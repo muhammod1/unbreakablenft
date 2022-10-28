@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Footer, Navbar } from "./components";
+import { DonateModal, Footer, Navbar } from "./components";
 
 import { About, Home, Nfts, Partnership, Program, Roadmap } from "./pages";
 import NotFound from "./pages/NotFound";
@@ -8,6 +8,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div>
+        <DonateModal />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
