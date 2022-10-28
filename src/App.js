@@ -3,11 +3,22 @@ import { DonateModal, Footer, Navbar } from "./components";
 
 import { About, Home, Nfts, Partnership, Program, Roadmap } from "./pages";
 import NotFound from "./pages/NotFound";
+import { ErrorBoundary, useErrorHandler } from 'react-error-boundary';
+
+function ErrorFallback({ error }) {
+  return (
+    <div role="alert">
+      <p>Something went wrong:</p>
+      <pre style={{ color: 'red' }}>{error.message}</pre>
+    </div>
+  );
+}
 
 const App = () => {
   return (
     <BrowserRouter>
       <div>
+      <ErrorBoundary FallbackComponent={ErrorFallback}>
         <DonateModal />
         <Navbar />
         <Routes>
@@ -20,6 +31,7 @@ const App = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
+        </ErrorBoundary>
       </div>
     </BrowserRouter>
   );
