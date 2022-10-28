@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Footer, Navbar } from "./components";
 
 import { About, Home, Nfts, Partnership, Program, Roadmap } from "./pages";
+import NotFound from "./pages/NotFound";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="program" element={<Program />} />
           <Route path="nfts" element={<Nfts />} />
           <Route path="partnership" element={<Partnership />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>
