@@ -15,6 +15,9 @@ module.exports = {
         audio: ["Audiowide", "cursive"],
         pop: ["Poppins", "sans-serif"],
       },
+      screens: {
+        small: "260px",
+      },
     },
   },
   plugins: [],

@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full h-screen md:h-auto bg-transparent">
-      <div className="justify-between px-10 mx-auto  md:items-center md:flex md:px-2 lg:px-8">
+      <div className="justify-between px-4 small:px-12 mx-auto  md:items-center md:flex md:px-2 lg:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="/">
@@ -39,22 +39,22 @@ const Navbar = () => {
             }`}
           >
             <ul className="items-center justify-center  space-y-12 md:flex md:space-x-2 lg:space-x-6 md:space-y-0">
-              <li className="text-[#E5E5E5]">
+              <li className="text-[#E5E5E5] text-lg md:text-sm">
                 <Link to="nfts">UnbrokenNFTs</Link>
               </li>
-              <li className="text-[#E5E5E5]">
+              <li className="text-[#E5E5E5] text-lg md:text-sm">
                 <Link to="/roadmap">Readmap</Link>
               </li>
-              <li className="text-[#E5E5E5]">
+              <li className="text-[#E5E5E5] text-lg md:text-sm">
                 <Link to="/program">Programmes</Link>
               </li>
-              <li className="flex items-center md:justify-center  text-[#E5E5E5]">
+              <li className="flex items-center md:justify-center  text-[#E5E5E5] text-lg md:text-sm">
                 <Link className="mr-3" to="/partnership">
                   Partnership
                 </Link>
                 <BsChevronDown />
               </li>
-              <li className="flex items-center md:justify-center  text-[#E5E5E5]">
+              <li className="flex items-center md:justify-center  text-[#E5E5E5] text-lg md:text-sm">
                 <Link className="mr-3" to="/about">
                   About
                 </Link>
@@ -74,7 +74,7 @@ const Navbar = () => {
         </div>
         <div className="hidden space-x-2 md:inline-block">
           <Link to="" className="px-4 py-2 bg-yellow  rounded-md shadow">
-            Joi community
+            Join community
           </Link>
         </div>
       </div>
