@@ -3,7 +3,7 @@ import { DonateModal, Footer, Navbar } from "./components";
 
 import { About, Home, Nfts, Partnership, Program, Roadmap } from "./pages";
 import NotFound from "./pages/NotFound";
-
+import "./App.css";
 const App = () => {
   return (
     <BrowserRouter>

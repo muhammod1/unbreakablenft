@@ -1,0 +1,25 @@
+
+
+.ellipse1{
+    position: absolute;
+    top: 100px;
+    left: -260px;
+    width: 328px;
+    height: 328px;
+    background: linear-gradient(98.41deg, #FFD700 0%, #1F050E 100%);
+opacity: 0.4;
+filter: blur(100px);
+transform: rotate(88.94deg);
+}
+
+.ellipse2{
+    width: 328px;
+    height: 148px;
+    position: absolute;
+    right: 320px;
+    top: 360px;
+    background: linear-gradient(98.41deg, #FFD700 0%, #1F050E 100%);
+opacity: 0.4;
+filter: blur(100px);
+transform: rotate(66.65deg);
+}
