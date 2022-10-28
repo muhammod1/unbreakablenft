@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { CgClose } from "react-icons/cg";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 const DonateModal = () => {
   const [toggleModel, setToggleModel] = useState(false);
   useEffect(() => {
