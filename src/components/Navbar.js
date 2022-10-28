@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { BsChevronDown } from "react-icons/bs";
 import { CgClose } from "react-icons/cg";
 import { Link } from "react-router-dom";
+import { logo } from "../assets";
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
@@ -12,7 +13,7 @@ const Navbar = () => {
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="/">
-              <h2 className="text-2xl text-white   font-bold">LOGO</h2>
+              <img src={logo} alt="logo" />
             </Link>
             <div className="md:hidden">
               <button
@@ -73,8 +74,11 @@ const Navbar = () => {
           </div>
         </div>
         <div className="hidden space-x-2 md:inline-block">
-          <Link to="" className="px-4 py-2 bg-yellow  rounded-md shadow">
-            Join community
+          <Link
+            to=""
+            className="px-2 py-2 lg:px-4 bg-yellow  rounded-md shadow"
+          >
+            Joi community
           </Link>
         </div>
       </div>
