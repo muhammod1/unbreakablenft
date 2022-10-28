@@ -10,6 +10,8 @@ module.exports = {
         black: {
           200: "#1E1E1E",
         },
+        grey_p: "#D4D4D4",
+        head_white: "#FAFAFA",
       },
       fontFamily: {
         audio: ["Audiowide", "cursive"],

@@ -1,7 +1,8 @@
 import React from "react";
 import { BiPlayCircle } from "react-icons/bi";
 import { nftsample1 } from "../assets";
-import { NftCard1 } from "../components";
+import { initiativeData } from "../assets/data";
+import { InitiativeCard, NftCard1 } from "../components";
 const Home = () => {
   return (
     <div className="scrollbar-hide overflow-y-auto">
@@ -35,12 +36,12 @@ const Home = () => {
       </div>
       <div className="mt-14 mx-6 md:mx-20 flex">
         <div className="hidden sm:block flex-1 w-full"></div>
-        <div className="w-[662px] flex flex-col justify-start flex-1 text-white relative">
+        <div className="w-[662px] flex flex-col justify-start flex-1  relative">
           <div className="-z-20 ellipse3"></div>
-          <p className="font-audio leading-[53px]  sm:leading-[79px] sm:text-[72px] text-5xl">
-            <span className="block">We are</span> Unbroken
+          <p className="text-head_white font-audio leading-[53px]  sm:leading-[79px] sm:text-[72px] text-5xl">
+            <span className="block ">We are</span> Unbroken
           </p>
-          <p className="mt-4">
+          <p className="mt-4 text-grey_p">
             In a world where the “weak” are constantly oppressed and looked down
             on, “Unbroken” is borne out of a deep yearning to comfort, rebuild
             and uphold the suppressed.
@@ -50,6 +51,21 @@ const Home = () => {
           </button>
         </div>
       </div>
+
+      <div className="mt-16 max-w-[534px] mx-6 md:mx-20 ">
+        <h3 className="font-audio text-4xl  md:text-7xl text-head_white">
+          Initiatives
+        </h3>
+        <p className="text-grey_p mt-2">
+          The proceeds from our collection will be used to implement three key
+          projects to address high school bullying in Nigeria.
+        </p>
+      </div>
+      {/* <div className="mt-14 mx-6 md:mx-20 w-full flex gap-6 flex-wrap">
+        {initiativeData.map((data) => (
+          <InitiativeCard {...data} />
+        ))}
+      </div> */}
     </div>
   );
 };
