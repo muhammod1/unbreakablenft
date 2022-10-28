@@ -8,8 +8,8 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full h-screen md:h-auto bg-transparent">
-      <div className="justify-between px-4 small:px-12 mx-auto  md:items-center md:flex md:px-2 lg:px-8">
+    <nav className="w-full  md:h-auto bg-transparent">
+      <div className="justify-between px-4  mx-auto  md:items-center md:flex md:px-4 lg:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="/">
@@ -35,7 +35,7 @@ const Navbar = () => {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+            className={`flex-1 h-screen md:h-3 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
               navbar ? "block" : "hidden"
             }`}
           >
