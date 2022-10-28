@@ -22,7 +22,7 @@ const Home = () => {
           <BiPlayCircle className="mr-2" /> Watch Vidoe
         </p>
       </div>
-      <div className="ml-6 md:ml-20 mt-16 flex gap-4 overflow-x-auto scrollbar-hide">
+      <div className="ml-6 h-[460px] md:ml-20 mt-16 flex items-center gap-4 overflow-x-auto scrollbar-hide">
         {/* this is were you map through your data and call a single card  data.map((val) => <NftCard1 key={val.id} image={val.image}/>) */}
         <NftCard1 image={nftsample1} />
         <NftCard1 image={nftsample1} />
@@ -32,6 +32,23 @@ const Home = () => {
         <NftCard1 image={nftsample1} />
         <NftCard1 image={nftsample1} />
         <NftCard1 image={nftsample1} />
+      </div>
+      <div className="mt-14 mx-6 md:mx-20 flex">
+        <div className="hidden sm:block flex-1 w-full"></div>
+        <div className="w-[662px] flex flex-col justify-start flex-1 text-white relative">
+          <div className="-z-20 ellipse3"></div>
+          <p className="font-audio leading-[53px]  sm:leading-[79px] sm:text-[72px] text-5xl">
+            <span className="block">We are</span> Unbroken
+          </p>
+          <p className="mt-4">
+            In a world where the “weak” are constantly oppressed and looked down
+            on, “Unbroken” is borne out of a deep yearning to comfort, rebuild
+            and uphold the suppressed.
+          </p>
+          <button className="bg-yellow w-32 p-3 mt-10 sm:mt-12 md:mt-14 rounded-lg text-black-200">
+            Learn More
+          </button>
+        </div>
       </div>
     </div>
   );
