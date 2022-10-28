@@ -61,11 +61,11 @@ const Home = () => {
           projects to address high school bullying in Nigeria.
         </p>
       </div>
-      {/* <div className="mt-14 mx-6 md:mx-20 w-full flex gap-6 flex-wrap">
+      <div className="mt-14 mx-6 md:mx-20  flex gap-6 flex-wrap">
         {initiativeData.map((data) => (
           <InitiativeCard {...data} />
         ))}
-      </div> */}
+      </div>
     </div>
   );
 };
