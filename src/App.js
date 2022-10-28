@@ -14,6 +14,7 @@ function ErrorFallback({ error }) {
   );
 }
 
+import "./App.css";
 const App = () => {
   return (
     <BrowserRouter>

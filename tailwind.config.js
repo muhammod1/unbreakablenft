@@ -18,6 +18,14 @@ module.exports = {
       screens: {
         small: "260px",
       },
+      backgroundImage: {
+        vector1: 'url("./assets/vector1.png")',
+        ellipse1: 'url("./assets/ellipse1.png")',
+        ellipse2: 'url("./assets/ellipse2.png")',
+      },
+      fontSize: {
+        "9xl": "clamp(2.5rem, 10.5vw, 7rem);",
+      },
     },
   },
   plugins: [],
