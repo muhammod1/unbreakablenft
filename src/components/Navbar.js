@@ -8,7 +8,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full h-screen md:h-auto bg-transparent">
-      <div className="justify-between px-4 mx-auto  md:items-center md:flex md:px-8">
+      <div className="justify-between px-10 mx-auto  md:items-center md:flex md:px-2 lg:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="/">
@@ -38,7 +38,7 @@ const Navbar = () => {
               navbar ? "block" : "hidden"
             }`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+            <ul className="items-center justify-center  space-y-12 md:flex md:space-x-2 lg:space-x-6 md:space-y-0">
               <li className="text-[#E5E5E5]">
                 <Link to="nfts">UnbrokenNFTs</Link>
               </li>
@@ -62,7 +62,7 @@ const Navbar = () => {
               </li>
             </ul>
 
-            <div className="mt-3 space-y-2 md:hidden ">
+            <div className="mt-3 space-y-2  md:hidden ">
               <Link
                 to=""
                 className="inline-block max-w-xs bg-yellow w-full px-4 py-2 text-center  rounded-md shadow"
@@ -74,7 +74,7 @@ const Navbar = () => {
         </div>
         <div className="hidden space-x-2 md:inline-block">
           <Link to="" className="px-4 py-2 bg-yellow  rounded-md shadow">
-            Join community
+            Joi community
           </Link>
         </div>
       </div>
