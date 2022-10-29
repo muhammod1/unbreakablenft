@@ -1,8 +1,8 @@
 import React from "react";
 import { BiPlayCircle } from "react-icons/bi";
 import { nftsample1 } from "../assets";
-import { initiativeData } from "../assets/data";
-import { InitiativeCard, NftCard1 } from "../components";
+import { initiativeData, journeyData } from "../assets/data";
+import { InitiativeCard, JourneyCard, NftCard1 } from "../components";
 const Home = () => {
   return (
     <div className="scrollbar-hide overflow-y-auto">
@@ -61,10 +61,27 @@ const Home = () => {
           projects to address high school bullying in Nigeria.
         </p>
       </div>
-      <div className="mt-14 mx-6 md:mx-20  flex gap-6 flex-wrap">
-        {initiativeData.map((data) => (
-          <InitiativeCard {...data} />
-        ))}
+      {initiativeData.length > 0 && (
+        <div className="mt-14 mx-6 md:mx-20  flex gap-6 flex-wrap">
+          {initiativeData.map((data) => (
+            <InitiativeCard key={data.title} {...data} />
+          ))}
+        </div>
+      )}
+
+      {/* Journey section  */}
+      <div className="mt-14 mx-6 md:mx-20">
+        <p className="text-[#737373] text-lg">Our Journey starts here</p>
+        <h3 className="text-head_white font-audio text-[40px] sm:text-7xl mt-2">
+          <span className="block 4xl:inline">The Unbroken</span> Roadmap
+        </h3>
+        {journeyData.length > 0 && (
+          <div className="mt-14">
+            {journeyData.map((data) => (
+              <JourneyCard key={data.title} {...data} />
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
