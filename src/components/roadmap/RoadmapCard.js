@@ -1,15 +1,16 @@
 import React from "react";
 
-import { activeJourney } from "../../assets";
+import { activeJourney, black, vector } from "../../assets";
 const RoadmapCard = ({ title, isaActive, desc, version, year }) => {
   return (
     <div className=" flex justify-between items-start gap-5 mb-5">
       <div className="max-w-[1039px] flex md:items-center flex-col md:flex-row gap-2 md:gap-9">
-        <div className="w-[83px] mb-8 md:mb-0">
+        <div className="w-[83px] mb-8 md:mb-0 visible md:invisible ">
           <h3 className="text-yellow font-audio text-[32px]">{version}</h3>
           <p className="text-[#404040] text-lg">{year}</p>
         </div>
-        <div className="flex flex-col mt-2">
+       
+        <div className="flex flex-col mt-32">
         <div className=" max-w-[657px]">
         {isaActive && (
             <div className="">
