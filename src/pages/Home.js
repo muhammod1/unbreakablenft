@@ -20,7 +20,7 @@ const Home = () => {
 
         <p className="flex text-yellow cursor-pointer items-center">
           {" "}
-          <BiPlayCircle className="mr-2" /> Watch Vidoe
+          <BiPlayCircle className="mr-2" /> Watch Video
         </p>
       </div>
       <div className="ml-6 h-[460px] md:ml-20 mt-16 flex items-center gap-4 overflow-x-auto scrollbar-hide">
