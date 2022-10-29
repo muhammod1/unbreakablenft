@@ -10,7 +10,7 @@ const RoadmapCard = ({ title, isaActive, desc, version, year }) => {
           <p className="text-[#404040] text-lg">{year}</p>
         </div>
        
-        <div className="flex flex-col mt-32">
+        <div className="flex flex-col md:mt-32">
         <div className=" max-w-[657px]">
         {isaActive && (
             <div className="">
