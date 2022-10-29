@@ -5,7 +5,7 @@ import NftSales from "../components/Nfts/NftSales";
 
 const nfts = () => {
   return (
-    <div className="bg-[black] -z-10">
+    <div className="bg-[black] ">
         <HeaderNfts />
         <Cards />
         <NftSales />

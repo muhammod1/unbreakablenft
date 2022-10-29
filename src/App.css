@@ -58,3 +58,7 @@ transform: rotate(66.65deg);
     background-size: cover;
     background-position: center;
 }
+.nftcard:hover{
+    opacity: 0.6;
+    transition: .4s;
+}
