@@ -1,5 +1,5 @@
 import React from "react";
-import { black, Vector } from "../assets";
+import { Union } from "../assets";
 
 
 import { roadmapData } from "../assets/data";
@@ -20,8 +20,7 @@ const Roadmap = () => {
           <div className="flex-auto mt-[20px] ml-24 w-[15%]  hidden md:block">
             <div className="flex">
               <div className="mt-20">
-              <img  src={black} alt="vector" />
-              <img className="" src={black} alt="vector" />
+             <img  src={Union} alt="vector" />
              
               </div>
             
@@ -30,7 +29,7 @@ const Roadmap = () => {
           </div>  
           <div className="flex-auto w-[85%]">
           {roadmapData.length > 0 && (
-          <div className="">
+          <div className="h-48">
             {roadmapData.map((data) => (
               <RoadmapCard key={data.title} {...data} />
             ))}

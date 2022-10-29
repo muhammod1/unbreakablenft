@@ -1,6 +1,6 @@
 import React from "react";
 
-import { activeJourney, black, vector } from "../../assets";
+import { activeJourney } from "../../assets";
 const RoadmapCard = ({ title, isaActive, desc, version, year }) => {
   return (
     <div className=" flex justify-between items-start gap-5 mb-5">
@@ -10,7 +10,7 @@ const RoadmapCard = ({ title, isaActive, desc, version, year }) => {
           <p className="text-[#404040] text-lg">{year}</p>
         </div>
        
-        <div className="flex flex-col md:mt-32">
+        <div className="flex flex-col md:mt-28">
         <div className=" max-w-[657px]">
         {isaActive && (
             <div className="">
@@ -21,7 +21,7 @@ const RoadmapCard = ({ title, isaActive, desc, version, year }) => {
             {title}
           </h3>
         </div>
-        <div className=" max-w-[908px]">
+        <div className=" max-w-[648px]  ">
           <p className="text-grey_p text-base sm:text-[18px]">{desc}</p>
         </div>
         </div>

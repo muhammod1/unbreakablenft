@@ -83,14 +83,14 @@ export const roadmapData = [
     version: "M5",
     year: "2022",
     title: "Groundwork for execution ",
-    desc: "Host NFTs on Opensea, presale publicity, and minting. Call for partnership",
+    desc: "Pre-launch publicity and activities, Launch NFT, website, Pre-launch publicity and activities, Launch NFT, website, Pre-launch publicity and activities, Launch NFT, website, Pre-launch publicity and activities, Launch NFT, website",
   },
   {
     isaActive: false,
     version: "M6",
     year: "2022",
     title: "Execution of projects ",
-    desc: "Host NFTs on Opensea, presale publicity, and minting. Call for partnership",
+    desc: "Pre-launch publicity and activities, Launch NFT, website, Pre-launch publicity and activities, Launch NFT, website, Pre-launch publicity and activities, Launch NFT, website, Pre-launch publicity and activities, Launch NFT, website",
   },
  
 ];

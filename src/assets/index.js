@@ -3,8 +3,10 @@ import nftsample1 from "./nftsample1.png";
 import cctv from "./cctv.png";
 import mic from "./mic.png";
 import board from "./board.png";
-import black from "./black.png";
 import activeJourney from "./activejourney.png";
-import Vector from "./Vector.png";
-
-export { logo, nftsample1, mic, cctv, board, activeJourney, black, Vector  };
+import Union from "./Union.svg"
+import instag from "./instag.png"
+import twit from "./twit.png"
+import faceb from "./faceb.png"
+import linkd from "./linkd.png"
+export { logo, nftsample1, mic, cctv, board, activeJourney, Union, instag, linkd, twit, faceb };
