@@ -3,4 +3,15 @@ import nftsample1 from "./nftsample1.png";
 import cctv from "./cctv.png";
 import mic from "./mic.png";
 import board from "./board.png";
-export { logo, nftsample1, mic, cctv, board };
+import nftrobot from "./nftrobot.png";
+import ArrowIcon from "./ArrowIcon.svg";
+
+export { 
+    logo, 
+    nftsample1, 
+    mic, 
+    cctv, 
+    board,
+    nftrobot,
+    ArrowIcon,
+};

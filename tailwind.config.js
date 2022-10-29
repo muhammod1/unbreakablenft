@@ -18,9 +18,10 @@ module.exports = {
         pop: ["Poppins", "sans-serif"],
       },
       screens: {
-        small: "260px",
+        sm: "425px",
       },
       backgroundImage: {
+        nftCard: 'url("./assets/nftrobot.png")',
         vector1: 'url("./assets/vector1.png")',
         ellipse1: 'url("./assets/ellipse1.png")',
         ellipse2: 'url("./assets/ellipse2.png")',

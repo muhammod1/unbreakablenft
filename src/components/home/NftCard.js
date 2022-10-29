@@ -8,7 +8,7 @@ const NftCard = ({ image }) => {
         <div className="bg-[#FAFAFA] opacity-40 -z-10 absolute inset-0"></div>
       </div>
       <div className="absolute inset-0 bg-black-200 opacity-30 "></div>
-      <img src={image} className="w-full" />
+      <img src={image} className="w-full" alt="icon" />
     </div>
   );
 };
