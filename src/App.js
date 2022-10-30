@@ -3,7 +3,7 @@ import NotFound from "./pages/NotFound";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { DonateModal, Footer, Navbar } from "./components";
 
-import { About, Home, Nfts, Partnership, Program, Roadmap } from "./pages";
+import { About, Community, Home, Nfts, Partnership, Program, Roadmap } from "./pages";
 import { ErrorBoundary, useErrorHandler } from "react-error-boundary";
 import Events from "./pages/Events";
 
@@ -30,6 +30,7 @@ const App = () => {
             <Route path="program" element={<Program />} />
             <Route path="nfts" element={<Nfts />} />
             <Route path="partnership" element={<Partnership />} />
+            <Route path="community" element={<Community/>}/>
             <Route path="events" element={<Events />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

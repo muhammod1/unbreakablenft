@@ -81,7 +81,8 @@ const Navbar = () => {
 
             <div className="mt-3 space-y-2  md:hidden ">
               <Link
-                to="/"
+                to="/community"
+              
                 onClick={() => setNavbar(false)}
                 className="inline-block max-w-xs bg-yellow w-full px-4 py-2 text-center  rounded-md shadow"
               >
@@ -92,10 +93,11 @@ const Navbar = () => {
         </div>
         <div className="hidden space-x-2 md:inline-block">
           <Link
-            to="/"
+            to="/community"
+            
             className="px-2 py-2 lg:px-4 bg-yellow  rounded-md shadow"
           >
-            Joi community
+            Join community
           </Link>
         </div>
       </div>

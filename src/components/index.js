@@ -6,6 +6,8 @@ export { default as InitiativeCard } from "./home/InitiativeCard";
 export { default as HeaderNfts } from "./Nfts/HeaderNfts";
 export { default as Cards } from "./Nfts/Cards";
 export { default as JourneyCard } from "./home/JourneyCard";
+export { default as RoadmapCard} from "./roadmap/RoadmapCard"
+
 export { default as SchoolCard } from "./home/SchoolCard";
 export { default as LinkButton } from "./LinkButton";
 export { default as Sponsors } from "./home/Sponsors";
