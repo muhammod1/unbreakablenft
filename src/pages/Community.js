@@ -1,15 +1,5 @@
 import React from "react";
-import {
-  event1,
-  event2,
-  event3,
-  faceb,
-  frame,
-  host,
-  instag,
-  linkd,
-  twit,
-} from "../assets";
+import { event1, event2, event3, faceb, frame, host, instag, linkd, twit } from "../assets";
 import { FaHeartBroken } from "react-icons/fa";
 const Community = () => {
   return (
@@ -64,7 +54,7 @@ const Community = () => {
         <div className=" mt-16 flex lg:flex-row flex-col  ">
           <div className="  ">
             <div className="  ">
-              <h3 className="font-audio text-4xl  md:text-7xl text-head_white">
+              <h3 className="font-audio text-4xl   md:text-7xl text-head_white">
                 Community <br /> townhall sessions
               </h3>
               <p className="text-grey_p lg:w-[500px] w-[300px] mt-2">
