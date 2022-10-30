@@ -22,13 +22,13 @@ const Cards = () => {
         {/* mapping through an object to display the cards   */}
         
         <div className="flex gap-8 w-[90%] mx-auto flex-wrap justify-center">
-            {cardData.map(({ icon, title, desc }) => (
+            {cardData.map(({ icon, title, desc, id }) => (
                 <button
+                  key={id}
                   className="text-black relative rounded"
-                  type="button"
                   onClick={() => setShowModal(true)}
                 >
-                  <div className='nftcard bg-nftCard w-[300px] h-[320px] bg-blue-700 rounded-2xl overflow-hidden relative'>
+                  <div className='nftcard hover:scale-105 bg-nftCard w-[300px] h-[320px] bg-blue-700 rounded-2xl overflow-hidden relative'>
                       <p className="text-sm bg-yellow mt-3 absolute mr-4 top-0 right-0 px-[8px] py-[6px] rounded-2xl">{desc}</p>
                       <p className="text-white mt-2 absolute bottom-0 mb-4 ml-4">{title}</p>
                       <img className='absolute bottom-0 right-0 mr-4 mb-4 w-[6%]' src={icon} alt="icon" />

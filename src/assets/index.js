@@ -6,14 +6,13 @@ import board from "./board.png";
 import nftrobot from "./nftrobot.png";
 import ArrowIcon from "./ArrowIcon.svg";
 import activeJourney from "./activejourney.png";
+
 import Union from "./Union.svg";
 import instag from "./instag.png";
 import twit from "./twit.png";
 import faceb from "./faceb.png";
 import linkd from "./linkd.png";
-import event1 from "./event1.png";
-import event2 from "./event2.png";
-import event3 from "./event3.png";
+
 import host from "./host.png";
 import frame from "./frame.png";
 import eventscard from "./eventscard.png";
@@ -22,6 +21,11 @@ import eventimage1 from "./eventimage1.png";
 import eventimage2 from "./eventimage2.png";
 import eventimage3 from "./eventimage3.png";
 import eventimage4 from "./eventimage4.png";
+
+import discord1 from "./discord1.png";
+import discord2 from "./discord2.png";
+import discord3 from "./discord3.png";
+
 import schoolBatch from "./schoolbatch.png";
 import schoolImage from "./schoolimage.png";
 import company1 from "./company1.png";
@@ -44,7 +48,6 @@ export {
   company3,
   company4,
   company5,
-  event1,
   nftrobot,
   ArrowIcon,
   Union,
@@ -52,8 +55,9 @@ export {
   linkd,
   twit,
   faceb,
-  event2,
-  event3,
+  discord2,
+  discord3,
+  discord1,
   host,
   frame,
   eventimage,
