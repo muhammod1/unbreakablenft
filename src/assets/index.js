@@ -5,6 +5,7 @@ import mic from "./mic.png";
 import board from "./board.png";
 import nftrobot from "./nftrobot.png";
 import ArrowIcon from "./ArrowIcon.svg";
+import activeJourney from "./activejourney.png";
 
 export { 
     logo, 
@@ -14,4 +15,5 @@ export {
     board,
     nftrobot,
     ArrowIcon,
+    activeJourney,
 };
