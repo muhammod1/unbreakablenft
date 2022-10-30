@@ -33,22 +33,23 @@ const Community = () => {
           <div className="mx-2">
             <img src={faceb} alt="facebook" />
           </div>
-          <div className="py-32 bg-black"></div>
+         
         </div>
-        <div className="w-[90%]  p-2 md:p-5 bg-yellow rounded-md ">
-          <div className="flex lg:flex-row flex-col  lg:space-x-6 space-x-0 item-center">
-            <h1 className="  lg:w-[20%] w-full my-auto my-3 text-[24px] lg:text-[28px] font-audio ">
-              <span className="block">Become an Unbroken</span>{" "}
-            </h1>
-            <p className=" mb-6 lg:w-[50%]  text-[16px] my-auto ">
-              Join the coolest tribe on Discord , participate in community
-              activities, events and programmes
-            </p>
-            <button className="sm:my-4 md:my-auto my-auto ml-auto md:ml-auto sm:ml-0 bg-[#262626] py-3 px-3 text-yellow text-[16px]  rounded">
-              Join Discord
-            </button>
-          </div>
+        <div className=' '>
+        <div className='w-[90%]  p-5 md:p-5 bg-yellow rounded-md'>
+            <div className='flex flex-col gap-4 md:flex-row item-center justify-between'>
+                <h1 className="w-full md:w-[20%] text-[28px] font-audio ">
+                    <span className="block">Become an Unbroken</span>{" "}
+                </h1>
+                <p className="h-fit my-auto mr-20 text-[16px]">
+                    Welcome to our NFT gallery. With your support, we will execute our anti-bullying initiatives.
+                </p>
+                <button className='h-fit  md:w-[30%] my-auto bg-[#262626] py-3 px-2 text-yellow text-[14px] rounded'>
+                    join discord
+                </button>
+            </div>
         </div>
+    </div>
        
         <div className=" mt-16 flex lg:flex-row flex-col  ">
           <div className="  ">
