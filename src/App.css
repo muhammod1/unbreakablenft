@@ -1,4 +1,8 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .ellipse1{
     position: absolute;
@@ -61,4 +65,12 @@ transform: rotate(66.65deg);
 .nftcard:hover{
     opacity: 0.6;
     transition: .4s;
+}
+
+.gradient {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+.card-font{
+    font-weight: 200;
 }

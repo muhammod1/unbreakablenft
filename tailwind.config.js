@@ -16,10 +16,12 @@ module.exports = {
       fontFamily: {
         audio: ["Audiowide", "cursive"],
         pop: ["Poppins", "sans-serif"],
+        nexa: ["Nexa Text-Trial", "sans-serif"],
       },
       screens: {
         small: "260px",
         small_l: "416px",
+        sm: "475px",
       },
       backgroundImage: {
         nftCard: 'url("./assets/nftrobot.png")',
