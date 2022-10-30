@@ -19,8 +19,10 @@ module.exports = {
       },
       screens: {
         small: "260px",
+        small_l: "416px",
       },
       backgroundImage: {
+        nftCard: 'url("./assets/nftrobot.png")',
         vector1: 'url("./assets/vector1.png")',
         ellipse1: 'url("./assets/ellipse1.png")',
         ellipse2: 'url("./assets/ellipse2.png")',
