@@ -36,7 +36,7 @@ const Community = () => {
          
         </div>
         <div className=' '>
-        <div className='w-[90%]  p-5 md:p-5 bg-yellow rounded-md'>
+        <div className='w-[100%]  p-5 md:p-5 bg-yellow rounded-md'>
             <div className='flex flex-col gap-4 md:flex-row item-center justify-between'>
                 <h1 className="w-full md:w-[20%] text-[28px] font-audio ">
                     <span className="block">Become an Unbroken</span>{" "}
