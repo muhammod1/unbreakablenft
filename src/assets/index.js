@@ -3,6 +3,8 @@ import nftsample1 from "./nftsample1.png";
 import cctv from "./cctv.png";
 import mic from "./mic.png";
 import board from "./board.png";
+import nftrobot from "./nftrobot.png";
+import ArrowIcon from "./ArrowIcon.svg";
 import activeJourney from "./activejourney.png";
 import schoolBatch from "./schoolbatch.png";
 import schoolImage from "./schoolimage.png";
@@ -27,4 +29,8 @@ export {
   company4,
   company5,
   event1,
+  nftrobot,
+    ArrowIcon,
+    
 };
+

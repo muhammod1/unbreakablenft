@@ -9,7 +9,7 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full  md:h-auto bg-transparent">
+    <nav className="w-full fixed z-50 bg-[#1E1E1E] sticky top-0 md:h-auto nav-bg">
       <div className="justify-between px-4  mx-auto  md:items-center md:flex md:px-4 lg:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
