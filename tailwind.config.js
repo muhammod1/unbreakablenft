@@ -21,7 +21,6 @@ module.exports = {
       screens: {
         small: "260px",
         small_l: "416px",
-        sm: "475px",
       },
       backgroundImage: {
         nftCard: 'url("./assets/nftrobot.png")',
