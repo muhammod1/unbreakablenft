@@ -1,6 +1,6 @@
 import React from "react";
-import { event1, event2, event3, faceb, host, instag, linkd, twit } from "../assets";
-
+import { event1, event2, event3, faceb, frame, host, instag, linkd, twit } from "../assets";
+import { FaHeartBroken } from "react-icons/fa";
 const Community = () => {
   return (
     <>
@@ -62,12 +62,16 @@ const Community = () => {
               </p>
             </div>
             <div className="flex mt-8 lg:flex-row flex-col lg:justify-between">
-              <div class=" rounded mt-8 mr-6  overflow-hidden bg-[#171717] w-full h-full">
+              <div class=" rounded mt-8 mr-6  overflow-hidden bg-[#171717] w-full h-full relative">
+              <div className="absolute  z-10  rounded-2xl overflow-hidden top-2 right-3">
+          <img src={frame} alt="frame" className="h-[25px] w-[100px]"/>
+        <div className="bg-[#FAFAFA] opacity-40 -z-10 absolute inset-0"></div>
+      </div>
                 <img
                   className="w-full h-[325px]"
                   src={event1}
                   alt="Sunset in the mountains"
-                />
+                /> 
                 <div class="px-6 py-2">
                   <div class="font-bold text-xl text-white mb-2">
                     Workshop: Changing the narrative - Anti-bullying{" "}
@@ -84,7 +88,11 @@ const Community = () => {
                   
                 </div>
               </div>
-              <div class=" mb-8 rounded overflow-hidden mt-8 bg-[#171717] w-full h-full">
+              <div class=" mb-8 rounded overflow-hidden mt-8 bg-[#171717] w-full h-full  relative">
+              <div className="absolute  z-10  rounded-2xl overflow-hidden top-2 right-3">
+          <img src={frame} alt="frame" className="h-[25px] w-[100px]"/>
+        <div className="bg-[#FAFAFA] opacity-40 -z-10 absolute inset-0"></div>
+      </div>
                 <img
                   className="w-full h-[325px]"
                   src={event2}
@@ -108,7 +116,11 @@ const Community = () => {
               </div>
             </div>
           </div>
-          <div class=" rounded overflow-hidden bg-[#171717]  h-full lg:ml-8">
+          <div class=" rounded overflow-hidden bg-[#171717] relative h-full lg:ml-8">
+          <div className="absolute  z-10  rounded-2xl overflow-hidden top-2 right-3">
+          <img src={frame} alt="frame" className="h-[25px] w-[100px]"/>
+        <div className="bg-[#FAFAFA] opacity-40 -z-10 absolute inset-0"></div>
+      </div>
                 <img
                   className="w-full h-[325px]"
                   src={event3}
