@@ -7,9 +7,10 @@ import { logo } from "../assets";
 import { Dropdown } from ".";
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
+  const [toggleDropdown, setToggleDropdown] = useState(false);
 
   return (
-    <nav className="w-full fixed z-50 bg-[#1E1E1E] sticky top-0 md:h-auto nav-bg">
+    <nav className="w-full fixed z-50 bg-[#1E1E1E]  top-0 md:h-auto nav-bg">
       <div className="justify-between px-4  mx-auto  md:items-center md:flex md:px-4 lg:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -66,7 +67,12 @@ const Navbar = () => {
                 <Link className="mr-3" to="/partnership">
                   Partnership
                 </Link>
-                <BsChevronDown />
+                {/* <BsChevronDown /> */}
+
+                {/* <div className="max-w-7 absolute md:top-24">
+                  <p>What is the value</p>
+                  <p>Second Item</p>
+                </div> */}
               </li>
               <li
                 onClick={() => setNavbar(false)}
@@ -75,14 +81,12 @@ const Navbar = () => {
                 <Link className="mr-3" to="/about">
                   About
                 </Link>
-                <BsChevronDown />
               </li>
             </ul>
 
             <div className="mt-3 space-y-2  md:hidden ">
               <Link
                 to="/community"
-              
                 onClick={() => setNavbar(false)}
                 className="inline-block max-w-xs bg-yellow w-full px-4 py-2 text-center  rounded-md shadow"
               >
@@ -94,7 +98,6 @@ const Navbar = () => {
         <div className="hidden space-x-2 md:inline-block">
           <Link
             to="/community"
-            
             className="px-2 py-2 lg:px-4 bg-yellow  rounded-md shadow"
           >
             Join community

@@ -1,19 +1,19 @@
 import React from "react";
 import { BiPlayCircle } from "react-icons/bi";
-import { schoolBatch, schoolImage } from "../../assets";
+import { schoolBatch } from "../../assets";
 
-const SchoolCard = ({ badge, name, address, photo, videoLink }) => {
+const SchoolCard = ({ photo, videoLink }) => {
   return (
     <div className="p-4 w-full  small_l:w-[361px] h-60 small_l:h-[387px] hover:scale-105 transition ease-in-out overflow-hidden flex-shrink-0 rounded-md relative">
       <div className="flex flex-col justify-between h-full">
         <div className="w-12 small_l:w-[78px]">
-          <img src={badge} />
+          <img src={schoolBatch} />
         </div>
         <div>
           <h4 className="text-head_white text-lg small_l:text-[32px]">
-            {name}
+            GSS PASALI
           </h4>
-          <p className="text-head_white">{address}</p>
+          <p className="text-head_white">Kuje, Abuja</p>
         </div>
         <button className="flex text-yellow items-center">
           {" "}

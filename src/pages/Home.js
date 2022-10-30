@@ -1,7 +1,7 @@
 import React from "react";
 import { BiPlayCircle } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import { nftsample1 } from "../assets";
+import { nftrobot } from "../assets";
 import { initiativeData, journeyData, schoolData } from "../assets/data";
 import {
   FAQ,
@@ -34,14 +34,14 @@ const Home = () => {
       </div>
       <div className="ml-2  small:ml-6 h-[460px] md:ml-20 mt-16 flex items-center gap-4 overflow-x-auto scrollbar-hide">
         {/* this is were you map through your data and call a single card  data.map((val) => <NftCard1 key={val.id} image={val.image}/>) */}
-        <NftCard1 image={nftsample1} />
-        <NftCard1 image={nftsample1} />
-        <NftCard1 image={nftsample1} />
-        <NftCard1 image={nftsample1} />
-        <NftCard1 image={nftsample1} />
-        <NftCard1 image={nftsample1} />
-        <NftCard1 image={nftsample1} />
-        <NftCard1 image={nftsample1} />
+        <NftCard1 image={nftrobot} />
+        <NftCard1 image={nftrobot} />
+        <NftCard1 image={nftrobot} />
+        <NftCard1 image={nftrobot} />
+        <NftCard1 image={nftrobot} />
+        <NftCard1 image={nftrobot} />
+        <NftCard1 image={nftrobot} />
+        <NftCard1 image={nftrobot} />
       </div>
       <div className="mt-14 mx-2  small:mx-6 md:mx-20 flex">
         <div className="hidden sm:block flex-1 w-full"></div>
