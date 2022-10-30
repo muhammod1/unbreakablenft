@@ -13,7 +13,7 @@ const Events = () => {
     <div>
       <div className="flex relative max-h-[468px]">
         <div className="mt-14 mx-6 absolute bottom-6  md:mx-20">
-          <h4 className="text-head_white font-audio text-5xl sm:text-7xl">
+          <h4 className="text-head_white text-3xl break-words  font-audio small_l:text-5xl sm:text-7xl">
             <span className="block">The Unbroken</span> Events
           </h4>
         </div>
@@ -33,7 +33,7 @@ const Events = () => {
       </div>
       <div className="mt-14 mx-6  md:mx-20">
         <div className="mb-14 ">
-          <h4 className="self-start font-audio text-2xl text-head_white">
+          <h4 className="self-start  font-audio text-2xl text-head_white">
             Current Events
           </h4>
           {currentEventData.length > 0 && (

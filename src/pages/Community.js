@@ -62,7 +62,7 @@ const Community = () => {
                 and reality of bullying.
               </p>
             </div>
-            <div className="flex mt-8 ">
+            <div className="flex mt-8 flex-col sm:flex-row">
               <div class=" rounded mt-8 mr-6 max-w-[350px] overflow-hidden bg-[#171717] h-full relative">
                 <div className="absolute  z-10  rounded-2xl overflow-hidden top-2 right-3">
                   <img src={frame} alt="frame" className="h-[25px] w-[100px]" />
