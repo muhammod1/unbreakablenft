@@ -1,5 +1,5 @@
 import React from "react";
-import { discord1, discord2, discord3, faceb, frame, host, instag, linkd, twit } from "../assets";
+import { event1, event2, event3, faceb, frame, host, instag, linkd, twit } from "../assets";
 import { FaHeartBroken } from "react-icons/fa";
 const Community = () => {
   return (
@@ -70,7 +70,7 @@ const Community = () => {
       </div>
                 <img
                   className="w-full h-[325px]"
-                  src={discord1}
+                  src={event1}
                   alt="Sunset in the mountains"
                 /> 
                 <div class="px-6 py-2">
@@ -96,7 +96,7 @@ const Community = () => {
       </div>
                 <img
                   className="w-full h-[325px]"
-                  src={discord2}
+                  src={event2}
                   alt="Sunset in the mountains"
                 />
                 <div class="px-6 py-2">
@@ -124,7 +124,7 @@ const Community = () => {
       </div>
                 <img
                   className="w-full h-[325px]"
-                  src={discord3}
+                  src={event3}
                   alt="Sunset in the mountains"
                 />
                 <div class="px-6 py-2 ">

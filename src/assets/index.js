@@ -11,9 +11,9 @@ import instag from "./instag.png"
 import twit from "./twit.png"
 import faceb from "./faceb.png"
 import linkd from "./linkd.png"
-import discord1 from "./discord1.png"
-import discord2 from "./discord2.png"
-import discord3 from "./discord3.png"
+import event1 from "./event1.png"
+import event2 from "./event2.png"
+import event3 from "./event3.png"
 import host from "./host.png"
 import frame from "./frame.png"
 
@@ -39,10 +39,10 @@ export {
   company3,
   company4,
   company5,
-  discord1,
+  event1,
   nftrobot,
  ArrowIcon,
- Union, instag, linkd, twit, faceb,  discord2, discord3, host, frame
+ Union, instag, linkd, twit, faceb,  event2, event3, host, frame
     
 };
 
