@@ -6,7 +6,7 @@ const DonateModal = () => {
   useEffect(() => {
     setTimeout(() => {
       setToggleModel(true);
-    }, 3000);
+    }, 4000);
   }, []);
   return (
     <motion.div
@@ -20,8 +20,10 @@ const DonateModal = () => {
           : "hidden"
       }
     >
-      <p className="mr-2">Donate to curb bullying in High schools</p>
-      <button className=" mr-4 bg-black-200 text-yellow p-2 rounded-md">
+      <p className="mr-2 text-xs small:text-sm">
+        Donate to curb bullying in High schools
+      </p>
+      <button className=" mr-4 bg-black-200 text-xs small:text-sm text-yellow p-2 rounded-md">
         Donate
       </button>
       <CgClose size={20} onClick={() => setToggleModel(false)} className="" />

@@ -4,12 +4,12 @@ import { activeJourney } from "../../assets";
 const JourneyCard = ({ title, isaActive, desc, version, year }) => {
   return (
     <div className=" flex justify-between items-start gap-5 mb-5">
-      <div className="max-w-[1039px] flex md:items-center flex-col md:flex-row gap-2 md:gap-9">
-        <div className="w-[83px] mb-8 md:mb-0">
+      <div className="max-w-full small:max-w-[1039px] flex md:items-center flex-col md:flex-row gap-2 md:gap-9">
+        <div className="min-w-[83px] mb-8 md:mb-0">
           <h3 className="text-yellow font-audio text-[32px]">{version}</h3>
           <p className="text-[#404040] text-lg">{year}</p>
         </div>
-        <div className=" max-w-[257px]">
+        <div className="min-w-full small:min-w-[257px] ">
           {isaActive && (
             <div className="">
               <p className="text-[#404040] text-lg">Current</p>
@@ -19,7 +19,7 @@ const JourneyCard = ({ title, isaActive, desc, version, year }) => {
             {title}
           </h3>
         </div>
-        <div className=" max-w-[608px]">
+        <div className=" max-w-[608px] xl:w-[700px]">
           <p className="text-grey_p text-base sm:text-[18px]">{desc}</p>
         </div>
         <a href="#" className=" text-yellow md:hidden">

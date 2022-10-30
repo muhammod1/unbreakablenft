@@ -18,7 +18,8 @@ module.exports = {
         pop: ["Poppins", "sans-serif"],
       },
       screens: {
-        sm: "425px",
+        small: "260px",
+        small_l: "416px",
       },
       backgroundImage: {
         nftCard: 'url("./assets/nftrobot.png")',

@@ -1,4 +1,4 @@
-import { board, cctv, mic } from ".";
+import { board, cctv, event1, mic, schoolBatch, schoolImage } from ".";
 
 export const initiativeData = [
   {
@@ -46,5 +46,130 @@ export const journeyData = [
     year: "2022",
     title: "Partnerships & NFT Sales",
     desc: "Host NFTs on Opensea, presale publicity and minting. Call for partnership.",
+  },
+];
+
+export const schoolData = [
+  {
+    badge: schoolBatch,
+    name: "GSS PASALI",
+    address: "Kuje, Abuja",
+    photo: schoolImage,
+    videoLink: "https://",
+  },
+  {
+    badge: schoolBatch,
+    name: "GSS PASALI2",
+    address: "Kuje, Abuja",
+    photo: schoolImage,
+    videoLink: "https://",
+  },
+  {
+    badge: schoolBatch,
+    name: "GSS PASALI 3",
+    address: "Kuje, Abuja",
+    photo: schoolImage,
+    videoLink: "https://",
+  },
+  {
+    badge: schoolBatch,
+    name: "GSS PASALI 4",
+    address: "Kuje, Abuja",
+    photo: schoolImage,
+    videoLink: "https://",
+  },
+  {
+    badge: schoolBatch,
+    name: "GSS PASALI 5",
+    address: "Kuje, Abuja",
+    photo: schoolImage,
+    videoLink: "https://",
+  },
+];
+
+export const currentEventData = [
+  {
+    icon: "",
+    center: "Twitter Space1",
+    title: "Roadmap to the Future1",
+    desc: "#respectme. The Anti-bullying alliance, join the movement, help make schools safer more kids",
+    date: "Oct 12, 9:00 AM GMT+1",
+    photo: event1,
+    url: "#",
+  },
+  {
+    icon: "",
+    center: "Twitter Space2",
+    title: "Roadmap to the Future2",
+    desc: "#respectme. The Anti-bullying alliance, join the movement, help make schools safer more kids",
+    date: "Oct 12, 9:00 AM GMT+1",
+    photo: event1,
+    url: "#",
+  },
+  {
+    icon: "",
+    center: "Twitter Space3",
+    title: "Roadmap to the Future3",
+    desc: "#respectme. The Anti-bullying alliance, join the movement, help make schools safer more kids",
+    date: "Oct 12, 9:00 AM GMT+1",
+    photo: event1,
+    url: "#",
+  },
+];
+
+export const pastEventData = [
+  {
+    icon: "",
+    center: "Twitter Space1",
+    title: "Roadmap to the Future1",
+    desc: "#respectme. The Anti-bullying alliance, join the movement, help make schools safer more kids",
+    date: "Oct 12, 9:00 AM GMT+1",
+    photo: event1,
+    url: "#",
+  },
+  {
+    icon: "",
+    center: "Twitter Space2",
+    title: "Roadmap to the Future2",
+    desc: "#respectme. The Anti-bullying alliance, join the movement, help make schools safer more kids",
+    date: "Oct 12, 9:00 AM GMT+1",
+    photo: event1,
+    url: "#",
+  },
+  {
+    icon: "",
+    center: "Twitter Space3",
+    title: "Roadmap to the Future3",
+    desc: "#respectme. The Anti-bullying alliance, join the movement, help make schools safer more kids",
+    date: "Oct 12, 9:00 AM GMT+1",
+    photo: event1,
+    url: "#",
+  },
+  {
+    icon: "",
+    center: "Twitter Space1",
+    title: "Roadmap to the Future1",
+    desc: "#respectme. The Anti-bullying alliance, join the movement, help make schools safer more kids",
+    date: "Oct 12, 9:00 AM GMT+1",
+    photo: event1,
+    url: "#",
+  },
+  {
+    icon: "",
+    center: "Twitter Space2",
+    title: "Roadmap to the Future2",
+    desc: "#respectme. The Anti-bullying alliance, join the movement, help make schools safer more kids",
+    date: "Oct 12, 9:00 AM GMT+1",
+    photo: event1,
+    url: "#",
+  },
+  {
+    icon: "",
+    center: "Twitter Space3",
+    title: "Roadmap to the Future3",
+    desc: "#respectme. The Anti-bullying alliance, join the movement, help make schools safer more kids",
+    date: "Oct 12, 9:00 AM GMT+1",
+    photo: event1,
+    url: "#",
   },
 ];
