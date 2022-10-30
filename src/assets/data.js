@@ -1,4 +1,4 @@
-import { board, cctv, event1, mic, schoolBatch, schoolImage } from ".";
+import { board, cctv, eventscard, ard, mic, schoolBatch, schoolImage } from ".";
 
 export const initiativeData = [
   {
@@ -94,7 +94,7 @@ export const currentEventData = [
     title: "Roadmap to the Future1",
     desc: "#respectme. The Anti-bullying alliance, join the movement, help make schools safer more kids",
     date: "Oct 12, 9:00 AM GMT+1",
-    photo: event1,
+    photo: eventscard,
     url: "#",
   },
   {
@@ -103,7 +103,7 @@ export const currentEventData = [
     title: "Roadmap to the Future2",
     desc: "#respectme. The Anti-bullying alliance, join the movement, help make schools safer more kids",
     date: "Oct 12, 9:00 AM GMT+1",
-    photo: event1,
+    photo: eventscard,
     url: "#",
   },
   {
@@ -112,7 +112,7 @@ export const currentEventData = [
     title: "Roadmap to the Future3",
     desc: "#respectme. The Anti-bullying alliance, join the movement, help make schools safer more kids",
     date: "Oct 12, 9:00 AM GMT+1",
-    photo: event1,
+    photo: eventscard,
     url: "#",
   },
 ];
@@ -124,7 +124,7 @@ export const pastEventData = [
     title: "Roadmap to the Future1",
     desc: "#respectme. The Anti-bullying alliance, join the movement, help make schools safer more kids",
     date: "Oct 12, 9:00 AM GMT+1",
-    photo: event1,
+    photo: eventscard,
     url: "#",
   },
   {
@@ -133,7 +133,7 @@ export const pastEventData = [
     title: "Roadmap to the Future2",
     desc: "#respectme. The Anti-bullying alliance, join the movement, help make schools safer more kids",
     date: "Oct 12, 9:00 AM GMT+1",
-    photo: event1,
+    photo: eventscard,
     url: "#",
   },
   {
@@ -142,7 +142,7 @@ export const pastEventData = [
     title: "Roadmap to the Future3",
     desc: "#respectme. The Anti-bullying alliance, join the movement, help make schools safer more kids",
     date: "Oct 12, 9:00 AM GMT+1",
-    photo: event1,
+    photo: eventscard,
     url: "#",
   },
   {
@@ -151,7 +151,7 @@ export const pastEventData = [
     title: "Roadmap to the Future1",
     desc: "#respectme. The Anti-bullying alliance, join the movement, help make schools safer more kids",
     date: "Oct 12, 9:00 AM GMT+1",
-    photo: event1,
+    photo: eventscard,
     url: "#",
   },
   {
@@ -160,7 +160,7 @@ export const pastEventData = [
     title: "Roadmap to the Future2",
     desc: "#respectme. The Anti-bullying alliance, join the movement, help make schools safer more kids",
     date: "Oct 12, 9:00 AM GMT+1",
-    photo: event1,
+    photo: eventscard,
     url: "#",
   },
   {
@@ -169,7 +169,7 @@ export const pastEventData = [
     title: "Roadmap to the Future3",
     desc: "#respectme. The Anti-bullying alliance, join the movement, help make schools safer more kids",
     date: "Oct 12, 9:00 AM GMT+1",
-    photo: event1,
+    photo: eventscard,
     url: "#",
   },
 ];

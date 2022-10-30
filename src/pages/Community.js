@@ -1,5 +1,15 @@
 import React from "react";
-import { event1, event2, event3, faceb, frame, host, instag, linkd, twit } from "../assets";
+import {
+  event1,
+  event2,
+  event3,
+  faceb,
+  frame,
+  host,
+  instag,
+  linkd,
+  twit,
+} from "../assets";
 import { FaHeartBroken } from "react-icons/fa";
 const Community = () => {
   return (
@@ -33,24 +43,24 @@ const Community = () => {
           <div className="mx-2">
             <img src={faceb} alt="facebook" />
           </div>
-         
         </div>
-        <div className=' '>
-        <div className='w-[100%]  p-5 md:p-5 bg-yellow rounded-md'>
-            <div className='flex flex-col gap-4 md:flex-row item-center justify-between'>
-                <h1 className="w-full md:w-[20%] text-[28px] font-audio ">
-                    <span className="block">Become an Unbroken</span>{" "}
-                </h1>
-                <p className="h-fit my-auto mr-20 text-[16px]">
-                    Welcome to our NFT gallery. With your support, we will execute our anti-bullying initiatives.
-                </p>
-                <button className='h-fit  md:w-[30%] my-auto bg-[#262626] py-3 px-2 text-yellow text-[14px] rounded'>
-                    join discord
-                </button>
+        <div className=" ">
+          <div className="w-[100%]  p-5 md:p-5 bg-yellow rounded-md">
+            <div className="flex flex-col gap-4 md:flex-row item-center justify-between">
+              <h1 className="w-full md:w-[20%] text-[28px] font-audio ">
+                <span className="block">Become an Unbroken</span>{" "}
+              </h1>
+              <p className="h-fit my-auto mr-20 text-[16px]">
+                Welcome to our NFT gallery. With your support, we will execute
+                our anti-bullying initiatives.
+              </p>
+              <button className="h-fit  md:w-[30%] my-auto bg-[#262626] py-3 px-2 text-yellow text-[14px] rounded">
+                join discord
+              </button>
             </div>
+          </div>
         </div>
-    </div>
-       
+
         <div className=" mt-16 flex lg:flex-row flex-col  ">
           <div className="  ">
             <div className="  ">
@@ -62,17 +72,17 @@ const Community = () => {
                 and reality of bullying.
               </p>
             </div>
-            <div className="flex mt-8 lg:flex-row flex-col lg:justify-between">
-              <div class=" rounded mt-8 mr-6  overflow-hidden bg-[#171717] w-full h-full relative">
-              <div className="absolute  z-10  rounded-2xl overflow-hidden top-2 right-3">
-          <img src={frame} alt="frame" className="h-[25px] w-[100px]"/>
-        <div className="bg-[#FAFAFA] opacity-40 -z-10 absolute inset-0"></div>
-      </div>
+            <div className="flex mt-8 ">
+              <div class=" rounded mt-8 mr-6 max-w-[350px] overflow-hidden bg-[#171717] h-full relative">
+                <div className="absolute  z-10  rounded-2xl overflow-hidden top-2 right-3">
+                  <img src={frame} alt="frame" className="h-[25px] w-[100px]" />
+                  <div className="bg-[#FAFAFA] opacity-40 -z-10 absolute inset-0"></div>
+                </div>
                 <img
                   className="w-full h-[325px]"
                   src={event1}
                   alt="Sunset in the mountains"
-                /> 
+                />
                 <div class="px-6 py-2">
                   <div class="font-bold text-xl text-white mb-2">
                     Workshop: Changing the narrative - Anti-bullying{" "}
@@ -84,16 +94,15 @@ const Community = () => {
                 </div>
                 <div class="px-6 pt-4 pb-2">
                   <span class="inline-block   py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                   <img src={host} alt="host" className="h-[45px] w-[146px]"/>
+                    <img src={host} alt="host" className="h-[45px] w-[146px]" />
                   </span>
-                  
                 </div>
               </div>
-              <div class=" mb-8 rounded overflow-hidden mt-8 bg-[#171717] w-full h-full  relative">
-              <div className="absolute  z-10  rounded-2xl overflow-hidden top-2 right-3">
-          <img src={frame} alt="frame" className="h-[25px] w-[100px]"/>
-        <div className="bg-[#FAFAFA] opacity-40 -z-10 absolute inset-0"></div>
-      </div>
+              <div class=" mb-8 rounded overflow-hidden mt-8 bg-[#171717] max-w-[350px] h-full  relative">
+                <div className="absolute  z-10  rounded-2xl overflow-hidden top-2 right-3">
+                  <img src={frame} alt="frame" className="h-[25px] w-[100px]" />
+                  <div className="bg-[#FAFAFA] opacity-40 -z-10 absolute inset-0"></div>
+                </div>
                 <img
                   className="w-full h-[325px]"
                   src={event2}
@@ -110,39 +119,37 @@ const Community = () => {
                 </div>
                 <div class="px-6 pt-4 pb-2">
                   <span class="inline-block   py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                   <img src={host} alt="host" className="h-[45px] w-[146px]"/>
+                    <img src={host} alt="host" className="h-[45px] w-[146px]" />
                   </span>
-                  
                 </div>
               </div>
             </div>
           </div>
-          <div class=" rounded overflow-hidden bg-[#171717] relative h-full lg:ml-8">
-          <div className="absolute  z-10  rounded-2xl overflow-hidden top-2 right-3">
-          <img src={frame} alt="frame" className="h-[25px] w-[100px]"/>
-        <div className="bg-[#FAFAFA] opacity-40 -z-10 absolute inset-0"></div>
-      </div>
-                <img
-                  className="w-full h-[325px]"
-                  src={event3}
-                  alt="Sunset in the mountains"
-                />
-                <div class="px-6 py-2 ">
-                  <div class="font-bold text-xl text-white mb-2">
-                    Workshop: Changing the narrative - Anti-bullying{" "}
-                  </div>
-                  <p class="text-grey_p text-base">
-                    #respectme. The Anti-bullying alliance, join the movement,
-                    help make schools safer more kids
-                  </p>
-                </div>
-                <div class="px-6 pt-4 pb-2">
-                  <span class="inline-block   py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                   <img src={host} alt="host" className="h-[45px] w-[146px]"/>
-                  </span>
-                  
-                </div>
+          <div class=" rounded max-w-[350px] overflow-hidden bg-[#171717] relative h-full lg:ml-8">
+            <div className="absolute  z-10  rounded-2xl overflow-hidden top-2 right-3">
+              <img src={frame} alt="frame" className="h-[25px] w-[100px]" />
+              <div className="bg-[#FAFAFA] opacity-40 -z-10 absolute inset-0"></div>
+            </div>
+            <img
+              className="w-full h-[325px]"
+              src={event3}
+              alt="Sunset in the mountains"
+            />
+            <div class="px-6 py-2 ">
+              <div class="font-bold text-xl text-white mb-2">
+                Workshop: Changing the narrative - Anti-bullying{" "}
               </div>
+              <p class="text-grey_p text-base">
+                #respectme. The Anti-bullying alliance, join the movement, help
+                make schools safer more kids
+              </p>
+            </div>
+            <div class="px-6 pt-4 pb-2">
+              <span class="inline-block   py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                <img src={host} alt="host" className="h-[45px] w-[146px]" />
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </>

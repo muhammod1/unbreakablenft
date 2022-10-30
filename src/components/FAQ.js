@@ -13,7 +13,9 @@ const FAQ = () => {
       </h3>
       <div className="mt-6 w-full  max-w-2xl mx-auto">
         <div className=" w-full   flex justify-between items-center">
-          <p className="text-grey_p">What is your name</p>
+          <p className="text-[#A3A3A3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+          </p>
           {toggleFnq ? (
             <BsChevronUp onClick={handleToggle} className="text-grey_p" />
           ) : (
@@ -27,7 +29,9 @@ const FAQ = () => {
             transition={{ duration: 0.5 }}
             className=""
           >
-            <p className="text-grey_p ">This is my name wow great</p>
+            <p className="text-[#525252] ">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+            </p>
           </motion.div>
         )}
       </div>
