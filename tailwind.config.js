@@ -19,6 +19,7 @@ module.exports = {
       },
       screens: {
         small: "260px",
+        small_l: "416px",
       },
       backgroundImage: {
         vector1: 'url("./assets/vector1.png")',
