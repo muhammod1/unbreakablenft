@@ -7,32 +7,25 @@ import { nftrobot } from '../../assets'
 const NftPopup = ({setShowModal}) => {
   return (
     <>
-    <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
-        >
+    <div className="justify-center gradient items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
         <div className="relative w-auto my-6 mx-auto max-w-3xl">
-            <div className="border-0  rounded-lg relative flex flex-col w-full bg-[#171717] outline-none focus:outline-none">
+            <div className="w-[85%] md:w-[85%] mx-auto border-0 rounded-lg relative bg-[#171717] outline-none focus:outline-none">
                 <button
-                className="absolute right-0 text-yellow background-transparent font-bold uppercase px-6 py-2 text-2xl outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                className="absolute right-[4px] -top-10 md:right-0 text-yellow background-transparent font-bold uppercase text-3xl outline-none focus:outline-none ease-linear transition-all duration-150"
                 type="button"
                 onClick={() => setShowModal(false)}
                 >
                 X
                 </button> 
-                <div className='w-full mx-auto h-fit flex '>
-                    <div className='w-[45%]'>
-                        <img className='h-full' src={nftrobot} alt="robot" />
+                <div className='w-full p-3  mx-auto h-fit flex flex-col md:flex-row'>
+                    <div className='w-[100%] h-[200px] md:h-full mx-auto'>
+                        <img className='h-full w-full' src={nftrobot} alt="robot" />
                     </div>
-                    <div className='w-[55%] px-5 my-3 pb-3'>
-                        <h1 className="mt-3 md:text-[28px] font-audio ">
+                    <div className='w-[100%] px-3'>
+                        <h1 className="mt-1 md:text-[26px] font-audio ">
                             <span className="block text-white">Unbroken #5692</span>{" "}
                         </h1>
-                        <p className='text-white font-light text-[14px]'>
-                            Unbroken NFTs is a collection that tells the fictional story of fifteen (15) unique characters from
-                            diverse cultural backgrounds. They were victims of bullying who transitioned to become
-                            successful by overcoming the pains they went through. This fictional story was created from the
-                            results of our survey, which was conducted in February 2022.
-                        </p>
-                        <p className='text-white mt-5 font-light text-[14px]'>
+                        <p className='card-font text-white mt-1 font-sans text-[12px] md:text-[16px]'>
                             Unbroken NFTs is a collection that tells the fictional story of fifteen (15) unique characters from
                             diverse cultural backgrounds. They were victims of bullying who transitioned to become
                             successful by overcoming the pains they went through. This fictional story was created from the
@@ -40,13 +33,13 @@ const NftPopup = ({setShowModal}) => {
                         </p>
                         <div>
                             <div className='flex  my-2 item-center'>
-                                <img className='w-[4%] h-[3%] my-auto' src={ETH} alt='eth' />
-                                <div className='text-yellow  text-[24px] mx-2 my-auto'>20.0002</div>
-                                <div className='text-white font-normal my-auto'>$30,008.35</div>
+                                <img className='w-[6%] h-[6%] my-auto' src={ETH} alt='eth' />
+                                <div className='text-yellow text-[18px] md:text-[20px] mx-2 my-auto'>20.0002</div>
+                                <div className='text-white text-[12px] md:text-[14px] card-font font-sans my-auto'>$30,008.35</div>
                             </div>
-                            <button className="flex max-w-xs bg-yellow px-4 py-2 text-center  rounded-md shadow">
-                                View on Opensea {" "}
-                                <img className='ml-auto pl-5' src={share} alt="share" />
+                            <button className="w-full md:w-fit flex justify-center text-[12px] md:text-[14px] bg-yellow px-1.5 md:px-2 py-1.5 text-center rounded-md">
+                                View on Opensea
+                                <img className='md:ml-3 ml-2' src={share} alt="share" />
                             </button>
                         </div>
                     </div>
