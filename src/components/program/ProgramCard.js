@@ -48,7 +48,7 @@ const ProgramCard = ({ schoolDetails }) => {
 
             {/* image Gallery */}
 
-            {/* <ProgramImage /> */}
+            <ProgramImage />
           </div>
         ))}
       </div>
