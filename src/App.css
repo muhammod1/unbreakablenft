@@ -74,3 +74,31 @@ transform: rotate(66.65deg);
 .card-font{
     font-weight: 200;
 }
+
+.bg__program {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0C0B09 100%), url('../src/assets/program-bg.svg');
+}
+
+/* .hero__p {
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0C0B09 100%), url('../src/assets/program-bg.svg');
+    display: grid;
+    place-items: start;
+    isolation: isolate;
+} */
+
+/* 
+.hero__p > * {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+}
+
+.bg__img{
+    z-index: -1;
+} */

@@ -25,6 +25,16 @@ import company3 from "./company3.png";
 import company4 from "./company4.png";
 import company5 from "./company5.png";
 
+import studentImage from './studentImage.png';
+import schoolLogo from './schoolLogo.png';
+import one from "./one.png";
+import two from "./two.png";
+import three from "./three.png";
+import four from "./four.png";
+import plus from "./plus.svg";
+import leftArrow from "./leftArrow.svg";
+import rightArrow from "./rightArrow.svg";
+
 export {
   logo,
   nftsample1,
@@ -42,6 +52,17 @@ export {
   event1,
   nftrobot,
  ArrowIcon,
+
+ studentImage,
+ schoolLogo,
+ one,
+ two,
+ three,
+ four,
+ plus,
+ rightArrow,
+ leftArrow,
+
  Union, instag, linkd, twit, faceb,  event2, event3, host, frame
     
 };
