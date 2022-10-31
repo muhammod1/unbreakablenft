@@ -59,8 +59,8 @@ const ProgramCard = ({ schoolDetails }) => {
               </div>
             </div>
             {showImage ? (
-          <ProgramImage />
-        ) : null}
+              <ProgramImage />
+            ) : null}
           </div>
         ))}
       </div>
