@@ -20,7 +20,7 @@ const Program = () => {
   const paginateFront = () => setCurrentPage(currentPage + 1);
   const paginateBack = () => setCurrentPage(currentPage - 1);
   return (
-    <div className='relative -top-[78px]'>
+    <div>
       <ProgramHero />
       <ProgramCard schoolDetails={currentPosts} />
       <Pagination 
