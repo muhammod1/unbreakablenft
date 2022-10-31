@@ -29,7 +29,7 @@ module.exports = {
         ellipse2: 'url("./assets/ellipse2.png")',
       },
       fontSize: {
-        "9xl": "clamp(2.5rem, 11.5vw, 8rem);",
+        "9xl": "clamp(2.5rem, 10.5vw, 7rem);",
       },
     },
   },
