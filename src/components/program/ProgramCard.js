@@ -41,9 +41,12 @@ const ProgramCard = ({ schoolDetails }) => {
               <div className='md:w-[10%] md:flex'>
                 <button 
                   onClick={() => setShowImage(true)} 
-                  className='w-full md:m-auto flex gap-2 justify-center'>
-                  <img className=' w-[20px]' src={plus} alt="number" />
-                  <span className='md:hidden text-white font-pop text-[14px]'>see more</span>
+                  className='w-full bg-red-700 md:m-auto flex gap-2 justify-center'>
+                  {/* <img className=' w-[20px]' src={plus} alt="number" /> */}
+                  <div className='h-[3px] w-[20px] bg-yellow my-auto'></div>
+                  <span className='md:hidden text-white font-pop text-[14px]'>
+                    see more
+                  </span>
                 </button>
               </div>
             </div>
