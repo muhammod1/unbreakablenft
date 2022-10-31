@@ -1,8 +1,9 @@
 import React from "react";
 import { BiPlayCircle } from "react-icons/bi";
 import { Link } from "react-router-dom";
-import { nftsample1 } from "../assets";
+import { motion, nftrobot } from "../assets";
 import { initiativeData, journeyData, schoolData } from "../assets/data";
+import { cardData } from "../assets/NftsData";
 import {
   FAQ,
   InitiativeCard,
@@ -18,31 +19,31 @@ const Home = () => {
       <div className="bg-vector1 hidden md:block w-[1055px]  h-[3196px]  top-14 fixed left-80   -z-10 "></div>
       <div className="ellipse1 hidden md:block"></div>
       <div className="ellipse2 hidden lg:block"></div>
-      <h3 className="text-white font-audio text-3xl small:text-[55px] sm:text-9xl leading-[111%] mt-16 md:mt-24 mx-6 md:mx-20">
-        <span className="block">Unbroken</span>{" "}
-        <span className="block sm:inline">Against</span> bullying
-      </h3>
-      <div className="mt-8 mx-2  small:mx-6 md:mx-20 flex flex-col small:flex-row small:items-center">
-        <button className="bg-yellow text-black-200 p-1 px-3  rounded-md mr-4">
-          Discover NFTs
-        </button>
-
-        <button className="flex text-yellow items-center">
-          {" "}
-          <BiPlayCircle size={24} className="mr-2" /> Watch Vidoe
-        </button>
+      <div className="mt-16 md:mt-24 mx-6 md:mx-20 flex gap-8 flex-col items-center sm:flex-row justify-between flex-wrap md:flex-nowrap">
+        <div className="flex flex-col flex-1 w-full justify-end">
+          <h3 className="text-white font-audio text-3xl small:text-[55px] leading-[110%]  xl:text-9xl ">
+            <span className="block">Unbroken</span>{" "}
+            <span className="block md:inline">Against</span> bullying
+          </h3>
+          <div className="mt-6 flex flex-col small:flex-row small:items-center">
+            <button className="bg-yellow text-black-200 p-1 px-3  rounded-md mr-4">
+              Discover NFTs
+            </button>
+          </div>
+        </div>
+        <div className="flex-1 w-full">
+          {/* <div className="hidden sm:block"></div> */}
+          <img className=" w-full" src={motion} alt="motion" />
+        </div>
       </div>
-      <div className="ml-2  small:ml-6 h-[460px] md:ml-20 mt-16 flex items-center gap-4 overflow-x-auto scrollbar-hide">
-        {/* this is were you map through your data and call a single card  data.map((val) => <NftCard1 key={val.id} image={val.image}/>) */}
-        <NftCard1 image={nftsample1} />
-        <NftCard1 image={nftsample1} />
-        <NftCard1 image={nftsample1} />
-        <NftCard1 image={nftsample1} />
-        <NftCard1 image={nftsample1} />
-        <NftCard1 image={nftsample1} />
-        <NftCard1 image={nftsample1} />
-        <NftCard1 image={nftsample1} />
-      </div>
+      {cardData.length > 0 && (
+        <div className="ml-2  small:ml-6 h-[460px] md:ml-20 mt-16 flex items-center gap-4 overflow-x-auto scrollbar-hide">
+          {/* this is were you map through your data and call a single card  data.map((val) => <NftCard1 key={val.id} image={val.image}/>) */}
+          {cardData.map((data) => (
+            <NftCard1 key={data.id} {...data} />
+          ))}
+        </div>
+      )}
       <div className="mt-14 mx-2  small:mx-6 md:mx-20 flex">
         <div className="hidden sm:block flex-1 w-full"></div>
         <div className="w-full small:w-[662px] flex flex-col justify-start flex-1  relative">

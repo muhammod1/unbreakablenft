@@ -11,8 +11,8 @@ const ProgramCard = ({ schoolDetails }) => {
     <div className='bg-[#0C0B09] pt-[30px]'>
       <div className='px-[5%]'>
         {schoolDetails.map(data => (
-          <div className='border-b border-[#171717]'>
-            <div key={data.id} className='py-[40px] flex flex-col md:gap-5 md:flex-row justify-center w-full'>
+          <div key={data.id} className='border-b border-[#171717]'>
+            <div  className='py-[40px] flex flex-col md:gap-5 md:flex-row justify-center w-full'>
               <div className='my-auto md:w-[10%]'>
                 <img src={data.number} alt="number" />
                 <p className='text-[#737373] my-2'>{data.institute}</p>

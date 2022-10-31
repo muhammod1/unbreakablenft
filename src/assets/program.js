@@ -18,7 +18,7 @@ export const schoolDetails = [
     desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
   },
   {
-    id: 1,
+    id: 2,
     bgImage: studentImage,
     logo: schoolLogo,
     number: two,
@@ -34,7 +34,7 @@ export const schoolDetails = [
     desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
   },
   {
-    id: 1,
+    id: 3,
     bgImage: studentImage,
     logo: schoolLogo,
     number: three,
@@ -50,7 +50,7 @@ export const schoolDetails = [
     desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
   },
   {
-    id: 1,
+    id: 4,
     bgImage: studentImage,
     logo: schoolLogo,
     number: four,
@@ -66,7 +66,7 @@ export const schoolDetails = [
     desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
   },
   {
-    id: 1,
+    id: 5,
     bgImage: studentImage,
     logo: schoolLogo,
     number: one,
@@ -82,7 +82,7 @@ export const schoolDetails = [
     desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
   },
   {
-    id: 1,
+    id: 6,
     bgImage: studentImage,
     logo: schoolLogo,
     number: two,
@@ -98,7 +98,7 @@ export const schoolDetails = [
     desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
   },
   {
-    id: 1,
+    id: 7,
     bgImage: studentImage,
     logo: schoolLogo,
     number: three,
@@ -114,7 +114,7 @@ export const schoolDetails = [
     desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
   },
   {
-    id: 1,
+    id: 8,
     bgImage: studentImage,
     logo: schoolLogo,
     number: four,
@@ -130,7 +130,7 @@ export const schoolDetails = [
     desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
   },
   {
-    id: 1,
+    id: 9,
     bgImage: studentImage,
     logo: schoolLogo,
     number: one,
@@ -146,7 +146,7 @@ export const schoolDetails = [
     desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
   },
   {
-    id: 1,
+    id: 10,
     bgImage: studentImage,
     logo: schoolLogo,
     number: two,
@@ -162,7 +162,7 @@ export const schoolDetails = [
     desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
   },
   {
-    id: 1,
+    id: 11,
     bgImage: studentImage,
     logo: schoolLogo,
     number: three,
@@ -178,7 +178,7 @@ export const schoolDetails = [
     desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
   },
   {
-    id: 1,
+    id: 12,
     bgImage: studentImage,
     logo: schoolLogo,
     number: four,
@@ -194,7 +194,7 @@ export const schoolDetails = [
     desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
   },
   {
-    id: 1,
+    id: 13,
     bgImage: studentImage,
     logo: schoolLogo,
     number: one,
@@ -210,7 +210,7 @@ export const schoolDetails = [
     desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
   },
   {
-    id: 1,
+    id: 14,
     bgImage: studentImage,
     logo: schoolLogo,
     number: two,
@@ -226,7 +226,7 @@ export const schoolDetails = [
     desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
   },
   {
-    id: 1,
+    id: 15,
     bgImage: studentImage,
     logo: schoolLogo,
     number: three,
@@ -242,7 +242,7 @@ export const schoolDetails = [
     desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
   },
   {
-    id: 1,
+    id: 16,
     bgImage: studentImage,
     logo: schoolLogo,
     number: four,

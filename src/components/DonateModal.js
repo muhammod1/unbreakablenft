@@ -16,7 +16,7 @@ const DonateModal = () => {
       exit={{ y: -1000 }}
       className={
         toggleModel
-          ? " bg-yellow h-16 flex justify-center items-center p-2"
+          ? " bg-yellow h-16 flex z-50 justify-center items-center p-2"
           : "hidden"
       }
     >
