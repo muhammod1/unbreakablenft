@@ -32,8 +32,6 @@ const Program = () => {
         paginateFront={paginateFront}
         paginate={paginate} 
       />
-      {/* <ProgramImage /> */}
-
     </div>
   )
 }

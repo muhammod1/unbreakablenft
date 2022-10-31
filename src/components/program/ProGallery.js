@@ -5,7 +5,7 @@ import {
   faCircleChevronLeft, 
   faCircleChevronRight, 
   faCircleXmark
-} from '@fortawesome/free-solid-svg-icons'
+} from '@fortawesome/free-solid-svg-icons';
 
 import './gallery.css'
 
@@ -52,29 +52,21 @@ const ProGallery = ({galleryImages}) => {
         </div>
       }
 
-      {/* <br />
-      Current slide number:  {slideNumber}
-      <br />
-      Total Slides: {galleryImages.length}
-      <br /><br /> */}
-
-      {/* <div className='galleryWrap'> */}
-      <div className='flex flex'>
+      <div className="flex flex-col gap-3 md:grid md:grid-rows-2 md:grid-cols-4 md:grid-flow-col md:gap-2">
         {
           galleryImages && galleryImages.map((slide, index) => {
             return(
               <div 
-                className='single' 
+              className={slide.className} 
                 key={index}
                 onClick={ () => handleOpenModal(index) }
               >
-                <img src={slide.img} alt='' />
+                <img className='h-full w-fit' src={slide.img} alt='' />
               </div>
             )
           })
         }
       </div>
-
     </div>
   )
 }

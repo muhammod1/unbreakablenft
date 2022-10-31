@@ -9,7 +9,7 @@ const pagination = ({ currentPage, postsPerPage, totalPosts, paginate,paginateFr
     }
 
   return (
-    <div className='flex bg-[#0C0B09] pb-5'>
+    <div className='flex bg-[#0C0B09] py-[30px]'>
         <nav
           className='mx-auto relative z-0 inline-flex shadow-sm '
           aria-label='Pagination'
@@ -37,7 +37,7 @@ const pagination = ({ currentPage, postsPerPage, totalPosts, paginate,paginateFr
                                 : "bg-transparent  text-white hover:opacity-50 relative inline-flex items-center px-3 py-2 text-sm font-medium"
                             }
                         >
-                        {'0'} {number}
+                           {`0${number}`}
                         </a>
                     </li>
                 ))}
