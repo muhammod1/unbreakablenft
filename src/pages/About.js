@@ -1,4 +1,14 @@
 import React from "react";
+import {
+  about1,
+  about2,
+  about3,
+  about4,
+  about5,
+  about6,
+  mabout,
+} from "../assets";
+import { AboutCard1, AboutCard2 } from "../components";
 
 const About = () => {
   return (
@@ -58,6 +68,36 @@ const About = () => {
               To improve the safety and monitoring of student activities on the
               school premises
             </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-14 flex mx-auto gap-4 flex-col sm:flex-row">
+        <div className="w-full">
+          <h4 className=" small:text-[28px] sm:text-[40px] font-audio  text-head_white">
+            We are the Unbrokens
+          </h4>
+          <p className="text-lg text-[#D4D4D4]">
+            The proceeds from our collection will help us implement three key
+            projects to address bullying in high schools in Nigeria.
+          </p>
+          <div className="hidden gap-3 w-full items-end sm:flex ">
+            <div className="w-full flex-1">
+              <AboutCard2 aboutImage={about1} />
+              <AboutCard2 aboutImage={about2} />
+            </div>
+            <div className="w-full flex-1">
+              <AboutCard1 aboutImage={about4} />
+              <AboutCard1 aboutImage={about3} />
+            </div>
+          </div>
+        </div>
+        <div className="mt-8 flex w-full  flex-col gap-5 sm:mt-0">
+          <AboutCard1 aboutImage={about6} />
+          <AboutCard1 aboutImage={about5} />
+          <div className="block sm:hidden">
+            <AboutCard1 aboutImage={mabout} />
+            <AboutCard1 aboutImage={about5} />
           </div>
         </div>
       </div>
