@@ -80,8 +80,8 @@ export {
  rightArrow,
  leftArrow,
 
-  event2, 
-  event3, 
+  // event2, 
+  // event3, 
   host, 
   frame,
     
@@ -93,8 +93,8 @@ export {
   discord2,
   discord3,
   discord1,
-  host,
-  frame,
+  // host,
+  // frame,
   eventimage,
   eventimage1,
   eventimage2,

@@ -4,7 +4,6 @@ import ProgramHero from '../components/program/ProgramHero'
 import Pagination from '../components/program/paginationPro'
 
 import { schoolDetails } from "../assets/program";
-import ProgramImage from '../components/program/ProgramImage';
 
 const Program = () => {
   const [currentPage, setCurrentPage] = useState(1);
