@@ -31,6 +31,13 @@ import company2 from "./company2.png";
 import company3 from "./company3.png";
 import company4 from "./company4.png";
 import company5 from "./company5.png";
+import mabout from "./mabout3.png";
+import about1 from "./about1.png";
+import about2 from "./about2.png";
+import about3 from "./about3.png";
+import about4 from "./about4.png";
+import about5 from "./about5.png";
+import about6 from "./about6.png";
 
 export {
   logo,
@@ -58,4 +65,11 @@ export {
   eventimage3,
   eventimage4,
   eventscard,
+  mabout,
+  about1,
+  about2,
+  about3,
+  about4,
+  about5,
+  about6,
 };
