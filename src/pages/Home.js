@@ -3,6 +3,7 @@ import { BiPlayCircle } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import { nftrobot } from "../assets";
 import { initiativeData, journeyData, schoolData } from "../assets/data";
+import { cardData } from "../assets/NftsData";
 import {
   FAQ,
   InitiativeCard,
@@ -32,17 +33,14 @@ const Home = () => {
           <BiPlayCircle size={24} className="mr-2" /> Watch Vidoe
         </button>
       </div>
-      <div className="ml-2  small:ml-6 h-[460px] md:ml-20 mt-16 flex items-center gap-4 overflow-x-auto scrollbar-hide">
-        {/* this is were you map through your data and call a single card  data.map((val) => <NftCard1 key={val.id} image={val.image}/>) */}
-        <NftCard1 image={nftrobot} />
-        <NftCard1 image={nftrobot} />
-        <NftCard1 image={nftrobot} />
-        <NftCard1 image={nftrobot} />
-        <NftCard1 image={nftrobot} />
-        <NftCard1 image={nftrobot} />
-        <NftCard1 image={nftrobot} />
-        <NftCard1 image={nftrobot} />
-      </div>
+      {cardData.length > 0 && (
+        <div className="ml-2  small:ml-6 h-[460px] md:ml-20 mt-16 flex items-center gap-4 overflow-x-auto scrollbar-hide">
+          {/* this is were you map through your data and call a single card  data.map((val) => <NftCard1 key={val.id} image={val.image}/>) */}
+          {cardData.map((data) => (
+            <NftCard1 key={data.id} {...data} />
+          ))}
+        </div>
+      )}
       <div className="mt-14 mx-2  small:mx-6 md:mx-20 flex">
         <div className="hidden sm:block flex-1 w-full"></div>
         <div className="w-full small:w-[662px] flex flex-col justify-start flex-1  relative">
