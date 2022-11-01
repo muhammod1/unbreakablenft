@@ -15,6 +15,7 @@ import {
 } from "./pages";
 import { ErrorBoundary, useErrorHandler } from "react-error-boundary";
 import Events from "./pages/Events";
+import Donate from "./pages/Donate";
 
 function ErrorFallback({ error }) {
   return (
@@ -41,6 +42,7 @@ const App = () => {
           <Route path="nfts" element={<Nfts />} />
           <Route path="partnership" element={<Partnership />} />
           <Route path="community" element={<Community />} />
+          <Route path="donate" element={<Donate />} />
           <Route path="events" element={<Events />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />

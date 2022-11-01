@@ -21,11 +21,9 @@ import eventimage1 from "./eventimage1.png";
 import eventimage2 from "./eventimage2.png";
 import eventimage3 from "./eventimage3.png";
 import eventimage4 from "./eventimage4.png";
-
-import discord1 from "./discord1.png";
-import discord2 from "./discord2.png";
-import discord3 from "./discord3.png";
-
+import event1 from "./event1.png"
+import event2 from "./event2.png"
+import event3 from "./event3.png"
 import schoolBatch from "./schoolbatch.png";
 import schoolImage from "./schoolimage.png";
 import company1 from "./company1.png";
@@ -73,31 +71,31 @@ export {
   company3,
   company4,
   company5,
+  event1,
   nftrobot,
-  ArrowIcon,
-  contactimage,
-  studentImage,
-  schoolLogo,
-  one,
-  two,
-  three,
-  four,
-  plus,
-  rightArrow,
-  leftArrow,
+ ArrowIcon,
+event2,
+event3,
+ studentImage,
+ schoolLogo,
+ one,
+ two,
+ three,
+ four,
+ plus,
+ rightArrow,
+ leftArrow,
 
-  // event2,
-  // event3,
-  host,
+  // event2, 
+  // event3, 
+  host, 
   frame,
   Union,
   instag,
   linkd,
   twit,
   faceb,
-  discord2,
-  discord3,
-  discord1,
+ 
   // host,
   // frame,
   eventimage,
