@@ -33,6 +33,17 @@ import company2 from "./company2.png";
 import company3 from "./company3.png";
 import company4 from "./company4.png";
 import company5 from "./company5.png";
+
+import studentImage from './studentImage.png';
+import schoolLogo from './schoolLogo.png';
+import one from "./one.png";
+import two from "./two.png";
+import three from "./three.png";
+import four from "./four.png";
+import plus from "./plus.svg";
+import leftArrow from "./leftArrow.svg";
+import rightArrow from "./rightArrow.svg";
+
 import mabout from "./mabout3.png";
 import about1 from "./about1.png";
 import about2 from "./about2.png";
@@ -57,7 +68,23 @@ export {
   company4,
   company5,
   nftrobot,
-  ArrowIcon,
+ ArrowIcon,
+
+ studentImage,
+ schoolLogo,
+ one,
+ two,
+ three,
+ four,
+ plus,
+ rightArrow,
+ leftArrow,
+
+  // event2, 
+  // event3, 
+  host, 
+  frame,
+    
   Union,
   instag,
   linkd,
@@ -66,8 +93,8 @@ export {
   discord2,
   discord3,
   discord1,
-  host,
-  frame,
+  // host,
+  // frame,
   eventimage,
   eventimage1,
   eventimage2,
