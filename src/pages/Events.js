@@ -17,39 +17,54 @@ const Events = () => {
             <span className="block">The Unbroken</span> Events
           </h4>
         </div>
-        <div className=" flex-1">
+        <div className=" -z-10 flex-1">
           <img
             className="h-full w-full object-cover"
             src={eventimage}
             alt="events"
           />
         </div>
-        <div className="flex flex-1 overflow-hidden">
-          <img className="w-full object-cover" src={eventimage1} alt="events" />
-          <img className="w-full object-cover" src={eventimage2} alt="events" />
-          <img className="w-full object-cover" src={eventimage3} alt="events" />
-          <img className="w-full object-cover" src={eventimage4} alt="events" />
+        <div className=" -z-50 flex flex-1 overflow-hidden">
+          <img
+            className="w-full   object-cover"
+            src={eventimage1}
+            alt="events"
+          />
+          <img
+            className="w-full   object-cover"
+            src={eventimage2}
+            alt="events"
+          />
+          <img
+            className="w-full   object-cover"
+            src={eventimage3}
+            alt="events"
+          />
+          <img
+            className="w-full   object-cover"
+            src={eventimage4}
+            alt="events"
+          />
         </div>
       </div>
-      <div className="mt-14 mx-6  md:mx-20">
+      <div className="mt-14 mx-6 flex flex-col justify-center items-center  md:mx-20">
         <div className="mb-14 ">
-          <h4 className="self-start  font-audio text-2xl text-head_white">
+          <h4 className="  font-audio text-2xl text-head_white">
             Current Events
           </h4>
           {currentEventData.length > 0 && (
-            <div className="mt-6 flex gap-4  flex-wrap">
+            <div className="mt-6 flex gap-4 justify-center  flex-wrap">
               {currentEventData.map((data) => (
                 <EventCard key={data.date} {...data} />
               ))}
             </div>
           )}
         </div>
-        <div className="mb-14">
-          <h4 className="self-start font-audio text-2xl text-head_white">
-            Past Events
-          </h4>
+
+        <div className="mb-14 flex flex-col ">
+          <h4 className=" font-audio text-2xl text-head_white">Past Events</h4>
           {pastEventData.length > 0 && (
-            <div className="mt-6 flex gap-4 flex-wrap">
+            <div className="mt-6  flex justify-center gap-4 flex-wrap">
               {pastEventData.map((data) => (
                 <EventCard key={data.date} {...data} />
               ))}

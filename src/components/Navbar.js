@@ -4,7 +4,7 @@ import { BsChevronDown } from "react-icons/bs";
 import { CgClose } from "react-icons/cg";
 import { Link } from "react-router-dom";
 import { logo } from "../assets";
-import { Dropdown } from ".";
+// import { Dropdown } from "./navbar/Dropdown";
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [toggleDropdown, setToggleDropdown] = useState(false);
@@ -37,11 +37,11 @@ const Navbar = () => {
         </div>
         <div>
           <div
-            className={`flex-1 h-screen md:h-3 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+            className={`flex-1    md:block md:pb-0 md:mt-0 ${
               navbar ? "block" : "hidden"
             }`}
           >
-            <ul className="items-center justify-center  space-y-12 md:flex md:space-x-2 lg:space-x-6 md:space-y-0">
+            <ul className=" items-center justify-center  space-y-12 md:flex md:space-x-2 lg:space-x-4 md:space-y-0">
               <li
                 onClick={() => setNavbar(false)}
                 className="text-[#E5E5E5] text-lg md:text-sm"
@@ -50,37 +50,65 @@ const Navbar = () => {
               </li>
               <li
                 onClick={() => setNavbar(false)}
-                className="text-[#E5E5E5] text-lg md:text-sm"
+                className="text-[#E5E5E5]  text-lg md:text-sm"
               >
                 <Link to="/roadmap">Readmap</Link>
               </li>
-              <li
-                onClick={() => setNavbar(false)}
-                className="text-[#E5E5E5] text-lg md:text-sm"
-              >
-                <Link to="/program">Programmes</Link>
+              <li className="group relative inline-block  text-[#E5E5E5] text-lg md:text-sm">
+                <button class="flex items-center rounded py-2 ">
+                  Programmes
+                  <BsChevronDown className="ml-2" />
+                </button>
+                <ul class="absolute z-50 hidden w-[162px] pt-1 text-grey_p group-hover:block ">
+                  <li onClick={() => setNavbar(false)} class="">
+                    <Link
+                      class="whitespace-no-wrap block rounded-t bg-[#0C0B09] py-2 px-4"
+                      to="/program"
+                    >
+                      Programmes
+                    </Link>
+                  </li>
+                  <li onClick={() => setNavbar(false)} class="">
+                    <Link
+                      class="whitespace-no-wrap block bg-[#0C0B09] py-2 px-4"
+                      to="/events"
+                    >
+                      Event
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li
                 onClick={() => setNavbar(false)}
                 className="flex items-center md:justify-center  text-[#E5E5E5] text-lg md:text-sm"
               >
-                <Link className="mr-3" to="/partnership">
+                <Link className="" to="/partnership">
                   Partnership
                 </Link>
-                {/* <BsChevronDown /> */}
-
-                {/* <div className="max-w-7 absolute md:top-24">
-                  <p>What is the value</p>
-                  <p>Second Item</p>
-                </div> */}
               </li>
-              <li
-                onClick={() => setNavbar(false)}
-                className="flex items-center md:justify-center  text-[#E5E5E5] text-lg md:text-sm"
-              >
-                <Link className="mr-3" to="/about">
+              <li className="group relative inline-block  text-[#E5E5E5] text-lg md:text-sm">
+                <button class="flex items-center rounded py-2 ">
                   About
-                </Link>
+                  <BsChevronDown className="ml-2" />
+                </button>
+                <ul class="absolute z-50 hidden w-[162px] pt-1 text-grey_p  group-hover:block ">
+                  <li onClick={() => setNavbar(false)} class="">
+                    <Link
+                      class="whitespace-no-wrap block rounded-t bg-[#0C0B09] py-2 px-4"
+                      to="/about"
+                    >
+                      About us
+                    </Link>
+                  </li>
+                  <li onClick={() => setNavbar(false)} class="">
+                    <Link
+                      class="whitespace-no-wrap block bg-[#0C0B09] py-2 px-4"
+                      to="/contact"
+                    >
+                      Contact us
+                    </Link>
+                  </li>
+                </ul>
               </li>
             </ul>
 

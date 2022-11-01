@@ -12,7 +12,6 @@ export { default as SchoolCard } from "./home/SchoolCard";
 export { default as LinkButton } from "./LinkButton";
 export { default as Sponsors } from "./home/Sponsors";
 export { default as FAQ } from "./FAQ";
-export { default as Dropdown } from "./DonateModal";
 export { default as EventCard } from "./events/EventCard";
 export { default as AboutCard1 } from "./about/AboutCard1";
 export { default as AboutCard2 } from "./about/AboutCard2";
