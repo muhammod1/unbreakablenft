@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutCard2 = ({ aboutImage }) => {
   return (
-    <div className="max-w-[416px] overflow-hidden rounded-lg relative">
+    <div className="w-full overflow-hidden rounded-lg relative">
       <div className=" absolute bottom-2 left-2 small:bottom-8 small:left-8 ">
         <h4 className="text-base small:text-2xl text-[#FAFAFA]">
           Oluchi Enebeli

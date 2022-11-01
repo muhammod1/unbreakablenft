@@ -22,12 +22,12 @@ const ProgramCard = ({ schoolDetails }) => {
               <div className="md:w-[80%]  my-5  flex flex-col md:flex-row gap-4 justify-between">
                 <div className="h-[240px] md:w-[40%] rounded-lg relative overflow-hidden">
                   <img
-                    className="w-full h-full"
+                    className="w-full object-cover h-full"
                     src={data.bgImage}
                     alt="number"
                   />
                   <div className="absolute h-[80%] w-fit flex flex-col justify-between top-[7.5%] left-[10%]">
-                    <img className="w-fit pl-5" src={data.logo} alt="number" />
+                    <img className="w-fit  pl-5" src={data.logo} alt="number" />
                     <div>
                       <p className="text-white font-bold text-[24px]">
                         {data.imgTitle}
