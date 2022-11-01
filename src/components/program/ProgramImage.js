@@ -1,7 +1,6 @@
 import React from 'react'
 
 import ProGallery from './ProGallery';
-// import { schoolDetails } from "../../assets/program";
 
 const ProgramImage = () => {
  const galleryImages = [
