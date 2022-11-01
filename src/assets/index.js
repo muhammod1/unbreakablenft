@@ -53,7 +53,11 @@ import about5 from "./about5.png";
 import about6 from "./about6.png";
 import motion from "./motion.png";
 
+import programbg from './program-bg.svg'
+
 export {
+  programbg,
+
   logo,
   motion,
   nftsample1,

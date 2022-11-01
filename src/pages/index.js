@@ -5,4 +5,5 @@ export { default as Partnership } from "./Partnership";
 export { default as Program } from "./Program";
 export { default as Roadmap } from "./Roadmap";
 export { default as Community } from "./Community";
+export { default as Donation } from "./Donation";
 

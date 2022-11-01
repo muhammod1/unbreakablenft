@@ -175,3 +175,10 @@ pointer-events: none;
 -ms-user-select: none; 
 user-select: none; 
 }
+
+.partner__bg{
+    background-image: url("../src/assets/program-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+}

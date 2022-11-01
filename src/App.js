@@ -11,6 +11,7 @@ import {
   Partnership,
   Program,
   Roadmap,
+  Donation,
 } from "./pages";
 import { ErrorBoundary, useErrorHandler } from "react-error-boundary";
 import Events from "./pages/Events";
@@ -40,6 +41,7 @@ const App = () => {
             <Route path="partnership" element={<Partnership />} />
             <Route path="community" element={<Community />} />
             <Route path="events" element={<Events />} />
+            <Route path="donation" element={<Donation />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
