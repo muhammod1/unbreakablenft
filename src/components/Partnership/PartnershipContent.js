@@ -12,7 +12,7 @@ const PartnershipContent = () => {
                 <p className="h-fit  my-4 text-[#D4D4D4] my-auto text-[13px]">
                     Want to be part of something great?
                 </p>
-                <Link to="/donation">
+                <Link to="/donate">
                 <button className='h-fit w-full my-auto bg-[#FFD700] py-2 px-2 text[#D4D4D4] text-[13px] rounded'>
                     Donate
                 </button>
