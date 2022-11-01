@@ -74,3 +74,47 @@ transform: rotate(66.65deg);
 .card-font{
     font-weight: 200;
 }
+
+ .nft__card-cover {
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    
+    position: absolute;
+    inset: 0;
+    .nft___main_cover{
+        display: none;
+    }
+   
+
+
+}
+.nft__card-cover:hover {
+    .nft___side_cover{
+        display: none;
+    }
+    .nftsample1{
+        display: none;
+    }
+   
+    .nft___main_cover{
+        display: block;
+    }
+    background: transparent;
+    transition: .4s;
+
+}
+
+// .nft___main_cover {
+//     z-index: 1;
+//     opacity: 0;
+//     display: none;
+//     position: absolute;
+//     inset: 0;
+// }
+
+// .nft___main_cover:hover {
+//     opacity: 1;
+//     display: block;
+//     transition: 0.6;
+
+// }
