@@ -55,22 +55,22 @@ const Navbar = () => {
                 <Link to="/roadmap">Readmap</Link>
               </li>
               <li className="group relative inline-block  text-[#E5E5E5] text-lg md:text-sm">
-                <button class="flex items-center rounded py-2 ">
+                <button className="flex items-center rounded py-2 ">
                   Programmes
                   <BsChevronDown className="ml-2" />
                 </button>
-                <ul class="absolute z-50 hidden w-[162px] pt-1 text-grey_p group-hover:block ">
-                  <li onClick={() => setNavbar(false)} class="">
+                <ul className="absolute z-50 hidden w-[162px] pt-1 text-grey_p group-hover:block ">
+                  <li onClick={() => setNavbar(false)} className="">
                     <Link
-                      class="whitespace-no-wrap block rounded-t bg-[#0C0B09] py-2 px-4"
+                      className="whitespace-no-wrap block rounded-t bg-[#0C0B09] py-2 px-4"
                       to="/program"
                     >
                       Programmes
                     </Link>
                   </li>
-                  <li onClick={() => setNavbar(false)} class="">
+                  <li onClick={() => setNavbar(false)} className="">
                     <Link
-                      class="whitespace-no-wrap block bg-[#0C0B09] py-2 px-4"
+                      className="whitespace-no-wrap block bg-[#0C0B09] py-2 px-4"
                       to="/events"
                     >
                       Event
@@ -87,22 +87,22 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="group relative inline-block  text-[#E5E5E5] text-lg md:text-sm">
-                <button class="flex items-center rounded py-2 ">
+                <button className="flex items-center rounded py-2 ">
                   About
                   <BsChevronDown className="ml-2" />
                 </button>
-                <ul class="absolute z-50 hidden w-[162px] pt-1 text-grey_p  group-hover:block ">
-                  <li onClick={() => setNavbar(false)} class="">
+                <ul className="absolute z-50 hidden w-[162px] pt-1 text-grey_p  group-hover:block ">
+                  <li onClick={() => setNavbar(false)} className="">
                     <Link
-                      class="whitespace-no-wrap block rounded-t bg-[#0C0B09] py-2 px-4"
+                      className="whitespace-no-wrap block rounded-t bg-[#0C0B09] py-2 px-4"
                       to="/about"
                     >
                       About us
                     </Link>
                   </li>
-                  <li onClick={() => setNavbar(false)} class="">
+                  <li onClick={() => setNavbar(false)} className="">
                     <Link
-                      class="whitespace-no-wrap block bg-[#0C0B09] py-2 px-4"
+                      className="whitespace-no-wrap block bg-[#0C0B09] py-2 px-4"
                       to="/contact"
                     >
                       Contact us

@@ -19,12 +19,12 @@ const Contact = () => {
   };
 
   return (
-    <div class="h-screen flex">
+    <div className="h-screen flex">
       <div
-        class="hidden justify-start md:flex w-full lg:w-1/2 bg-contact bg-cover  bg-no-repeat
+        className="hidden justify-start md:flex w-full lg:w-1/2 bg-contact bg-cover  bg-no-repeat
    items-end"
       >
-        <div class="w-full mb-10 mx-auto px-10 flex flex-col">
+        <div className="w-full mb-10 mx-auto px-10 flex flex-col">
           <h4 className="text-yellow leading-9 lg:leading-10 text-[40px] font-audio">
             We would love to hear from you
           </h4>
@@ -33,14 +33,14 @@ const Contact = () => {
           </p>
         </div>
       </div>
-      <div class="flex w-full lg:w-1/2 justify-center  ">
-        <div class="w-full px-8 ">
-          <form class="" onSubmit={handleSubmit}>
-            <h1 class="text-yellow text-[32px] font-audio">Contact us</h1>
-            <p class=" text-grey_p">
+      <div className="flex w-full lg:w-1/2 justify-center  ">
+        <div className="w-full px-8 ">
+          <form className="" onSubmit={handleSubmit}>
+            <h1 className="text-yellow text-[32px] font-audio">Contact us</h1>
+            <p className=" text-grey_p">
               Want to become a partner or have a story to share?
             </p>
-            <div class="flex  flex-col  mt-8  py-2 px-3 ">
+            <div className="flex  flex-col  mt-8  py-2 px-3 ">
               <label className="text-gray-50">Full name</label>
               <input
                 value={name}
@@ -50,7 +50,7 @@ const Contact = () => {
                 placeholder="your legal name"
               />
             </div>
-            <div class="flex  flex-col  mt-4  py-2 px-3 ">
+            <div className="flex  flex-col  mt-4  py-2 px-3 ">
               <label className="text-gray-50">Email address</label>
               <input
                 value={email}
@@ -60,7 +60,7 @@ const Contact = () => {
                 placeholder="We would love to discuss further the terms of partnership"
               />
             </div>
-            <div class="flex  flex-col  mt-4  py-2 px-3 ">
+            <div className="flex  flex-col  mt-4  py-2 px-3 ">
               <label className="text-gray-50">Organization</label>
               <input
                 value={org}
@@ -70,7 +70,7 @@ const Contact = () => {
                 placeholder="org name if any*"
               />
             </div>
-            <div class="flex  flex-col  mt-4 mb-8 py-2 px-3 ">
+            <div className="flex  flex-col  mt-4 mb-8 py-2 px-3 ">
               <label className="text-gray-50">Message</label>
               <textarea
                 value={message}
@@ -84,7 +84,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              class="block w-full text-sm  bg-yellow mt-5 py-2 rounded-lg  hover:-translate-y-1 transition-all duration-500  mb-2"
+              className="block w-full text-sm  bg-yellow mt-5 py-2 rounded-lg  hover:-translate-y-1 transition-all duration-500  mb-2"
             >
               send
             </button>
