@@ -75,7 +75,7 @@ const Home = () => {
         </p>
       </div>
       {initiativeData.length > 0 && (
-        <div className="mt-14 mx-6 md:mx-20  flex gap-6 flex-wrap">
+        <div className="mt-14 mx-6 md:mx-20  flex gap-4 justify-between flex-wrap">
           {initiativeData.map((data) => (
             <InitiativeCard key={data.title} {...data} />
           ))}
@@ -131,6 +131,21 @@ const Home = () => {
 
       {/* Frequently Asked section   */}
       <FAQ />
+
+      <div className="mt-14 flex flex-col sm:flex-row justify-between gap-2 px-4 py-2 sm:px-10 rounded-md items-center mx-2 min-h-[110px] bg-yellow  small:mx-6 md:mx-20">
+        <div className="flex flex-col lg:gap-10 lg:flex-row lg:justify-between lg:items-center">
+          <h4 className="font-audio text-2xl">
+            <span className="inline sm:block">Become an</span> Unbroken
+          </h4>
+          <p className="text-[#262626] max-w-[583px] w-full text-lg">
+            Join the coolest tribe on Discord , participate in community
+            activities, events and programmes
+          </p>
+        </div>
+        <button className="bg-[#262626] p-3 rounded-md text-yellow text-sm">
+          Join Discord
+        </button>
+      </div>
     </div>
   );
 };

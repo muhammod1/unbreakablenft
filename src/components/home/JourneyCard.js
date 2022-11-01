@@ -9,7 +9,7 @@ const JourneyCard = ({ title, isaActive, desc, version, year }) => {
           <h3 className="text-yellow font-audio text-[32px]">{version}</h3>
           <p className="text-[#404040] text-lg">{year}</p>
         </div>
-        <div className="min-w-full small:min-w-[257px] ">
+        <div className=" w-[270px]  ">
           {isaActive && (
             <div className="">
               <p className="text-[#404040] text-lg">Current</p>
