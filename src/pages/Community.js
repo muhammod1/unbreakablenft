@@ -61,7 +61,7 @@ const Community = () => {
           </div>
         </div>
 
-        <div className=" mt-16 flex lg:flex-row flex-col  ">
+        <div className=" mt-16 flex lg:flex-row justify-center flex-col  ">
           <div className="  ">
             <div className="  ">
               <h3 className="font-audio text-4xl  md:text-7xl text-head_white">
