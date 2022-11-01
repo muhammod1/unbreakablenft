@@ -34,8 +34,8 @@ import company3 from "./company3.png";
 import company4 from "./company4.png";
 import company5 from "./company5.png";
 
-import studentImage from './studentImage.png';
-import schoolLogo from './schoolLogo.png';
+import studentImage from "./studentImage.png";
+import schoolLogo from "./schoolLogo.png";
 import one from "./one.png";
 import two from "./two.png";
 import three from "./three.png";
@@ -52,6 +52,7 @@ import about4 from "./about4.png";
 import about5 from "./about5.png";
 import about6 from "./about6.png";
 import motion from "./motion.png";
+import contactimage from "./contactimage.png";
 export {
   logo,
   motion,
@@ -68,23 +69,22 @@ export {
   company4,
   company5,
   nftrobot,
- ArrowIcon,
+  ArrowIcon,
+  contactimage,
+  studentImage,
+  schoolLogo,
+  one,
+  two,
+  three,
+  four,
+  plus,
+  rightArrow,
+  leftArrow,
 
- studentImage,
- schoolLogo,
- one,
- two,
- three,
- four,
- plus,
- rightArrow,
- leftArrow,
-
-  // event2, 
-  // event3, 
-  host, 
+  // event2,
+  // event3,
+  host,
   frame,
-    
   Union,
   instag,
   linkd,
