@@ -72,8 +72,8 @@ const About = () => {
         </div>
       </div>
 
-      <div className="mt-14 flex mx-auto gap-4 flex-col sm:flex-row">
-        <div className="w-full">
+      <div className="mt-14 flex max-w-[1120px]  mx-auto gap-4 flex-col sm:items-end sm:flex-row">
+        <div className=" w-full h-109px sm:w-[70%]">
           <h4 className=" small:text-[28px] sm:text-[40px] font-audio  text-head_white">
             We are the Unbrokens
           </h4>
@@ -81,22 +81,24 @@ const About = () => {
             The proceeds from our collection will help us implement three key
             projects to address bullying in high schools in Nigeria.
           </p>
-          <div className="hidden gap-3 w-full items-end sm:flex ">
-            <div className="w-full flex-1">
+
+          <div className="hidden gap-3 w-full  items-end sm:flex ">
+            <div className="w-full flex-shrink-1  gap-4 flex flex-col">
               <AboutCard2 aboutImage={about1} />
               <AboutCard2 aboutImage={about2} />
             </div>
-            <div className="w-full flex-1">
+            <div className="w-full items-end flex flex-col gap-4 ">
               <AboutCard1 aboutImage={about4} />
               <AboutCard1 aboutImage={about3} />
             </div>
           </div>
         </div>
-        <div className="mt-8 flex w-full  flex-col gap-5 sm:mt-0">
+        <div className=" w-full sm:w-[30%] h-109px  justify-center items-center sm:items-end flex  flex-col gap-5 sm:mt-0">
           <AboutCard1 aboutImage={about6} />
           <AboutCard1 aboutImage={about5} />
-          <div className="block sm:hidden">
+          <div className="block sm:hidden ">
             <AboutCard1 aboutImage={mabout} />
+            <div className="mt-5"></div>
             <AboutCard1 aboutImage={about5} />
           </div>
         </div>

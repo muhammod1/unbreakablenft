@@ -63,13 +63,13 @@ const Community = () => {
               </p>
             </div>
             <div className="flex mt-8 flex-col sm:flex-row">
-              <div class=" rounded mt-8 mr-6 max-w-[350px] overflow-hidden bg-[#171717] h-full relative">
+              <div class=" rounded mt-8 sm:mr-6 max-w-[350px] overflow-hidden bg-[#171717] h-full relative">
                 <div className="absolute  z-10  rounded-2xl overflow-hidden top-2 right-3">
                   <img src={frame} alt="frame" className="h-[25px] w-[100px]" />
                   <div className="bg-[#FAFAFA] opacity-40 -z-10 absolute inset-0"></div>
                 </div>
                 <img
-                  className="w-full h-[325px]"
+                  className="w-full object-cover h-[325px]"
                   src={event1}
                   alt="Sunset in the mountains"
                 />
@@ -84,17 +84,25 @@ const Community = () => {
                 </div>
                 <div class="px-6 pt-4 pb-2">
                   <span class="inline-block   py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                    <img src={host} alt="host" className="h-[45px] w-[146px]" />
+                    <img
+                      src={host}
+                      alt="host"
+                      className="h-[45px]  w-[146px]"
+                    />
                   </span>
                 </div>
               </div>
               <div class=" mb-8 rounded overflow-hidden mt-8 bg-[#171717] max-w-[350px] h-full  relative">
                 <div className="absolute  z-10  rounded-2xl overflow-hidden top-2 right-3">
-                  <img src={frame} alt="frame" className="h-[25px] w-[100px]" />
+                  <img
+                    src={frame}
+                    alt="frame"
+                    className="h-[25px]  w-[100px]"
+                  />
                   <div className="bg-[#FAFAFA] opacity-40 -z-10 absolute inset-0"></div>
                 </div>
                 <img
-                  className="w-full h-[325px]"
+                  className="w-full object-cover h-[325px]"
                   src={event2}
                   alt="Sunset in the mountains"
                 />
@@ -121,7 +129,7 @@ const Community = () => {
               <div className="bg-[#FAFAFA] opacity-40 -z-10 absolute inset-0"></div>
             </div>
             <img
-              className="w-full h-[325px]"
+              className="w-full object-cover h-[325px]"
               src={event3}
               alt="Sunset in the mountains"
             />
