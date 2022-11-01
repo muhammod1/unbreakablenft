@@ -21,9 +21,9 @@ import eventimage1 from "./eventimage1.png";
 import eventimage2 from "./eventimage2.png";
 import eventimage3 from "./eventimage3.png";
 import eventimage4 from "./eventimage4.png";
-import event1 from "./event1.png"
-import event2 from "./event2.png"
-import event3 from "./event3.png"
+import event1 from "./event1.png";
+import event2 from "./event2.png";
+import event3 from "./event3.png";
 import schoolBatch from "./schoolbatch.png";
 import schoolImage from "./schoolimage.png";
 import company1 from "./company1.png";
@@ -52,11 +52,11 @@ import about6 from "./about6.png";
 import motion from "./motion.png";
 import contactimage from "./contactimage.png";
 
-import programbg from './program-bg.svg'
+import programbg from "./program-bg.svg";
 
 export {
   programbg,
-
+  contactimage,
   logo,
   motion,
   nftsample1,
@@ -73,29 +73,29 @@ export {
   company5,
   event1,
   nftrobot,
- ArrowIcon,
-event2,
-event3,
- studentImage,
- schoolLogo,
- one,
- two,
- three,
- four,
- plus,
- rightArrow,
- leftArrow,
+  ArrowIcon,
+  event2,
+  event3,
+  studentImage,
+  schoolLogo,
+  one,
+  two,
+  three,
+  four,
+  plus,
+  rightArrow,
+  leftArrow,
 
-  // event2, 
-  // event3, 
-  host, 
+  // event2,
+  // event3,
+  host,
   frame,
   Union,
   instag,
   linkd,
   twit,
   faceb,
- 
+
   // host,
   // frame,
   eventimage,

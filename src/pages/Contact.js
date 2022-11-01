@@ -5,7 +5,7 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [org, setOrg] = useState("");
   const [message, setMessage] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  // const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
