@@ -34,17 +34,17 @@ const Community = () => {
             <img src={faceb} alt="facebook" />
           </div>
         </div>
-        <div className=" ">
+        <div >
           <div className="w-[100%]  p-5 md:p-5 bg-yellow rounded-md">
             <div className="flex flex-col gap-4 md:flex-row item-center justify-between">
-              <h1 className="w-full md:w-[20%] text-[28px] font-audio ">
+              <h1 className="w-full md:w-[30%] text-[28px] font-audio ">
                 <span className="block">Become an Unbroken</span>{" "}
               </h1>
-              <p className="h-fit my-auto mr-20 text-[16px]">
+              <p className="h-fit my-auto text-[16px]">
                 Welcome to our NFT gallery. With your support, we will execute
                 our anti-bullying initiatives.
               </p>
-              <button className="h-fit  md:w-[30%] my-auto bg-[#262626] py-3 px-2 text-yellow text-[14px] rounded">
+              <button className="h-fit  md:w-[30%] my-auto bg-[#262626] py-2 px-2 text-yellow text-[14px] rounded">
                 join discord
               </button>
             </div>
