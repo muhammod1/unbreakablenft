@@ -21,12 +21,14 @@ module.exports = {
       screens: {
         small: "260px",
         small_l: "416px",
+        mobile: "475px",
       },
       backgroundImage: {
         nftCard: 'url("./assets/nftrobot.png")',
         vector1: 'url("./assets/vector1.png")',
         ellipse1: 'url("./assets/ellipse1.png")',
         ellipse2: 'url("./assets/ellipse2.png")',
+        contact: 'url("./assets/contactimage.png")',
       },
       fontSize: {
         "9xl": "clamp(2.5rem, 10.5vw, 7rem);",

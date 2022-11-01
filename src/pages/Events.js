@@ -17,18 +17,34 @@ const Events = () => {
             <span className="block">The Unbroken</span> Events
           </h4>
         </div>
-        <div className=" flex-1">
+        <div className=" -z-10 flex-1">
           <img
             className="h-full w-full object-cover"
             src={eventimage}
             alt="events"
           />
         </div>
-        <div className="flex flex-1 overflow-hidden">
-          <img className="w-full object-cover" src={eventimage1} alt="events" />
-          <img className="w-full object-cover" src={eventimage2} alt="events" />
-          <img className="w-full object-cover" src={eventimage3} alt="events" />
-          <img className="w-full object-cover" src={eventimage4} alt="events" />
+        <div className=" -z-50 flex flex-1 overflow-hidden">
+          <img
+            className="w-full   object-cover"
+            src={eventimage1}
+            alt="events"
+          />
+          <img
+            className="w-full   object-cover"
+            src={eventimage2}
+            alt="events"
+          />
+          <img
+            className="w-full   object-cover"
+            src={eventimage3}
+            alt="events"
+          />
+          <img
+            className="w-full   object-cover"
+            src={eventimage4}
+            alt="events"
+          />
         </div>
       </div>
       <div className="mt-14 mx-6  md:mx-20">

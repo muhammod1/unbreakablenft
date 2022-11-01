@@ -32,8 +32,8 @@ import company3 from "./company3.png";
 import company4 from "./company4.png";
 import company5 from "./company5.png";
 
-import studentImage from './studentImage.png';
-import schoolLogo from './schoolLogo.png';
+import studentImage from "./studentImage.png";
+import schoolLogo from "./schoolLogo.png";
 import one from "./one.png";
 import two from "./two.png";
 import three from "./three.png";
@@ -50,6 +50,8 @@ import about4 from "./about4.png";
 import about5 from "./about5.png";
 import about6 from "./about6.png";
 import motion from "./motion.png";
+import contactimage from "./contactimage.png";
+
 export {
   logo,
   motion,
@@ -84,7 +86,6 @@ event3,
   // event3, 
   host, 
   frame,
-    
   Union,
   instag,
   linkd,

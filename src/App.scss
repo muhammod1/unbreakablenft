@@ -106,7 +106,7 @@ transform: rotate(66.65deg);
         display: block;
     }
     background: transparent;
-    transition: .4s;
+    transition: all ease-in-out .7s;
 
 }
 
@@ -175,3 +175,8 @@ pointer-events: none;
 -ms-user-select: none; 
 user-select: none; 
 }
+
+
+.contact_img_section {
+    background: linear-gradient(rgba(2,2,2,.7),rgba(0,0,0,.7)),url("./assets/contactimage.png") center center;
+}  
