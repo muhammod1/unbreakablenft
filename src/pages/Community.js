@@ -1,6 +1,16 @@
 import React from "react";
-import { event1, event2, event3, faceb, frame, host, instag, linkd, twit } from "../assets";
-import { FaHeartBroken } from "react-icons/fa";
+import {
+  event1,
+  event2,
+  event3,
+  faceb,
+  frame,
+  host,
+  instag,
+  linkd,
+  twit,
+} from "../assets";
+
 const Community = () => {
   return (
     <>
@@ -34,7 +44,7 @@ const Community = () => {
             <img src={faceb} alt="facebook" />
           </div>
         </div>
-        <div >
+        <div>
           <div className="w-[100%]  p-5 md:p-5 bg-yellow rounded-md">
             <div className="flex flex-col gap-4 md:flex-row item-center justify-between">
               <h1 className="w-full md:w-[30%] text-[28px] font-audio ">
