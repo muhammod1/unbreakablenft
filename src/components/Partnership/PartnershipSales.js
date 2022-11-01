@@ -1,6 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
+
+import ProgramModal from './PartnershipModal'
+
 
 const PartnershipSales = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <div>
         <div className='w-full mx-auto p-5 bg-yellow rounded-md'>
@@ -11,11 +16,18 @@ const PartnershipSales = () => {
                 <p className="h-fit my-auto text-[13px]">
                     The initial sale has sold out. To get your Unbroken NFT, check out the collection on OpenSea.
                 </p>
-                <button className='h-fit md:w-[34%] mobile:w-[35%] my-auto bg-[#262626] py-2 px-2 text-yellow text-[13px] rounded'>
+                <button 
+                    onClick={() => setShowModal(true)}
+                    className='h-fit md:w-[34%] mobile:w-[35%] my-auto bg-[#262626] py-2 px-2 text-yellow text-[13px] rounded'
+                >
                     Send proposal
                 </button>
             </div>
         </div>
+
+        {showModal ? (
+            <ProgramModal setShowModal={setShowModal} />
+        ) : null}
     </div>
   )
 }
