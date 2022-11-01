@@ -31,7 +31,7 @@ const ProgramCard = ({ schoolDetails }) => {
                 <div className='my-4 md:w-[60%]'>
                   <p className='text-yellow text-[14px] '>{data.title}</p>
                   <div className='text-white text-[12px] mt-2'>{data.desc}</div>
-                  <div className='text-[#E5E5E5] mt-5 text-[11px] flex justify-start gap-3'>
+                  <div className='text-[#E5E5E5] mt-5 text-[11px] flex flex-wrap justify-start gap-3'>
                     <span className='bg-[#171717] p-2 rounded-full' >{data.prefrence.title1}</span>
                     <span className='bg-[#171717] p-2 rounded-full'>{data.prefrence.title2}</span>
                     <span className='bg-[#171717] p-2 rounded-full'>{data.prefrence.title3}</span>
