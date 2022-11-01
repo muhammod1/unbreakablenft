@@ -7,8 +7,6 @@ import {
   faCircleXmark
 } from '@fortawesome/free-solid-svg-icons';
 
-import './gallery.css'
-
 const ProGallery = ({galleryImages}) => {
 
   const [slideNumber, setSlideNumber] = useState(0)

@@ -21,7 +21,7 @@ const pagination = ({ currentPage, postsPerPage, totalPosts, paginate,paginateFr
             >
                 <span className='inline-flex'> 
                     <img className='mr-2' src={rightArrow} alt='a' />
-                    Previous
+                    Prev
                 </span>
             </a>
 
