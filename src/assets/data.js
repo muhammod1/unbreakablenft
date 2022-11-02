@@ -1,4 +1,18 @@
-import { board, cctv, eventscard, ard, mic, schoolBatch, schoolImage } from ".";
+import {
+  board,
+  cctv,
+  eventscard,
+  ard,
+  mic,
+  schoolBatch,
+  schoolImage,
+  m1,
+  m2,
+  m3,
+  m4,
+  m5,
+  m6,
+} from ".";
 
 export const initiativeData = [
   {
@@ -178,6 +192,7 @@ export const roadmapData = [
   {
     isaActive: false,
     version: "M1",
+    progressIcon: m1,
     year: "2022",
     title: "Pre-launch activities",
     desc: "Design and develop the website, create marketing plans, finish NFT artworks, plan and document anti-bullying initiatives",
@@ -185,6 +200,7 @@ export const roadmapData = [
   {
     isaActive: true,
     version: "M2",
+    progressIcon: m2,
     year: "2022",
     title: "NFT & website Launch",
     desc: "Officially launch the NFT artworks and Unbroken website",
@@ -192,6 +208,7 @@ export const roadmapData = [
   {
     isaActive: false,
     version: "M3",
+    progressIcon: m3,
     year: "2022",
     title: "Community building",
     desc: "Create social media pages, setup and onboard community and contributor platforms",
@@ -199,6 +216,7 @@ export const roadmapData = [
   {
     isaActive: false,
     version: "M4",
+    progressIcon: m4,
     year: "2022",
     title: "Partnerships & NFT Sales",
     desc: "Host NFTs on Opensea, presale publicity and minting. Call for partnership.",
@@ -206,6 +224,7 @@ export const roadmapData = [
   {
     isaActive: false,
     version: "M5",
+    progressIcon: m5,
     year: "2022",
     title: "Groundwork for execution ",
     desc: "Pre-launch publicity and activities, Launch NFT, website, Pre-launch publicity and activities, Launch NFT, website, Pre-launch publicity and activities, Launch NFT, website, Pre-launch publicity and activities, Launch NFT, website",
@@ -213,6 +232,7 @@ export const roadmapData = [
   {
     isaActive: false,
     version: "M6",
+    progressIcon: m6,
     year: "2022",
     title: "Execution of projects ",
     desc: "Pre-launch publicity and activities, Launch NFT, website, Pre-launch publicity and activities, Launch NFT, website, Pre-launch publicity and activities, Launch NFT, website, Pre-launch publicity and activities, Launch NFT, website",

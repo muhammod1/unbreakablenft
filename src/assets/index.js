@@ -53,8 +53,19 @@ import motion from "./motion.png";
 import contactimage from "./contactimage.png";
 
 import programbg from "./program-bg.svg";
-
+import m1 from "./m1.svg";
+import m2 from "./m2.svg";
+import m3 from "./m3.svg";
+import m4 from "./m4.svg";
+import m5 from "./m5.svg";
+import m6 from "./m6.svg";
 export {
+  m1,
+  m2,
+  m3,
+  m4,
+  m5,
+  m6,
   programbg,
   contactimage,
   logo,
