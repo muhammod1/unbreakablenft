@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <nav className="w-full max-w-[1240px] mx-auto top-0 md:h-auto">
-      <div className="justify-between px-4  mx-auto  md:items-center md:flex md:px-6 lg:px-0">
+      <div className="justify-between   mx-auto  md:items-center md:flex px-4 small:px-6 ">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link onClick={() => setNavbar(false)} to="/">

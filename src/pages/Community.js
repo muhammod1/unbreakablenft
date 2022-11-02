@@ -15,7 +15,7 @@ const Community = () => {
   return (
     <>
       {/* community section  */}
-      <div className="mt-14 mx-6 md:mx-20 flex-col scrollbar-hide overflow-y-auto">
+      <div className="mt-14 flex-col scrollbar-hide px-4 small:px-6 max-w-[1240px] mx-auto overflow-y-auto">
         <p className="text-[#737373] text-lg">Our Community</p>
         <h3 className="text-head_white font-audio text-[40px] sm:text-7xl mt-2">
           <span className="block 4xl:inline">Join other Unbrokens</span> around
@@ -61,7 +61,7 @@ const Community = () => {
           </div>
         </div>
 
-        <div className=" mt-16 flex lg:flex-row justify-center flex-col  ">
+        <div className=" mt-16 flex lg:flex-row justify-center flex-col justify-evenly ">
           <div className="  ">
             <div className="  ">
               <h3 className="font-audio text-4xl   md:text-7xl text-head_white">

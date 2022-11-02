@@ -15,7 +15,7 @@ import {
 } from "../components";
 const Home = () => {
   return (
-    <div className="scrollbar-hide max-w-[1240px] mx-auto overflow-y-auto">
+    <div className="scrollbar-hide px-4 small:px-6 max-w-[1240px] mx-auto overflow-y-auto">
       <div className="bg-vector1 hidden md:block w-[1055px]  h-[3196px]  top-14 fixed left-80   -z-10 "></div>
       <div className="ellipse1 hidden md:block"></div>
       <div className="ellipse2 hidden lg:block"></div>

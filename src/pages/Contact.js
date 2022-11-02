@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-screen flex">
+    <div className="h-screen flex ">
       <div
         className="hidden justify-start md:flex w-full lg:w-1/2 bg-contact bg-cover  bg-no-repeat
    items-end"
@@ -34,8 +34,8 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex w-full lg:w-1/2 justify-center  ">
-        <div className="w-full px-8 ">
-          <form className="" onSubmit={handleSubmit}>
+        <div className="w-full px-4 small:px-6 mx-auto">
+          <form className=" max-w-[600px]" onSubmit={handleSubmit}>
             <h1 className="text-yellow text-[32px] font-audio">Contact us</h1>
             <p className=" text-grey_p">
               Want to become a partner or have a story to share?
