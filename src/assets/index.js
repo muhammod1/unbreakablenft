@@ -41,6 +41,7 @@ import four from "./four.png";
 import plus from "./plus.svg";
 import leftArrow from "./leftArrow.svg";
 import rightArrow from "./rightArrow.svg";
+import cancle from "./cancle.svg";
 
 import mabout from "./mabout3.png";
 import about1 from "./about1.png";
@@ -105,9 +106,8 @@ export {
   plus,
   rightArrow,
   leftArrow,
+  cancle,
 
-  // event2,
-  // event3,
   host,
   frame,
   Union,
@@ -116,8 +116,6 @@ export {
   twit,
   faceb,
 
-  // host,
-  // frame,
   eventimage,
   eventimage1,
   eventimage2,

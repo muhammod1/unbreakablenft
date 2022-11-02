@@ -1,11 +1,7 @@
 import React, { useState } from 'react'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faCircleChevronLeft, 
-  faCircleChevronRight, 
-  faCircleXmark
-} from '@fortawesome/free-solid-svg-icons';
+import { leftArrow, rightArrow, cancle } from '../../assets';
+
 import { motion } from "framer-motion";
 
 import { galleryImages } from '../../assets/program';
@@ -47,10 +43,11 @@ const ProgramImage = () => {
     >
        {openModal && 
           <div className='sliderWrap'>
-            <FontAwesomeIcon icon={faCircleXmark} className='btnClose' onClick={handleCloseModal}  />
-            <FontAwesomeIcon icon={faCircleChevronLeft} className='btnPrev' onClick={prevSlide} />
-            <FontAwesomeIcon icon={faCircleChevronRight} className='btnNext' onClick={nextSlide} />
+            {/* <FontAwesomeIcon icon={faCircleXmark} className='btnClose' onClick={handleCloseModal}  /> */}
+            <img  className='btnPrev' onClick={prevSlide} src={leftArrow} alt="left" />
+            <img  className='btnNext' onClick={nextSlide} src={rightArrow} alt="left" />
             <div className='fullScreenImage'>
+              <div className='btnClose text-[40px] md:text-[60px] p-2' onClick={handleCloseModal}>X</div>
               <img src={galleryImages[slideNumber].img} alt='' />
             </div>
           </div>

@@ -8,21 +8,18 @@ const PartnershipSales = () => {
 
   return (
     <div>
-        <div className='w-full mx-auto p-5 bg-yellow rounded-md'>
-            <div className='flex flex-col gap-4 mobile:flex-row item-center justify-between'>
-                <h1 className="w-full md:w-[40%] mobile:w-[35%] text-[24px] font-audio ">
-                    <span className="block">Partner with us</span>{" "}
-                </h1>
-                <p className="h-fit my-auto text-[13px]">
+        <div className="mt-14 flex flex-col sm:flex-row justify-between gap-2 px-4 py-2 sm:px-6 rounded-md items-center mx-2 min-h-[110px] bg-yellow">
+            <div className="flex flex-col lg:gap-10 lg:flex-row lg:justify-between lg:items-center">
+                <h4 className="font-audio text-2xl">
+                    <span className="inline sm:block">Partner with us</span>
+                </h4>
+                <p className="text-[#262626] max-w-[583px] w-full text-lg">
                     The initial sale has sold out. To get your Unbroken NFT, check out the collection on OpenSea.
                 </p>
-                <button 
-                    onClick={() => setShowModal(true)}
-                    className='h-fit md:w-[34%] mobile:w-[35%] my-auto bg-[#262626] py-2 px-2 text-yellow text-[13px] rounded'
-                >
-                    Send proposal
-                </button>
             </div>
+            <button className="bg-[#262626] p-3 rounded-md text-yellow text-sm">
+                Send proposal
+            </button>
         </div>
 
         {showModal ? (

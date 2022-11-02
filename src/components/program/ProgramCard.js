@@ -18,19 +18,19 @@ const ProgramCard = ({ schoolDetails }) => {
 
   return (
     <div className="bg-[#0C0B09] pt-[30px]">
-      <div className="px-[5%] ">
+      <div className="px-[5%]">
         {schData.length > 0 &&
         schData.map((data) => (
           <div
             key={data.id}
-            className="max-w-5xl md:mx-auto border-b border-[#171717]"
+            className="max-w-[1240px] md:mx-auto border-b border-[#171717]"
           >
-            <div className="w-full small_l:mx-auto mobile:w-[350px] md:w-full  py-[40px] flex flex-col md:gap-5 md:flex-row justify-center">
+            <div className="w-full small_l:mx-auto  mobile:w-[350px] md:w-full  py-[40px] flex flex-col md:gap-5 md:flex-row justify-center">
               <div className="my-auto md:w-[10%]">
                 <img src={data.number} alt="number" />
                 <p className="text-[#737373] my-2">{data.institute}</p>
               </div>
-              <div className="md:w-[80%]  my-5  flex flex-col md:flex-row gap-4 justify-between">
+              <div className="md:w-[80%] my-5 flex flex-col md:flex-row gap-4 justify-between">
                 <div className="h-[240px] md:w-[40%] rounded-lg relative overflow-hidden">
                   <img
                     className="w-full object-cover h-full"
