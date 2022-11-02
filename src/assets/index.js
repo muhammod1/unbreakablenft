@@ -65,7 +65,20 @@ import m3Complete from "./m3Complete.svg";
 import m4Complete from "./m4Complete.svg";
 import m5Complete from "./m5Complete.svg";
 import m6Complete from "./m6Complete.svg";
+
+import schPic1 from "./schPic1.png";
+import schPic2 from "./schPic2.png";
+import schPic3 from "./schPic3.png";
+import schPic4 from "./schPic4.png";
+import schPic5 from "./schPic5.png";
+
 export {
+  schPic1,
+  schPic2,
+  schPic3,
+  schPic4,
+  schPic5,
+
   m1,
   m2,
   m3,

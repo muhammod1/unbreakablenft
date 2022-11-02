@@ -62,7 +62,7 @@ const ProgramImage = () => {
                   key={index}
                   onClick={ () => handleOpenModal(index) }
                 >
-                  <img className='h-full w-fit' src={slide.img} alt='' />
+                  <img className='h-full w-full' src={slide.img} alt='' />
                 </div>
               )
             })
