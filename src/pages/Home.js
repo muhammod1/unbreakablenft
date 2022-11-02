@@ -33,7 +33,15 @@ const Home = () => {
         </div>
         <div className="flex-1 w-full">
           {/* <div className="hidden sm:block"></div> */}
-          <img className=" w-full" src={motion} alt="motion" />
+          {/* <img className=" w-full" src={motion} alt="motion" /> */}
+          <iframe
+            className="w-full"
+            height="415"
+            src="https://www.youtube.com/embed/1VMokxuA0Ec"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="Embedded youtube"
+          />
         </div>
       </div>
       {cardData.length > 0 && (

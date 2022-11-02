@@ -3,7 +3,7 @@ import { FaHeartBroken } from "react-icons/fa";
 import { nftsample1 } from "../../assets";
 const NftCard = ({ bgImage, icon, title, desc }) => {
   return (
-    <div className="w-[353px] hover:scale-105 transition ease-in-out overflow-hidden flex-shrink-0 rounded-xl h-[427px] relative ">
+    <div className="w-[353px] hover:scale-105 transition-all duration-500 group ease-in-out  overflow-hidden flex-shrink-0 rounded-xl h-[427px] relative ">
       <div className="nft__card-cover w-full">
         <div className="nft___side_cover absolute  z-10 py-1 px-4 rounded-2xl overflow-hidden top-2 right-3">
           <FaHeartBroken className="text-yellow " />
