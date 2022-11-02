@@ -59,6 +59,11 @@ import m3 from "./m3.svg";
 import m4 from "./m4.svg";
 import m5 from "./m5.svg";
 import m6 from "./m6.svg";
+
+import m3Complete from "./m3Complete.svg";
+import m4Complete from "./m4Complete.svg";
+import m5Complete from "./m5Complete.svg";
+import m6Complete from "./m6Complete.svg";
 export {
   m1,
   m2,
@@ -66,6 +71,10 @@ export {
   m4,
   m5,
   m6,
+  m3Complete,
+  m4Complete,
+  m5Complete,
+  m6Complete,
   programbg,
   contactimage,
   logo,

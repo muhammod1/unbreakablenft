@@ -16,8 +16,8 @@ const Roadmap = () => {
         <div className="flex  w-full">
           {roadmapData.length > 0 && (
             <div className="w-full">
-              {roadmapData.map((data) => (
-                <RoadmapCard key={data.title} {...data} />
+              {roadmapData.map((data, index) => (
+                <RoadmapCard key={data.title} {...data} indexId={index} />
               ))}
             </div>
           )}

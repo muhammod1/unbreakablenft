@@ -3,17 +3,28 @@ import React from "react";
 import { activeJourney } from "../../assets";
 const RoadmapCard = ({
   title,
-  isaActive,
+  isActive,
   desc,
   version,
   year,
   progressIcon,
+  isCompleted,
+  completedIcon,
+  indexId,
 }) => {
   return (
     <div className=" flex w-full justify-between md:mt-28 items-center gap-5 mb-5">
       <div className=" flex md:items-center flex-col md:flex-row gap-2 md:gap-9">
+        <div className=" w-11">
+          {indexId === 0 && <p className="text-[#404040] text-lg">2020</p>}
+          {indexId === 4 && <p className="text-[#404040] text-lg">2023</p>}
+        </div>
         <div className="hidden md:block">
-          <img src={progressIcon} alt="progress" />
+          {isCompleted ? (
+            <img src={completedIcon} alt="progress" />
+          ) : (
+            <img src={progressIcon} alt="progress" />
+          )}
         </div>
         <div className=" mb-8 md:mb-0 block md:hidden ">
           <h3 className="text-yellow font-audio text-[32px]">{version}</h3>
@@ -22,7 +33,7 @@ const RoadmapCard = ({
 
         <div className="flex flex-col ">
           <div className=" max-w-[657px]">
-            {isaActive && (
+            {isActive && (
               <div className="">
                 <p className="text-[#404040] text-lg">Current</p>
               </div>
@@ -36,7 +47,7 @@ const RoadmapCard = ({
           </div>
         </div>
       </div>
-      {isaActive && (
+      {isActive && (
         <div className="pt-3 hidden md:block">
           <img src={activeJourney} alt="active journey icon" />
         </div>
