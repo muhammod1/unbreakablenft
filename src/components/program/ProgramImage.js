@@ -1,36 +1,78 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import ProGallery from './ProGallery';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faCircleChevronLeft, 
+  faCircleChevronRight, 
+  faCircleXmark
+} from '@fortawesome/free-solid-svg-icons';
+import { motion } from "framer-motion";
+
+import { galleryImages } from '../../assets/program';
 
 const ProgramImage = () => {
- const galleryImages = [
-  {
-    img: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    className: ' row-span-1 col-span-1 bg-white hover:opacity-[.4]',
-  },
-  {
-    img: "https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    className: 'col-span-1 bg-white hover:opacity-[.4]',
-  },
-  {
-    img: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    className: 'row-span-2 col-span-2 bg-white hover:opacity-[.4]',
-  },
-  {
-    img: "https://images.pexels.com/photos/1194713/pexels-photo-1194713.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    className: 'col-span-1 bg-white hover:opacity-[.4]',
-  },
-  {
-    img: "https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    className: 'col-span-1 bg-white hover:opacity-[.4]',
-  },
-]
+  const [slideNumber, setSlideNumber] = useState(0)
+  const [openModal, setOpenModal] = useState(false)
 
-return (
-  <div className="my-[40px]">
-    <ProGallery galleryImages={galleryImages} />
-  </div>
-);
+
+  const handleOpenModal = (index) => {
+    setSlideNumber(index)
+    setOpenModal(true)
+  }
+
+  // Close Modal
+  const handleCloseModal = () => {
+    setOpenModal(false)
+  }
+
+  // Previous Image
+  const prevSlide = () => {
+    slideNumber === 0 
+    ? setSlideNumber( galleryImages.length -1 ) 
+    : setSlideNumber( slideNumber - 1 )
+  }
+
+  // Next Image  
+  const nextSlide = () => {
+    slideNumber + 1 === galleryImages.length 
+    ? setSlideNumber(0) 
+    : setSlideNumber(slideNumber + 1)
+  }
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+      className="my-[40px]"
+    >
+       {openModal && 
+          <div className='sliderWrap'>
+            <FontAwesomeIcon icon={faCircleXmark} className='btnClose' onClick={handleCloseModal}  />
+            <FontAwesomeIcon icon={faCircleChevronLeft} className='btnPrev' onClick={prevSlide} />
+            <FontAwesomeIcon icon={faCircleChevronRight} className='btnNext' onClick={nextSlide} />
+            <div className='fullScreenImage'>
+              <img src={galleryImages[slideNumber].img} alt='' />
+            </div>
+          </div>
+        }
+
+        <div className="flex flex-col gap-3 md:grid md:grid-rows-2 md:grid-cols-4 md:grid-flow-col md:gap-2 transition duration-700 ease-in-out">
+          {
+            galleryImages.map((slide, index) => {
+              return(
+                <div 
+                className={slide.className} 
+                  key={index}
+                  onClick={ () => handleOpenModal(index) }
+                >
+                  <img className='h-full w-fit' src={slide.img} alt='' />
+                </div>
+              )
+            })
+          }
+        </div>
+    </motion.div>
+  );
 }
 
 export default ProgramImage;

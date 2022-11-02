@@ -3,13 +3,24 @@ import React, { useState, useEffect } from "react";
 import { plus } from "../../assets";
 import ProgramImage from "./ProgramImage";
 
+
 const ProgramCard = ({ schoolDetails }) => {
-  const [showImage, setShowImage] = useState(false);
+  const [schData, setSchData] = useState(schoolDetails);
+  const handleToggle = (id) => {
+    setSchData((prev) => {
+      return prev.map((val) =>
+        val.id === id
+          ? { ...val, isOpen: !val.isOpen }
+          : { ...val, isOpen: false }
+      );
+    });
+  };
 
   return (
     <div className="bg-[#0C0B09] pt-[30px]">
       <div className="px-[5%] ">
-        {schoolDetails.map((data) => (
+        {schData.length > 0 &&
+        schData.map((data) => (
           <div
             key={data.id}
             className="max-w-5xl md:mx-auto border-b border-[#171717]"
@@ -53,20 +64,20 @@ const ProgramCard = ({ schoolDetails }) => {
                 </div>
               </div>
               <div className="md:w-[10%] md:flex">
-                {showImage ? (
+                {data.isOpen ? (
                   <button
-                    onClick={() => setShowImage(false)}
-                    className="w-fit mx-auto md:m-auto flex gap-2 justify-center"
+                    onClick={() => handleToggle(data.id)}
+                    className="w-fit mx-auto p-3 md:m-auto flex gap-2 justify-center"
                   >
                     <div className="h-[2px] w-[20px] bg-yellow my-auto"></div>
                     <span className="md:hidden text-white font-pop text-[14px]">
                       see less
                     </span>
                   </button>
-                ) : (
+                  ) : (
                   <button
-                    onClick={() => setShowImage(true)}
-                    className="w-fit mx-auto md:m-auto flex gap-2 justify-center"
+                    onClick={() => handleToggle(data.id)}
+                    className="w-fit  p-3 mx-auto md:m-auto flex gap-2 justify-center"
                   >
                     <img className=" w-[20px]" src={plus} alt="number" />
                     <span className="md:hidden text-white font-pop text-[14px]">
@@ -76,7 +87,7 @@ const ProgramCard = ({ schoolDetails }) => {
                 )}
               </div>
             </div>
-            {showImage ? <ProgramImage /> : null}
+            {data.isOpen && <ProgramImage /> }
           </div>
         ))}
       </div>
