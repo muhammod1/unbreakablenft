@@ -47,7 +47,7 @@ const Events = () => {
           />
         </div>
       </div>
-      <div className="mt-14 mx-6 flex flex-col justify-center items-center  md:mx-20">
+      <div className="mt-14 flex flex-col justify-center items-center  px-4 small:px-6 max-w-[1240px] mx-auto">
         <div className="mb-14 ">
           <h4 className="  font-audio text-2xl text-head_white">
             Current Events

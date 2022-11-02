@@ -1,32 +1,44 @@
-import { one, two, three, four, schoolLogo, studentImage, schPic1, schPic2, schPic3, schPic4, schPic5 } from ".";
+import {
+  one,
+  two,
+  three,
+  four,
+  schoolLogo,
+  studentImage,
+  schPic1,
+  schPic2,
+  schPic3,
+  schPic4,
+  schPic5,
+} from ".";
 
 export const galleryImages = [
   {
     img: schPic1,
-    className: ' row-span-1 col-span-1 bg-white hover:opacity-[.4]',
+    className: " row-span-1 col-span-1 bg-white hover:opacity-[.4] object-fill",
     id: 1,
   },
   {
     img: schPic2,
-    className: 'col-span-1 bg-white hover:opacity-[.4]',
+    className: "col-span-1 bg-white hover:opacity-[.4] object-fill",
     id: 2,
   },
   {
-    img:schPic3,
-    className: 'row-span-2 col-span-2 bg-white hover:opacity-[.4]',
+    img: schPic3,
+    className: "row-span-2 col-span-2 bg-white hover:opacity-[.4] object-fill",
     id: 3,
   },
   {
     img: schPic4,
-    className: 'col-span-1 bg-white hover:opacity-[.4]',
+    className: "col-span-1 bg-white hover:opacity-[.4] object-fill",
     id: 4,
   },
   {
     img: schPic5,
-    className: 'col-span-1 bg-white hover:opacity-[.4]',
+    className: "col-span-1 bg-white hover:opacity-[.4] object-fill",
     id: 5,
   },
-]
+];
 
 export const schoolDetails = [
   {
@@ -44,7 +56,7 @@ export const schoolDetails = [
       title2: "CCTV Installation",
       title3: "Seminar",
     },
-    desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
+    desc: "The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.",
   },
   {
     isOpen: false,
@@ -57,11 +69,11 @@ export const schoolDetails = [
     institute: "School",
     location: "Kuje, Abuja",
     prefrence: {
-            title1: "Campaign",
-            title2: "CCTV Installation",
-            title3: "Seminar",
-        },
-    desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
+      title1: "Campaign",
+      title2: "CCTV Installation",
+      title3: "Seminar",
+    },
+    desc: "The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.",
   },
   {
     isOpen: false,
@@ -74,11 +86,11 @@ export const schoolDetails = [
     institute: "School",
     location: "Kuje, Abuja",
     prefrence: {
-            title1: "Campaign",
-            title2: "CCTV Installation",
-            title3: "Seminar",
-        },
-    desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
+      title1: "Campaign",
+      title2: "CCTV Installation",
+      title3: "Seminar",
+    },
+    desc: "The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.",
   },
   {
     isOpen: false,
@@ -91,11 +103,11 @@ export const schoolDetails = [
     institute: "School",
     location: "Kuje, Abuja",
     prefrence: {
-            title1: "Campaign",
-            title2: "CCTV Installation",
-            title3: "Seminar",
-        },
-    desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
+      title1: "Campaign",
+      title2: "CCTV Installation",
+      title3: "Seminar",
+    },
+    desc: "The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.",
   },
   {
     isOpen: false,
@@ -108,11 +120,11 @@ export const schoolDetails = [
     institute: "School",
     location: "Kuje, Abuja",
     prefrence: {
-            title1: "Campaign",
-            title2: "CCTV Installation",
-            title3: "Seminar",
-        },
-    desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
+      title1: "Campaign",
+      title2: "CCTV Installation",
+      title3: "Seminar",
+    },
+    desc: "The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.",
   },
   {
     isOpen: false,
@@ -125,11 +137,11 @@ export const schoolDetails = [
     institute: "School",
     location: "Kuje, Abuja",
     prefrence: {
-            title1: "Campaign",
-            title2: "CCTV Installation",
-            title3: "Seminar",
-        },
-    desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
+      title1: "Campaign",
+      title2: "CCTV Installation",
+      title3: "Seminar",
+    },
+    desc: "The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.",
   },
   {
     isOpen: false,
@@ -142,11 +154,11 @@ export const schoolDetails = [
     institute: "School",
     location: "Kuje, Abuja",
     prefrence: {
-            title1: "Campaign",
-            title2: "CCTV Installation",
-            title3: "Seminar",
-        },
-    desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
+      title1: "Campaign",
+      title2: "CCTV Installation",
+      title3: "Seminar",
+    },
+    desc: "The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.",
   },
   {
     isOpen: false,
@@ -159,11 +171,11 @@ export const schoolDetails = [
     institute: "School",
     location: "Kuje, Abuja",
     prefrence: {
-            title1: "Campaign",
-            title2: "CCTV Installation",
-            title3: "Seminar",
-        },
-    desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
+      title1: "Campaign",
+      title2: "CCTV Installation",
+      title3: "Seminar",
+    },
+    desc: "The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.",
   },
   {
     isOpen: false,
@@ -176,11 +188,11 @@ export const schoolDetails = [
     institute: "School",
     location: "Kuje, Abuja",
     prefrence: {
-            title1: "Campaign",
-            title2: "CCTV Installation",
-            title3: "Seminar",
-        },
-    desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
+      title1: "Campaign",
+      title2: "CCTV Installation",
+      title3: "Seminar",
+    },
+    desc: "The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.",
   },
   {
     isOpen: false,
@@ -193,11 +205,11 @@ export const schoolDetails = [
     institute: "School",
     location: "Kuje, Abuja",
     prefrence: {
-            title1: "Campaign",
-            title2: "CCTV Installation",
-            title3: "Seminar",
-        },
-    desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
+      title1: "Campaign",
+      title2: "CCTV Installation",
+      title3: "Seminar",
+    },
+    desc: "The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.",
   },
   {
     isOpen: false,
@@ -210,11 +222,11 @@ export const schoolDetails = [
     institute: "School",
     location: "Kuje, Abuja",
     prefrence: {
-            title1: "Campaign",
-            title2: "CCTV Installation",
-            title3: "Seminar",
-        },
-    desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
+      title1: "Campaign",
+      title2: "CCTV Installation",
+      title3: "Seminar",
+    },
+    desc: "The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.",
   },
   {
     isOpen: false,
@@ -227,11 +239,11 @@ export const schoolDetails = [
     institute: "School",
     location: "Kuje, Abuja",
     prefrence: {
-            title1: "Campaign",
-            title2: "CCTV Installation",
-            title3: "Seminar",
-        },
-    desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
+      title1: "Campaign",
+      title2: "CCTV Installation",
+      title3: "Seminar",
+    },
+    desc: "The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.",
   },
   {
     isOpen: false,
@@ -244,11 +256,11 @@ export const schoolDetails = [
     institute: "School",
     location: "Kuje, Abuja",
     prefrence: {
-            title1: "Campaign",
-            title2: "CCTV Installation",
-            title3: "Seminar",
-        },
-    desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
+      title1: "Campaign",
+      title2: "CCTV Installation",
+      title3: "Seminar",
+    },
+    desc: "The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.",
   },
   {
     isOpen: false,
@@ -261,11 +273,11 @@ export const schoolDetails = [
     institute: "School",
     location: "Kuje, Abuja",
     prefrence: {
-            title1: "Campaign",
-            title2: "CCTV Installation",
-            title3: "Seminar",
-        },
-    desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
+      title1: "Campaign",
+      title2: "CCTV Installation",
+      title3: "Seminar",
+    },
+    desc: "The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.",
   },
   {
     isOpen: false,
@@ -278,11 +290,11 @@ export const schoolDetails = [
     institute: "School",
     location: "Kuje, Abuja",
     prefrence: {
-            title1: "Campaign",
-            title2: "CCTV Installation",
-            title3: "Seminar",
-        },
-    desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
+      title1: "Campaign",
+      title2: "CCTV Installation",
+      title3: "Seminar",
+    },
+    desc: "The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.",
   },
   {
     isOpen: false,
@@ -295,11 +307,10 @@ export const schoolDetails = [
     institute: "School",
     location: "Kuje, Abuja",
     prefrence: {
-            title1: "Campaign",
-            title2: "CCTV Installation",
-            title3: "Seminar",
-        },
-    desc: 'The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.'
+      title1: "Campaign",
+      title2: "CCTV Installation",
+      title3: "Seminar",
+    },
+    desc: "The Good Shepherd Group is set to go into the next decade as a model school in Nigeria with branches in all states of the federation. In realization of this noble dream, the Ogun State campus opened up for big time academic activities in September, for the 2006/2007 session.",
   },
-  
 ];
