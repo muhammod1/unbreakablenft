@@ -15,11 +15,11 @@ import {
 } from "../components";
 const Home = () => {
   return (
-    <div className="scrollbar-hide overflow-y-auto">
+    <div className="scrollbar-hide max-w-[1240px] mx-auto overflow-y-auto">
       <div className="bg-vector1 hidden md:block w-[1055px]  h-[3196px]  top-14 fixed left-80   -z-10 "></div>
       <div className="ellipse1 hidden md:block"></div>
       <div className="ellipse2 hidden lg:block"></div>
-      <div className="mt-16 md:mt-24 mx-6 md:mx-20 flex gap-8 flex-col items-center sm:flex-row justify-between flex-wrap md:flex-nowrap">
+      <div className="mt-16 md:mt-24  flex gap-8 flex-col items-center sm:flex-row justify-between flex-wrap md:flex-nowrap">
         <div className="flex flex-col flex-1 w-full justify-end">
           <h3 className="text-white font-audio text-3xl small:text-[55px] leading-[110%]  xl:text-9xl ">
             <span className="block">Unbroken</span>{" "}
@@ -37,7 +37,7 @@ const Home = () => {
           <iframe
             className="w-full"
             height="415"
-            src="https://www.youtube.com/embed/1VMokxuA0Ec"
+            src="https://www.youtube.com/embed/QsEKICkpQBI"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             title="Embedded youtube"
@@ -45,14 +45,13 @@ const Home = () => {
         </div>
       </div>
       {cardData.length > 0 && (
-        <div className="ml-2  small:ml-6 h-[460px] md:ml-20 mt-16 flex items-center gap-4 overflow-x-auto scrollbar-hide">
-          {/* this is were you map through your data and call a single card  data.map((val) => <NftCard1 key={val.id} image={val.image}/>) */}
+        <div className=" h-[460px] mt-16 flex items-center gap-4 overflow-x-auto scrollbar-hide">
           {cardData.map((data) => (
             <NftCard1 key={data.id} {...data} />
           ))}
         </div>
       )}
-      <div className="mt-14 mx-2  small:mx-6 md:mx-20 flex">
+      <div className="mt-14 mx-2  small: flex">
         <div className="hidden sm:block flex-1 w-full"></div>
         <div className="w-full small:w-[662px] flex flex-col justify-start flex-1  relative">
           <div className="-z-20 ellipse3"></div>
@@ -73,7 +72,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mt-16 max-w-[534px]  mx-2  small:mx-6 md:mx-20 ">
+      <div className="mt-16 max-w-[534px]  mx-2  small: ">
         <h3 className="font-audio text-4xl  md:text-7xl text-head_white">
           Initiatives
         </h3>
@@ -83,7 +82,7 @@ const Home = () => {
         </p>
       </div>
       {initiativeData.length > 0 && (
-        <div className="mt-14 mx-6 md:mx-20  flex gap-4 justify-between flex-wrap">
+        <div className="mt-14   flex gap-4 justify-between flex-wrap">
           {initiativeData.map((data) => (
             <InitiativeCard key={data.title} {...data} />
           ))}
@@ -91,7 +90,7 @@ const Home = () => {
       )}
 
       {/* Journey section  */}
-      <div className=" mt-14 mx-2  small:mx-6 md:mx-20">
+      <div className=" mt-14 mx-2  small:">
         <p className="text-[#737373] text-lg">Our Journey starts here</p>
         <h3 className="text-head_white font-audio text-3xl small_l:text-[40px] sm:text-7xl mt-2">
           <span className="block 4xl:inline">The Unbroken</span> Roadmap
@@ -113,7 +112,7 @@ const Home = () => {
       </div>
 
       {/* schools section */}
-      <div className="mt-14 mx-2  small:mx-6 md:mx-20">
+      <div className="mt-14 mx-2  small:">
         <div className=" flex gap-5 justify-center flex-wrap ">
           <div
             className=" max-w-[378px] flex md:items-center
@@ -140,7 +139,7 @@ const Home = () => {
       {/* Frequently Asked section   */}
       <FAQ />
 
-      <div className="mt-14 flex flex-col sm:flex-row justify-between gap-2 px-4 py-2 sm:px-10 rounded-md items-center mx-2 min-h-[110px] bg-yellow  small:mx-6 md:mx-20">
+      <div className="mt-14 flex flex-col sm:flex-row justify-between gap-2 px-4 py-2 sm:px-10 rounded-md items-center mx-2 min-h-[110px] bg-yellow  small:">
         <div className="flex flex-col lg:gap-10 lg:flex-row lg:justify-between lg:items-center">
           <h4 className="font-audio text-2xl">
             <span className="inline sm:block">Become an</span> Unbroken
