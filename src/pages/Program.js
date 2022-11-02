@@ -23,7 +23,7 @@ const Program = () => {
     <div>
       <ProgramHero />
       <ProgramCard schoolDetails={currentPosts} />
-      <Pagination 
+      <Pagination
         postsPerPage={postsPerPage} 
         totalPosts={schoolDetails.length} 
         currentPage={currentPage}

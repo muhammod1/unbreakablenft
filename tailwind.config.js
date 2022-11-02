@@ -24,6 +24,7 @@ module.exports = {
         mobile: "475px",
       },
       backgroundImage: {
+        nftBgImg: 'url("../src/assets/bgimage.jpg")',
         nftCard: 'url("./assets/nftrobot.png")',
         vector1: 'url("./assets/vector1.png")',
         ellipse1: 'url("./assets/ellipse1.png")',

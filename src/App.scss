@@ -51,7 +51,6 @@ transform: rotate(66.65deg);
 .nft-content {
     display: grid;
     place-items: center;
-    background-image: url("../src/assets/bgimage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -154,8 +153,21 @@ opacity: 1;
 }
 
 .sliderWrap .btnClose {
-top: 40px;
-right: 40px;
+    top: 5%;
+    right: 15%;
+
+    @media screen and (max-width: 1100px) {
+        top: 6%;
+        right: 12%;
+    }
+    @media screen and (max-width: 799px) {
+        top: 6%;
+        right: 8%;
+    }
+    @media screen and (max-width: 670px) {
+        top: 0%;
+        right: 8%;
+    }
 }
 
 
