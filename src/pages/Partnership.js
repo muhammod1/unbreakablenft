@@ -7,7 +7,7 @@ import PartnershipSales from "../components/Partnership/PartnershipSales";
 
 const partnership = () => {
   return (
-    <div className="w-[85%] mobile:w-[90%] max-w-7xl mx-auto">
+    <div className="w-[85%] mobile:w-[90%] max-w-[1220px] mx-auto">
       <PartnerHero />
       <PartnershipContent />
       <PartnershipSales />  

@@ -20,7 +20,7 @@ const pagination = ({ currentPage, postsPerPage, totalPosts, paginate,paginateFr
                 className='relative inline-flex mr-3 items-center px-2 py-2 text-sm font-normal text-white hover:opacity-50'
             >
                 <span className='inline-flex'> 
-                    <img className='mr-2' src={rightArrow} alt='a' />
+                    <img className='mr-2' src={leftArrow} alt='a' />
                     Prev
                 </span>
             </a>
@@ -49,7 +49,7 @@ const pagination = ({ currentPage, postsPerPage, totalPosts, paginate,paginateFr
             >
                 <span className='inline-flex'> 
                     Next
-                    <img className='ml-2' src={leftArrow} alt='a' />
+                    <img className='ml-2' src={rightArrow} alt='a' />
                 </span>
           </a>
         </nav>

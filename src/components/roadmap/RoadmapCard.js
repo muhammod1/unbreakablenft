@@ -32,7 +32,7 @@ const RoadmapCard = ({
         </div>
 
         <div className="flex flex-col ">
-          <div className=" max-w-[657px]">
+          <div className="  max-w-[657px]">
             {isActive && (
               <div className="">
                 <p className="text-[#404040] text-lg">Current</p>
