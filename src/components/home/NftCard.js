@@ -7,7 +7,7 @@ const NftCard = ({ bgImage, icon, title, desc }) => {
     <motion.div
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
       transition={{ duration: 0.5 }}
-      className="w-[353px] hover:scale-105 transition-all duration-500 group ease-in-out  overflow-hidden flex-shrink-0 rounded-xl h-[427px] relative "
+      className="w-[353px] hover:scale-105 transition duration-700 group ease-in-out  overflow-hidden flex-shrink-0 rounded-xl h-[427px] relative "
     >
       <div className="nft__card-cover w-full">
         <div className="nft___side_cover absolute  z-10 py-1 px-4 rounded-2xl overflow-hidden top-2 right-3">

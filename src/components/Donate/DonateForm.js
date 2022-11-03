@@ -3,7 +3,7 @@ import React, { useState } from "react";
 // import { Submit } from '../UI/Form';
 
 import { lock, coin } from "../../assets";
-
+import { motion } from "framer-motion";
 const DonateForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -21,8 +21,16 @@ const DonateForm = () => {
   };
 
   return (
-    <div className="mt-20 flex item-start">
-      <div className="w-[97%] small_l[95%] mx-auto md:mx-0 md:w-[50%]">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="mt-20 flex item-start"
+    >
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        className="w-[97%] small_l[95%] mx-auto md:mx-0 md:w-[50%]"
+      >
         <div class="flex items-center mb-4">
           <input
             id="default-checkbox"
@@ -124,13 +132,21 @@ const DonateForm = () => {
             send
           </button>
         </form>
-      </div>
-      <div className="ml-auto hidden md:block">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        className="ml-auto hidden md:block"
+      >
         <div className="w-[400px] p-5 border border-[#171717] rounded-lg">
           <p className="block font-bold text-[18px] text-yellow">
             Donate Summary
           </p>
-          <div className="flex justify-between ">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            className="flex justify-between "
+          >
             <div className="">
               <p className="mt-3 block text-[14px] text-[#737373]">Full name</p>
               <p className="mt-3 block text-[14px] text-[#737373]">
@@ -151,10 +167,10 @@ const DonateForm = () => {
                 NGN 200,000
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

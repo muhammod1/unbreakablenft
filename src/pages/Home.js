@@ -17,8 +17,8 @@ const Home = () => {
     <div className="scrollbar-hide bg-vector1   overflow-y-auto">
       {/* <div className="bg-vector1 hidden md:block w-[1055px]  h-[3196px]  top-14 fixed left-80   -z-10 "></div> */}
       <motion.div
-        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-        transition={{ duration: 0.5 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         className="ellipse1 hidden md:block"
       ></motion.div>
       {/* <motion.div

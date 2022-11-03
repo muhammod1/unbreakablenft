@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 const HomeHeader = () => {
   return (
     <motion.div
-      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-      transition={{ duration: 0.5 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       className="mt-16 md:mt-24 px-3 sm:px-6 max-w-[1240px] mx-auto  flex gap-8 flex-col items-center sm:flex-row justify-between flex-wrap md:flex-nowrap"
     >
       <div className="flex flex-col flex-1 w-full justify-end">

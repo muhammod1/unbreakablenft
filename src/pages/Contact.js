@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import { Submit } from "../components/UI/Form";
-
+import { motion } from "framer-motion";
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -21,7 +21,9 @@ const Contact = () => {
 
   return (
     <div className="h-screen flex ">
-      <div
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         className="hidden justify-start md:flex w-full lg:w-1/2 bg-contact bg-cover  bg-no-repeat
    items-end"
       >
@@ -33,8 +35,12 @@ const Contact = () => {
             Write to us, we would love to hear from you.
           </p>
         </div>
-      </div>
-      <div className="flex w-full lg:w-1/2 justify-center  ">
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        className="flex w-full lg:w-1/2 justify-center  "
+      >
         <div className="w-full px-4 small:px-6 mx-auto">
           <form className=" max-w-[600px]" onSubmit={handleSubmit}>
             <h1 className="text-yellow text-[32px] font-audio">Contact us</h1>
@@ -91,7 +97,7 @@ const Contact = () => {
             </button>
           </form>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

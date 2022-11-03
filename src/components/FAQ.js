@@ -42,15 +42,21 @@ const FAQ = () => {
     });
   };
   return (
-    <div className="flex  flex-col   flex-wrap mt-14 px-3 sm:px-6 max-w-[1240px] mx-auto">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="flex  flex-col   flex-wrap mt-14 px-3 sm:px-6 max-w-[1240px] mx-auto"
+    >
       <h3 className="text-head_white text-center font-audio text-lg small:text-4xl sm:text-[32px]">
         Frequently Asked Questions
       </h3>
       <div className="mt-6 w-full  max-w-[802px] mx-auto">
         {fnqData.length > 0 &&
           fnqData.map(({ question, answer, id, isOpen }) => (
-            <div
-            key={id}
+            <motion.div
+              whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+              transition={{ duration: 0.5 }}
+              key={id}
             >
               <div
                 onClick={() => handleToggle(id)}
@@ -74,10 +80,10 @@ const FAQ = () => {
                   <p className="text-[#525252]  ">{answer}</p>
                 </motion.div>
               )}
-            </div>
+            </motion.div>
           ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
