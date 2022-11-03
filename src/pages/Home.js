@@ -20,7 +20,7 @@ import {
 } from "../components";
 const Home = () => {
   return (
-    <div className="scrollbar-hide   overflow-y-auto">
+    <div className="scrollbar-hide bg-vector1   overflow-y-auto">
       {/* <div className="bg-vector1 hidden md:block w-[1055px]  h-[3196px]  top-14 fixed left-80   -z-10 "></div> */}
       <div className="ellipse1 hidden md:block"></div>
       <div className="ellipse2 hidden lg:block"></div>
