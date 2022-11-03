@@ -72,7 +72,11 @@ import schPic3 from "./schPic3.jpg";
 import schPic4 from "./schPic4.jpg";
 import schPic5 from "./schPic5.png";
 
+import lock from "./lock.svg";
+
 export {
+  lock,
+  
   schPic1,
   schPic2,
   schPic3,
