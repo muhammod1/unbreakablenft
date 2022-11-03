@@ -1,5 +1,5 @@
 import React from "react";
-import { union, unionFill } from "../assets";
+import { union, unionFill, unionUnFill } from "../assets";
 
 import { roadmapData } from "../assets/data";
 import { RoadmapCard } from "../components";
@@ -14,22 +14,42 @@ const Roadmap = () => {
           <span className="block 4xl:inline">Unbroken</span> Roadmap
         </h3>
         <div className="flex relative w-full">
-          <div className="hidden absolute  top-[77px] left-[50px] lg_l:block">
-            <img src={unionFill} className="w-183px h-[279px]" alt="union" />
+          <div className="hidden absolute z-50  top-[77px] left-[50px] lg_l:block">
+            <img src={unionFill} className="w-183px h-[281px]" alt="union" />
           </div>
-          <div className="hidden absolute top-[287px] left-[50px]  lg_l:block">
-            <img src={unionFill} className="w-183px h-[279px]" alt="union" />
+          <div className="hidden z-40 absolute top-[288px] left-[50px]  lg_l:block">
+            <img
+              src={unionUnFill}
+              className="w-183px h-[280px]"
+              alt="un fill union"
+            />
+            {/* <img src={unionFill} className="w-183px h-[280px]" alt="union" /> */}
           </div>
-          <div className="hidden absolute top-[496px] left-[50px]  lg_l:block">
-            <img src={unionFill} className="w-183px h-[282px]" alt="union" />
+          <div className="hidden z-30 absolute top-[499px] left-[50px]  lg_l:block">
+            <img
+              src={unionUnFill}
+              className="w-183px h-[280px]"
+              alt="un fill union"
+            />
+            {/* <img src={unionFill} className="w-183px h-[281px]" alt="union" /> */}
           </div>
-          <div className="hidden absolute bottom-[298px] left-[50px]  lg_l:block">
-            <img src={unionFill} className="w-183px h-[280px]" alt="union" />
+          <div className="hidden z-10 absolute bottom-[297px] left-[50px]  lg_l:block">
+            <img
+              src={unionUnFill}
+              className="w-183px h-[280px]"
+              alt="un fill union"
+            />
+            {/* <img src={unionFill} className="w-184px h-[280px]" alt="union" /> */}
           </div>
 
           {/* together */}
-          <div className="hidden absolute bottom-[87px] left-[50px]  lg_l:block">
-            <img src={unionFill} className="w-183px h-[280px]" alt="union" />
+          <div className="hidden absolute bottom-[86px] left-[50px]  lg_l:block">
+            <img
+              src={unionUnFill}
+              className="w-183px h-[280px]"
+              alt="un fill union"
+            />
+            {/* <img src={unionFill} className="w-183px h-[281px]" alt="union" /> */}
           </div>
 
           {roadmapData.length > 0 && (
