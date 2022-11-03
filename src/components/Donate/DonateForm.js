@@ -92,15 +92,23 @@ const DonateForm = () => {
               </label>
               <select
                 id="coins"
-                className="my-2 w-fit bg-yellow text-[black] text-bold text-[20px] rounded-lg p-2.5"
+                className="my-2 flex-col w-fit bg-yellow text-[black] text-bold text-[20px] rounded-lg p-2.5"
               >
-                <option selected data-content={coin}>
+                <option className="pl-3" selected data-content={coin}>
                   USDC
                 </option>
-                <option value="US">United States</option>
-                <option value="CA">Canada</option>
-                <option value="FR">France</option>
-                <option value="DE">Germany</option>
+                <option className="pl-3" value="US">
+                  United States
+                </option>
+                <option className="pl-3" value="CA">
+                  Canada
+                </option>
+                <option className="pl-3" value="FR">
+                  France
+                </option>
+                <option className="pl-3" value="DE">
+                  Germany
+                </option>
               </select>
               <p className="mt-9 block text-[12px] text-[#737373]">Approx:</p>
             </div>

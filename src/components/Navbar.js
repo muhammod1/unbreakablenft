@@ -8,7 +8,11 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full max-w-[1240px] mx-auto top-0 md:h-auto">
+    <nav
+      className={`w-full  ${
+        navbar && "bg-[#0c0809] h-screen "
+      }  mx-auto top-0 md:h-auto max-w-[1240px]`}
+    >
       <div className="justify-between   mx-auto  md:items-center md:flex px-3 sm:px-6 ">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -39,7 +43,7 @@ const Navbar = () => {
               navbar ? "block" : "hidden"
             }`}
           >
-            <ul className=" items-center justify-center  space-y-12 md:flex md:space-x-2 lg:space-x-4 md:space-y-0">
+            <ul className=" items-center justify-center   space-y-12 md:flex md:space-x-1 lg:space-x-4 md:space-y-0">
               <li
                 onClick={() => setNavbar(false)}
                 className="text-[#E5E5E5] text-lg md:text-sm"
