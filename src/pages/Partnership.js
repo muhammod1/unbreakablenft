@@ -7,10 +7,10 @@ import PartnershipSales from "../components/Partnership/PartnershipSales";
 
 const partnership = () => {
   return (
-    <div className="w-[85%] mobile:w-[90%] max-w-[1220px] mx-auto">
+    <div className="px-3 sm:px-6 max-w-[1240px] mx-auto">
       <PartnerHero />
       <PartnershipContent />
-      <PartnershipSales />  
+      <PartnershipSales />
       <PartnerMain />
       <PartnerCard />
     </div>

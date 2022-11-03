@@ -42,7 +42,7 @@ const FAQ = () => {
     });
   };
   return (
-    <div className="flex  flex-col   flex-wrap mt-14 mx-6 md:mx-20">
+    <div className="flex  flex-col   flex-wrap mt-14 px-3 sm:px-6 max-w-[1240px] mx-auto">
       <h3 className="text-head_white text-center font-audio text-lg small:text-4xl sm:text-[32px]">
         Frequently Asked Questions
       </h3>

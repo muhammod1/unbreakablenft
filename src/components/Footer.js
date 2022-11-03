@@ -1,10 +1,12 @@
 import React from "react";
+import { BsTwitter } from "react-icons/bs";
+import { AiFillLinkedin } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { logo } from "../assets";
+import { facebookIcon, instagramIcon, logo } from "../assets";
 const Footer = () => {
   return (
     <div className="pb-8  mt-24  flex flex-col items-center">
-      <div className="px-4 md:px-6  max-w-[1240px] mx-auto">
+      <div className="px-3 sm:px-6 max-w-[1240px] mx-auto">
         <div className="flex gap-5 justify-center flex-wrap md:flex-nowrap flex-col md:flex-row  w-full">
           <div className="w-full mb-8 flex sm:items-center flex-col md:w-1/2">
             <div>
@@ -15,6 +17,12 @@ const Footer = () => {
                 Get the latest updates about our new features and product
                 updates.
               </p>
+              <div className="mt-6 flex gap-3">
+                <BsTwitter color="#1DA1F2" size={24} />
+                <AiFillLinkedin size={25} color="#0A66C2" />
+                <img src={instagramIcon} className="w-6" alt="instagram icon" />
+                <img src={facebookIcon} className="w-6" alt="facebook icon" />
+              </div>
             </div>
           </div>
           <div className="flex sm:w-1/2 flex-wrap md:flex-nowrap sm:gap-5 sm:justify-center">
