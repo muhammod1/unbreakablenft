@@ -82,12 +82,16 @@ import thunder from "./thunder.svg";
 
 import lock from "./lock.svg";
 import coin from "./coin.svg";
+import QRCode from "./QRCode.png";
+import copyIcon from "./copyIcon.svg";
 
 import facebookIcon from "./facebookicon.png";
 import linkedinIcon from "./linkedinicon.png";
 import twitterIcon from "./twitterIcon.png";
 import instagramIcon from "./instagramicon.png";
 export {
+  copyIcon,
+  QRCode,
   lock,
   coin,
   schPic1,

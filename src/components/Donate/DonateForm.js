@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 
-// import { Submit } from '../UI/Form';
-
 import { lock, coin } from "../../assets";
+import { Form, IconForm, SubmitBtn } from "../UI/Form";
+
 import { motion } from "framer-motion";
+import DonateQRCode from "./DonateQRCode";
 const DonateForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
-  // const [isLoading, setIsLoading] = useState(false);
+  const [showQRCode, setShowQRCode] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,7 +19,9 @@ const DonateForm = () => {
       number,
     };
     console.log(filledForm);
+    setShowQRCode(true)
   };
+
 
   return (
     <motion.div
@@ -31,7 +34,7 @@ const DonateForm = () => {
         whileInView={{ opacity: 1 }}
         className="w-[97%] small_l[95%] mx-auto md:mx-0 md:w-[50%]"
       >
-        <div class="flex items-center mb-4">
+        <div className="flex items-center mb-4">
           <input
             id="default-checkbox"
             type="checkbox"
@@ -52,26 +55,23 @@ const DonateForm = () => {
           All donation payments are secured and encrypted
         </p>
         <form onSubmit={handleSubmit}>
-          <div className="flex  flex-col  mt-8  py-2">
-            <label className="text-gray-50">Full name</label>
-            <input
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="bg-transparent text-gray-400 placeholder-[#404040] w-full border-[#404040] outline-none p-2 rounded-lg border-2 "
-              type="text"
-              placeholder="your legal name"
+            <Form
+                value={name}
+                required="required"
+                type="text" 
+                onChangeCallBack={setName}
+                placeholder="your legal name" 
+                label="Full name"
             />
-          </div>
-          <div className="flex  flex-col  mt-4  py-2">
-            <label className="text-gray-50">Email address</label>
-            <input
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="bg-transparent text-gray-400 placeholder-[#404040] w-full border-[#404040] outline-none p-2 rounded-lg border-2 "
-              type="text"
-              placeholder="We would love to discuss further the terms of partnership"
+            <Form 
+                value={email}
+                required="required"
+                type="email" 
+                onChangeCallBack={setEmail}
+                placeholder="We would love to discuss further the terms of partnership" 
+                label="Email address"
             />
-          </div>
+        
           <h3 className="text-white font-audio text-2xl my-3 mt-14 flex item-center">
             <img src={lock} alt="lock" />
             <span className="pl-3">Payment methods</span>
@@ -80,25 +80,24 @@ const DonateForm = () => {
             All donation payments are secured and encrypted
           </p>
           <div className="flex relative flex-col  mt-4  py-2">
-            <label className="text-gray-50">Email address</label>
-            <input
-              value={number}
-              onChange={(e) => setNumber(e.target.value)}
-              className="bg-transparent text-gray-400 placeholder-[#404040] w-full border-[#404040] outline-none p-2 rounded-lg border-2 "
-              type="number"
-              placeholder="200,000"
+          <IconForm 
+                value={number}
+                required="required"
+                type="number" 
+                onChangeCallBack={setNumber}
+                placeholder="200,000" 
+                label="Donate Amount"
+                icon="$"
             />
-            <div class="text-grey_p flex absolute inset-y-0 right-10 top-6 items-center pl-3 pointer-events-none">
-              $
-            </div>
+            
           </div>
 
           <div className="flex mt-10 justify-between p-5 border border-[#171717] rounded-lg">
             <div className="w-[50%]">
-              <label for="coins" className="block text-[14px] text-[#737373]">
+              {/* <label for="coins" className="block text-[14px] text-[#737373]">
                 I want to donate
-              </label>
-              <select
+              </label> 
+                <select
                 id="coins"
                 className="my-2 flex-col w-fit bg-yellow text-[black] text-bold text-[20px] rounded-lg p-2.5"
               >
@@ -117,7 +116,7 @@ const DonateForm = () => {
                 <option className="pl-3" value="DE">
                   Germany
                 </option>
-              </select>
+              </select> */}
               <p className="mt-9 block text-[12px] text-[#737373]">Approx:</p>
             </div>
             <div className="mt-auto">
@@ -125,12 +124,9 @@ const DonateForm = () => {
               <p className=" mt-9 text-[12px] text-end text-[#737373]">-$0</p>
             </div>
           </div>
-          <button
-            type="submit"
-            className="block w-full bg-yellow mt-5 py-2 rounded-lg  hover:-translate-y-1 transition-all duration-500  mb-2"
-          >
-            send
-          </button>
+          <SubmitBtn type="submit" text="Proceed" />
+
+            { showQRCode && ( <DonateQRCode /> ) }
         </form>
       </motion.div>
       <motion.div
