@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 
 import { lock, coin } from "../../assets";
-import { Form } from "../UI/Form";
+import { Form, IconForm } from "../UI/Form";
 
 import { motion } from "framer-motion";
+import DonateQRCode from "./DonateQRCode";
 const DonateForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
+  const [showQRCode, setShowQRCode] = useState(false);
+
   // const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = (e) => {
@@ -18,6 +21,7 @@ const DonateForm = () => {
       number,
     };
     console.log(filledForm);
+    setShowQRCode(true)
   };
 
 
@@ -32,7 +36,7 @@ const DonateForm = () => {
         whileInView={{ opacity: 1 }}
         className="w-[97%] small_l[95%] mx-auto md:mx-0 md:w-[50%]"
       >
-        <div class="flex items-center mb-4">
+        <div className="flex items-center mb-4">
           <input
             id="default-checkbox"
             type="checkbox"
@@ -57,37 +61,17 @@ const DonateForm = () => {
                 value={name}
                 type="text" 
                 onChangeCallBack={setName}
-                placeholder="your full name" 
+                placeholder="your legal name" 
                 label="Full name"
             />
-            {/* <Form 
+            <Form 
                 value={email}
                 type="email" 
-                onChange={(e) => setEmail(e.target.value)}
+                onChangeCallBack={setEmail}
                 placeholder="We would love to discuss further the terms of partnership" 
                 label="Email address"
-            /> */}
-          {/* 
-          <div className="flex  flex-col  mt-8  py-2">
-            <label className="text-gray-50">Full name</label>
-            <input
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="bg-transparent text-gray-400 placeholder-[#404040] w-full border-[#404040] outline-none p-2 rounded-lg border-2 "
-              type="text"
-              placeholder="your legal name"
             />
-          </div> */}
-          {/* <div className="flex  flex-col  mt-4  py-2">
-            <label className="text-gray-50">Email address</label>
-            <input
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="bg-transparent text-gray-400 placeholder-[#404040] w-full border-[#404040] outline-none p-2 rounded-lg border-2 "
-              type="text"
-              placeholder="We would love to discuss further the terms of partnership"
-            />
-          </div> */}
+        
           <h3 className="text-white font-audio text-2xl my-3 mt-14 flex item-center">
             <img src={lock} alt="lock" />
             <span className="pl-3">Payment methods</span>
@@ -96,17 +80,15 @@ const DonateForm = () => {
             All donation payments are secured and encrypted
           </p>
           <div className="flex relative flex-col  mt-4  py-2">
-            <label className="text-gray-50">Donate Amount</label>
-            <input
-              value={number}
-              onChange={(e) => setNumber(e.target.value)}
-              className="bg-transparent text-gray-400 placeholder-[#404040] w-full border-[#404040] outline-none p-2 rounded-lg border-2 "
-              type="number"
-              placeholder="200,000"
+          <IconForm 
+                value={number}
+                type="number" 
+                onChangeCallBack={setNumber}
+                placeholder="200,000" 
+                label="Donate Amount"
+                icon="$"
             />
-            <div className="text-grey_p flex absolute inset-y-0 right-10 top-6 items-center pl-3 pointer-events-none">
-              $
-            </div>
+            
           </div>
 
           <div className="flex mt-10 justify-between p-5 border border-[#171717] rounded-lg">
@@ -147,6 +129,12 @@ const DonateForm = () => {
           >
             Proceed
           </button>
+
+          {showQRCode && (
+            <DonateQRCode />
+          )
+          
+        }
         </form>
       </motion.div>
       <motion.div
