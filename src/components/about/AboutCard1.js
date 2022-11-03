@@ -9,7 +9,7 @@ const AboutCard1 = ({ aboutImage }) => {
           Oluchi Enebeli
         </h4>
         <p className="text-sm text-[#D4D4D4]">United Kingdom, UK</p>
-        <div className="flex gap-2">
+        <div className="flex gap-2 mt-2">
           <BsTwitter color="#fff" />
           <AiFillLinkedin color="#fff" />
         </div>
