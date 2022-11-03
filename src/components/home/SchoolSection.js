@@ -9,7 +9,7 @@ const SchoolSection = () => {
     <motion.div
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
       transition={{ duration: 0.5 }}
-      className="mt-16 px-3 sm:px-6 max-w-[1240px] mx-auto"
+      className="mt-[85px] px-3 sm:px-6 max-w-[1240px] mx-auto"
     >
       <div className=" flex gap-5 justify-center flex-wrap ">
         <div
@@ -27,7 +27,7 @@ const SchoolSection = () => {
         {schoolData.length > 0 &&
           schoolData.map((data) => <SchoolCard key={data.name} {...data} />)}
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-[46px]">
         <LinkButton text="View more" url="/program" />
       </div>
     </motion.div>

@@ -7,7 +7,7 @@ const InitiativeSection = () => {
     <motion.div
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
       transition={{ duration: 0.5 }}
-      className="px-3 mt-20 sm:px-6 max-w-[1240px] mx-auto"
+      className="px-3 mt-[86px] sm:px-6 max-w-[1240px] mx-auto"
     >
       <div className=" max-w-[534px] ">
         <h3 className="font-audio text-4xl  md:text-7xl text-head_white">
@@ -19,7 +19,7 @@ const InitiativeSection = () => {
         </p>
       </div>
       {initiativeData.length > 0 && (
-        <div className="mt-14   flex gap-4 justify-between flex-wrap">
+        <div className="mt-[40px]   flex gap-4 justify-between flex-wrap">
           {initiativeData.map((data) => (
             <InitiativeCard key={data.title} {...data} />
           ))}

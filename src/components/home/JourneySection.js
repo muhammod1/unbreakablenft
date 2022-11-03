@@ -15,7 +15,7 @@ const JourneySection = () => {
         <span className="block 4xl:inline">The Unbroken</span> Roadmap
       </h3>
       {journeyData.length > 0 && (
-        <div className="mt-14 ">
+        <div className="mt-[78px] ">
           <div className="">
             {journeyData.map((data, index) => (
               <JourneyCard key={data.title} {...data} index={index} />
