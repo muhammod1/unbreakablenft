@@ -139,23 +139,7 @@ export const currentEventData = [
   },
 ];
 
-export const comunityIcon = [
-  {
-    icon: "",
-    center: "Twitter Spaces",
-    
-  },
-  {
-    icon: "",
-    center: "Twitter Spaces",
-    
-  },
-  {
-    icon: "",
-    center: "Twitter Spaces",
-   
-  },
-]
+
 
 export const pastEventData = [
   {
