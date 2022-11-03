@@ -21,7 +21,9 @@ const HomeHeader = () => {
       <div className="flex-1 w-full">
         {/* <div className="hidden sm:block"></div> */}
         {/* <img className=" w-full" src={motion} alt="motion" /> */}
-        <iframe
+        <motion.iframe
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           className="w-full"
           height="415"
           src="https://www.youtube.com/embed/QsEKICkpQBI"

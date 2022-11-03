@@ -16,8 +16,8 @@ const Community = () => {
     <>
       {/* community section  */}
       <motion.div
-        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-        transition={{ duration: 0.5 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         className="mt-14 flex-col scrollbar-hide px-3 sm:px-6 max-w-[1240px] mx-auto overflow-y-auto"
       >
         <p className="text-[#737373] text-lg">Our Community</p>
