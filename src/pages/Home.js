@@ -7,6 +7,7 @@ import {
   HomeHeader,
   InitiativeSection,
   JourneySection,
+  LinkButton,
   NftHomeCardSection,
   SchoolSection,
   Sponsors,
@@ -46,12 +47,13 @@ const Home = () => {
             on, “Unbroken” is borne out of a deep yearning to comfort, rebuild
             and uphold the suppressed.
           </p>
-          <Link
+          {/* <Link
             to="/roadmap"
             className="bg-yellow flex justify-center items-center w-32 p-3 mt-10 sm:mt-12 md:mt-14 rounded-[5px] text-black-200"
           >
             Learn More
-          </Link>
+          </Link> */}
+          <LinkButton text="Learn More" url="/roadmap" />
         </div>
       </motion.div>
       {/* initiative section   */}
