@@ -41,9 +41,9 @@ const Contact = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        className="flex w-full lg:w-1/2 justify-center  "
+        className="flex w-full lg:w-1/2 justify-center items-center  "
       >
-        <div className="w-full px-4 small:px-6 mx-auto">
+        <div className="w-full px-4 small:px-6 mx-auto my">
           <form className=" max-w-[600px]" onSubmit={handleSubmit}>
             <h1 className="text-yellow text-[32px] font-audio">Contact us</h1>
             <p className=" text-grey_p">
