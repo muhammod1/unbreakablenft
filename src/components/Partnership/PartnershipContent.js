@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const PartnershipContent = () => {
   return (
     <div className='py-20'>
-        <div className='w-fit flex flex-col gap-[25px] mobile:flex-row-reverse mx-auto'>
+        <div className='w-full flex flex-col gap-[25px] mobile:flex-row-reverse mx-auto'>
             <div className='mobile:w-[40%] m-auto h-fit p-5 bg-[#171717] rounded-md'>
                 <h1 className="w-full  text-[#FFD700] text-[28px] font-audio ">
                     <span className="block">Donate to Anti-bullying</span>{" "}
@@ -12,7 +12,7 @@ const PartnershipContent = () => {
                 <p className="h-fit  my-4 text-[#D4D4D4] my-auto text-[13px]">
                     Want to be part of something great?
                 </p>
-                <Link to="/donation">
+                <Link to="/donate">
                 <button className='h-fit w-full my-auto bg-[#FFD700] py-2 px-2 text[#D4D4D4] text-[13px] rounded'>
                     Donate
                 </button>

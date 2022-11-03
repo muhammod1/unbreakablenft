@@ -2,7 +2,7 @@ import React from "react";
 
 const PartnerHero = () => {
   return (
-    <div className="w-[90%] mt-[60px] mobile:mt-[80px]  mx-auto md:mx-0 md:w-[70%]">
+    <div className="w-full mt-[60px] mobile:mt-[80px]  mx-auto md:mx-0 md:w-[70%]">
       <h3 className="text-white font-audio text-2xl small_l:text-[265%] small_l:leading-[121%]  md:text-[65px]">
         <span className="block">Why Unbroken</span>{" "}
       </h3>

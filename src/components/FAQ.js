@@ -49,7 +49,9 @@ const FAQ = () => {
       <div className="mt-6 w-full  max-w-[802px] mx-auto">
         {fnqData.length > 0 &&
           fnqData.map(({ question, answer, id, isOpen }) => (
-            <>
+            <div
+            key={id}
+            >
               <div
                 onClick={() => handleToggle(id)}
                 className=" w-full mt-10 cursor-pointer  flex justify-between items-center"
@@ -72,7 +74,7 @@ const FAQ = () => {
                   <p className="text-[#525252]  ">{answer}</p>
                 </motion.div>
               )}
-            </>
+            </div>
           ))}
       </div>
     </div>
