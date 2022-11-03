@@ -23,7 +23,7 @@ const PartnershipContent = () => {
           </Link>
         </div>
 
-        <p className="mobile:w-[60%] text-[#D4D4D4] text-[13px]">
+        <p className="mobile:w-[60%] text-[#D4D4D4] text-[16px]">
           The Centers for Disease Control and Prevention(CDC) reports that
           bullying is a problem that occurs at least once a week in nearly 14%
           of public schools. International research carried out by P.K. Smith et
