@@ -1,34 +1,40 @@
 import React from "react";
-import { BiPlayCircle } from "react-icons/bi";
+
 import { Link } from "react-router-dom";
-import { motion, nftrobot } from "../assets";
-import { initiativeData, journeyData, schoolData } from "../assets/data";
-import { cardData } from "../assets/NftsData";
+
 import {
   FAQ,
   HomeHeader,
-  InitiativeCard,
   InitiativeSection,
-  JourneyCard,
   JourneySection,
-  LinkButton,
-  NftCard1,
   NftHomeCardSection,
-  SchoolCard,
   SchoolSection,
   Sponsors,
 } from "../components";
+import { motion } from "framer-motion";
 const Home = () => {
   return (
     <div className="scrollbar-hide bg-vector1   overflow-y-auto">
       {/* <div className="bg-vector1 hidden md:block w-[1055px]  h-[3196px]  top-14 fixed left-80   -z-10 "></div> */}
-      <div className="ellipse1 hidden md:block"></div>
-      <div className="ellipse2 hidden lg:block"></div>
+      <motion.div
+        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{ duration: 0.5 }}
+        className="ellipse1 hidden md:block"
+      ></motion.div>
+      {/* <motion.div
+        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{ duration: 0.5 }}
+        className="ellipse2 hidden lg:block"
+      ></motion.div> */}
       {/* header section   */}
       <HomeHeader />
       {/* //nft display card section */}
       <NftHomeCardSection />
-      <div className="mt-14 mx-2  small: flex">
+      <motion.div
+        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{ duration: 0.5 }}
+        className="mt-14 mx-2  small: flex"
+      >
         <div className="hidden sm:block flex-1 w-full"></div>
         <div className="w-full small:w-[662px] flex flex-col justify-start flex-1  relative">
           <div className="-z-20 ellipse3"></div>
@@ -47,7 +53,7 @@ const Home = () => {
             Learn More
           </a>
         </div>
-      </div>
+      </motion.div>
       {/* initiative section   */}
       <InitiativeSection />
       {/* Journey section  */}
@@ -58,7 +64,11 @@ const Home = () => {
       <Sponsors />
       {/* Frequently Asked section   */}
       <FAQ />
-      <div className="px-3 sm:px-6 max-w-[1240px] mx-auto ">
+      <motion.div
+        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{ duration: 0.5 }}
+        className="px-3 sm:px-6 max-w-[1240px] mx-auto "
+      >
         <div className="mt-14 px-3 flex flex-col sm:flex-row justify-between gap-2 py-2  rounded-md items-center  min-h-[110px] bg-yellow ">
           <div className="flex flex-col lg:gap-10 lg:flex-row lg:justify-between lg:items-center">
             <h4 className="font-audio text-2xl">
@@ -76,7 +86,7 @@ const Home = () => {
             Join Discord
           </Link>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

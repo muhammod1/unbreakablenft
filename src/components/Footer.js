@@ -3,9 +3,14 @@ import { BsTwitter } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { facebookIcon, instagramIcon, logo } from "../assets";
+import { motion } from "framer-motion";
 const Footer = () => {
   return (
-    <div className="pb-8  mt-24  flex flex-col items-center">
+    <motion.div
+      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      transition={{ duration: 0.5 }}
+      className="pb-8  mt-24  flex flex-col items-center"
+    >
       <div className="px-3 sm:px-6 max-w-[1240px] mx-auto">
         <div className="flex gap-5 justify-center flex-wrap md:flex-nowrap flex-col md:flex-row  w-full">
           <div className="w-full mb-8 flex sm:items-center flex-col md:w-1/2">
@@ -98,7 +103,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

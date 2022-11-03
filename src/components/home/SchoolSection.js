@@ -2,10 +2,14 @@ import React from "react";
 import { schoolData } from "../../assets/data";
 import LinkButton from "../LinkButton";
 import SchoolCard from "./SchoolCard";
-
+import { motion } from "framer-motion";
 const SchoolSection = () => {
   return (
-    <div className="mt-16 px-3 sm:px-6 max-w-[1240px] mx-auto">
+    <motion.div
+      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      transition={{ duration: 0.5 }}
+      className="mt-16 px-3 sm:px-6 max-w-[1240px] mx-auto"
+    >
       <div className=" flex gap-5 justify-center flex-wrap ">
         <div
           className=" max-w-[378px] flex md:items-center
@@ -25,7 +29,7 @@ const SchoolSection = () => {
       <div className="flex justify-center">
         <LinkButton text="View more" url="#" />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

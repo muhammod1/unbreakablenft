@@ -2,9 +2,14 @@ import React from "react";
 import { BiPlayCircle } from "react-icons/bi";
 import { schoolBatch, schoolImage } from "../../assets";
 import { motion } from "framer-motion";
+
 const SchoolCard = ({ photo, videoLink }) => {
   return (
-    <div className="p-4 group w-full  bg-no-repeat transition-all duration-500 hover:scale-105 ease-in-out bg-cover small_l:w-[361px] h-60 small_l:h-[387px]  overflow-hidden flex-shrink-0 rounded-md relative">
+    <motion.div
+      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      transition={{ duration: 0.5 }}
+      className="p-4 group w-full  bg-no-repeat transition-all duration-500 hover:scale-105 ease-in-out bg-cover small_l:w-[361px] h-60 small_l:h-[387px]  overflow-hidden flex-shrink-0 rounded-md relative"
+    >
       <div className="flex flex-col justify-between h-full">
         <div className="w-12 small_l:w-[78px]">
           <img src={schoolBatch} />
@@ -28,15 +33,13 @@ const SchoolCard = ({ photo, videoLink }) => {
         className="w-full group-hover:hidden -z-10  absolute inset-0"
       />
       <motion.img
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        exit={{ opacity: 1 }}
+        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{ duration: 0.5 }}
         src={schoolImage}
         alt="schoolimages"
         className="w-full hidden group-hover:block -z-10  absolute inset-0"
       />
-    </div>
+    </motion.div>
   );
 };
 

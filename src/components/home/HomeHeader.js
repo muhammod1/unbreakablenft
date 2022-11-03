@@ -1,8 +1,12 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const HomeHeader = () => {
   return (
-    <div className="mt-16 md:mt-24 px-3 sm:px-6 max-w-[1240px] mx-auto  flex gap-8 flex-col items-center sm:flex-row justify-between flex-wrap md:flex-nowrap">
+    <motion.div
+      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      transition={{ duration: 0.5 }}
+      className="mt-16 md:mt-24 px-3 sm:px-6 max-w-[1240px] mx-auto  flex gap-8 flex-col items-center sm:flex-row justify-between flex-wrap md:flex-nowrap"
+    >
       <div className="flex flex-col flex-1 w-full justify-end">
         <h3 className="text-white font-audio   small:text-[55px] leading-[110%]  xl:text-9xl ">
           <span className="block">Unbroken</span>{" "}
@@ -26,7 +30,7 @@ const HomeHeader = () => {
           title="Embedded youtube"
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
