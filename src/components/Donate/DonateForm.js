@@ -11,8 +11,6 @@ const DonateForm = () => {
   const [number, setNumber] = useState("");
   const [showQRCode, setShowQRCode] = useState(false);
 
-  // const [isLoading, setIsLoading] = useState(false);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     let filledForm = {
