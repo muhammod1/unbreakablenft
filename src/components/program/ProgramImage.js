@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { leftArrow, rightArrow, cancle } from "../../assets";
+import { leftArrow, rightArrow } from "../../assets";
 
 import { motion } from "framer-motion";
 

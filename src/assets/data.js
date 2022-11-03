@@ -2,7 +2,6 @@ import {
   board,
   cctv,
   eventscard,
-  ard,
   mic,
   schoolBatch,
   schoolImage,
