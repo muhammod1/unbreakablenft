@@ -128,11 +128,7 @@ const DonateForm = () => {
           </div>
           <SubmitBtn type="submit" text="Proceed" />
 
-          {showQRCode && (
-            <DonateQRCode />
-          )
-          
-        }
+            { showQRCode && ( <DonateQRCode /> ) }
         </form>
       </motion.div>
       <motion.div
