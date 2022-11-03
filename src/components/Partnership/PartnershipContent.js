@@ -6,10 +6,10 @@ const PartnershipContent = () => {
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      className="py-20"
+      className="pt-16 pb-12"
     >
-      <div className="w-full flex flex-col gap-[25px] mobile:flex-row-reverse mx-auto">
-        <div className="mobile:w-[40%] m-auto h-fit p-5 bg-[#171717] rounded-md">
+      <div className="w-full flex flex-col  gap-[25px] mobile_l:flex-row-reverse mx-auto">
+        <div className="mobile_l:w-[450px] w-full mobile:w-[85%]  mobile_l:m-auto h-fit p-5 bg-[#171717] rounded-md">
           <h1 className="w-full  text-[#FFD700] text-[28px] font-audio ">
             <span className="block">Donate to Anti-bullying</span>{" "}
           </h1>
@@ -23,7 +23,7 @@ const PartnershipContent = () => {
           </Link>
         </div>
 
-        <p className="mobile:w-[60%] text-[#D4D4D4] text-[13px]">
+        <p className="mobile_l:w-[60%] text-[#D4D4D4] text-[16px]">
           The Centers for Disease Control and Prevention(CDC) reports that
           bullying is a problem that occurs at least once a week in nearly 14%
           of public schools. International research carried out by P.K. Smith et

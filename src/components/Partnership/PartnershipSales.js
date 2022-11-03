@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import ProgramModal from "./PartnershipModal";
 import { motion } from "framer-motion";
+import PartnershipModal from "./PartnershipModal";
 const PartnershipSales = ({ title, desc, buttonText }) => {
   const [showModal, setShowModal] = useState(false);
 
@@ -10,7 +10,7 @@ const PartnershipSales = ({ title, desc, buttonText }) => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        className="mt-14 flex flex-col sm:flex-row justify-between gap-2 px-4 py-2 sm:px-6 rounded-md items-center mx-2 min-h-[110px] bg-yellow"
+        className="flex flex-col sm:flex-row justify-between gap-2 px-4 py-2 sm:px-6 rounded-md items-center mx-2 min-h-[110px] bg-yellow"
       >
         <div className="flex flex-col lg:gap-10 lg:flex-row lg:justify-between lg:items-center">
           <h4 className="font-audio text-2xl">
@@ -26,7 +26,7 @@ const PartnershipSales = ({ title, desc, buttonText }) => {
         </button>
       </motion.div>
 
-      {showModal ? <ProgramModal setShowModal={setShowModal} /> : null}
+      {showModal ? <PartnershipModal setShowModal={setShowModal} /> : null}
     </div>
   );
 };
