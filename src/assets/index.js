@@ -71,18 +71,24 @@ import m4Complete from "./m4Complete.svg";
 import m5Complete from "./m5Complete.svg";
 import m6Complete from "./m6Complete.svg";
 
-import schPic1 from "./schPic1.png";
-import schPic2 from "./schPic2.png";
-import schPic3 from "./schPic3.png";
-import schPic4 from "./schPic4.png";
+import schPic1 from "./schPic1.jpg";
+import schPic2 from "./schPic2.jpg";
+import schPic3 from "./schPic3.jpg";
+import schPic4 from "./schPic4.jpg";
 import schPic5 from "./schPic5.png";
 import thunder from "./thunder.svg";
+
+import lock from "./lock.svg";
+import coin from "./coin.svg";
 
 import facebookIcon from "./facebookicon.png";
 import linkedinIcon from "./linkedinicon.png";
 import twitterIcon from "./twitterIcon.png";
 import instagramIcon from "./instagramicon.png";
 export {
+  lock,
+  coin,
+  
   schPic1,
   schPic2,
   schPic3,

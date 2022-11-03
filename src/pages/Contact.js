@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Submit } from "../components/UI/Form";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -84,7 +85,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="block w-full text-sm  bg-yellow mt-5 py-2 rounded-lg  hover:-translate-y-1 transition-all duration-500  mb-2"
+              className="block w-full c  bg-yellow mt-5 py-2 rounded-lg  hover:-translate-y-1 transition-all duration-500  mb-2"
             >
               send
             </button>
