@@ -53,14 +53,22 @@ const DonateForm = () => {
           All donation payments are secured and encrypted
         </p>
         <form onSubmit={handleSubmit}>
-            <Form 
+            <Form
                 value={name}
                 type="text" 
-                onChange={(e) => setName(e.target.value)}
+                onChangeCallBack={setName}
                 placeholder="your full name" 
                 label="Full name"
             />
-          {/* <div className="flex  flex-col  mt-8  py-2">
+            {/* <Form 
+                value={email}
+                type="email" 
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="We would love to discuss further the terms of partnership" 
+                label="Email address"
+            /> */}
+          {/* 
+          <div className="flex  flex-col  mt-8  py-2">
             <label className="text-gray-50">Full name</label>
             <input
               value={name}
@@ -70,7 +78,7 @@ const DonateForm = () => {
               placeholder="your legal name"
             />
           </div> */}
-          <div className="flex  flex-col  mt-4  py-2">
+          {/* <div className="flex  flex-col  mt-4  py-2">
             <label className="text-gray-50">Email address</label>
             <input
               value={email}
@@ -79,7 +87,7 @@ const DonateForm = () => {
               type="text"
               placeholder="We would love to discuss further the terms of partnership"
             />
-          </div>
+          </div> */}
           <h3 className="text-white font-audio text-2xl my-3 mt-14 flex item-center">
             <img src={lock} alt="lock" />
             <span className="pl-3">Payment methods</span>
@@ -88,7 +96,7 @@ const DonateForm = () => {
             All donation payments are secured and encrypted
           </p>
           <div className="flex relative flex-col  mt-4  py-2">
-            <label className="text-gray-50">Email address</label>
+            <label className="text-gray-50">Donate Amount</label>
             <input
               value={number}
               onChange={(e) => setNumber(e.target.value)}
