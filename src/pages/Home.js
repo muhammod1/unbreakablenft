@@ -47,7 +47,7 @@ const Home = () => {
             and uphold the suppressed.
           </p>
           <Link
-            to="/"
+            to="/roadmap"
             className="bg-yellow flex justify-center items-center w-32 p-3 mt-10 sm:mt-12 md:mt-14 rounded-lg text-black-200"
           >
             Learn More
@@ -80,7 +80,7 @@ const Home = () => {
             </p>
           </div>
           <Link
-            to=""
+            to="/community"
             className="bg-[#262626] w-full text-center sm:w-fit p-3 rounded-md text-yellow text-sm"
           >
             Join Discord

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 const HomeHeader = () => {
   return (
     <motion.div
@@ -13,9 +14,12 @@ const HomeHeader = () => {
           <span className="block md:inline">Against</span> bullying
         </h3>
         <div className="mt-6 flex flex-col small:flex-row small:items-center">
-          <button className="bg-yellow text-black-200 p-1 px-3  rounded-md mr-4">
+          <Link
+            to="/nfts"
+            className="bg-yellow text-black-200 p-1 px-3  rounded-md mr-4"
+          >
             Discover NFTs
-          </button>
+          </Link>
         </div>
       </div>
       <div className="flex-1 w-full">
