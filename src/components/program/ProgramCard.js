@@ -30,7 +30,7 @@ const ProgramCard = ({ schoolDetails }) => {
               key={data.id}
               className="max-w-[1240px] md:mx-auto border-b border-[#171717]"
             >
-              <div className="w-full small_l:mx-auto  mobile:w-[350px] md:w-full  py-[40px] flex flex-col md:gap-5 md:flex-row justify-center">
+              <div className=" w-full small_l:mx-auto  mobile:w-[350px] md:w-full  pt-[40px] flex flex-col md:gap-5 md:flex-row justify-center">
                 <div className="my-auto md:w-[10%]">
                   <img src={data.number} alt="number" />
                   <p className="text-[#737373] my-2">{data.institute}</p>
