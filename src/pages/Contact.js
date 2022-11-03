@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Submit } from "../components/UI/Form";
 
 const Contact = () => {
   const [name, setName] = useState("");

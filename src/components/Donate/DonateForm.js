@@ -1,7 +1,5 @@
 import React, {useState} from 'react'
 
-import { Submit } from '../UI/Form';
-
 import { lock, coin } from '../../assets';
 
 const DonateForm = () => {
