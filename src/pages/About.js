@@ -25,7 +25,7 @@ const About = () => {
           overcoming the pains they went through.
         </p>
 
-        <div className="mt-8 hidden sm:block">
+        <div className="mt-20 hidden sm:block">
           <p className="text-[#D4D4D4] text-lg ">
             This fictional story was created from the results of our survey,
             which was conducted in February 2022. We received over 450 responses
@@ -79,7 +79,7 @@ const About = () => {
       <motion.div
         whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
         transition={{ duration: 0.5 }}
-        className="mt-14 flex max-w-[1120px]  mx-auto gap-4 flex-col sm:items-end sm:flex-row"
+        className="mt-24 flex max-w-[1120px]  mx-auto gap-4 flex-col sm:items-end sm:flex-row"
       >
         <div className=" w-full h-109px sm:w-[70%]">
           <h4 className=" small:text-[28px] sm:text-[40px] font-audio  text-head_white">

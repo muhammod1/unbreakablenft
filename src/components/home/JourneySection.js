@@ -8,14 +8,14 @@ const JourneySection = () => {
     <motion.div
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
       transition={{ duration: 0.5 }}
-      className=" mt-14  px-3 sm:px-6 max-w-[1240px] mx-auto"
+      className=" mt-[85px]  px-3 sm:px-6 max-w-[1240px] mx-auto"
     >
       <p className="text-[#737373] text-lg">Our Journey starts here</p>
       <h3 className="text-head_white font-audio text-3xl small_l:text-[40px] sm:text-7xl mt-2">
         <span className="block 4xl:inline">The Unbroken</span> Roadmap
       </h3>
       {journeyData.length > 0 && (
-        <div className="mt-14 ">
+        <div className="mt-[78px] ">
           <div className="">
             {journeyData.map((data, index) => (
               <JourneyCard key={data.title} {...data} index={index} />

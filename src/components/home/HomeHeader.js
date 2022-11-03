@@ -16,7 +16,7 @@ const HomeHeader = () => {
         <div className="mt-6 flex flex-col small:flex-row small:items-center">
           <Link
             to="/nfts"
-            className="bg-yellow text-black-200 p-1 px-3  rounded-md mr-4"
+            className="bg-yellow text-black-200 p-3 px-3  rounded-[5px]"
           >
             Discover NFTs
           </Link>

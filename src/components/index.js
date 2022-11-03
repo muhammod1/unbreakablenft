@@ -9,7 +9,7 @@ export { default as JourneyCard } from "./home/JourneyCard";
 export { default as RoadmapCard } from "./roadmap/RoadmapCard";
 
 export { default as SchoolCard } from "./home/SchoolCard";
-export { default as LinkButton } from "./LinkButton";
+export { default as LinkButton } from "./UI/LinkButton";
 export { default as Sponsors } from "./home/Sponsors";
 export { default as FAQ } from "./FAQ";
 export { default as EventCard } from "./events/EventCard";

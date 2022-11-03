@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 // import { Submit } from "../components/UI/Form";
+
+import { Form, SubmitBtn, Textarea } from "../components/UI/Form";
 import { motion } from "framer-motion";
 const Contact = () => {
   const [name, setName] = useState("");
@@ -39,62 +41,48 @@ const Contact = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        className="flex w-full lg:w-1/2 justify-center  "
+        className="flex w-full lg:w-1/2 justify-center items-center  "
       >
-        <div className="w-full px-4 small:px-6 mx-auto">
+        <div className="w-full px-4 small:px-6 mx-auto my">
           <form className=" max-w-[600px]" onSubmit={handleSubmit}>
             <h1 className="text-yellow text-[32px] font-audio">Contact us</h1>
             <p className=" text-grey_p">
               Want to become a partner or have a story to share?
             </p>
-            <div className="flex  flex-col  mt-8  py-2 px-3 ">
-              <label className="text-gray-50">Full name</label>
-              <input
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                className="bg-transparent text-gray-400 placeholder-[#404040] w-full border-[#404040] outline-none p-2 rounded-lg border-2 "
-                type="text"
-                placeholder="your legal name"
+            <Form
+              value={name}
+              type="text" 
+              required="required"
+              onChangeCallBack={setName}
+              placeholder="your legal name" 
+              label="Full name"
+            />
+            
+            <Form
+              value={email}
+              required="required"
+              type="email" 
+              onChangeCallBack={setEmail}
+              placeholder="We would love to discuss further the terms of partnership"
+              label="Email address"
               />
-            </div>
-            <div className="flex  flex-col  mt-4  py-2 px-3 ">
-              <label className="text-gray-50">Email address</label>
-              <input
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="bg-transparent text-gray-400 placeholder-[#404040] w-full border-[#404040] outline-none p-2 rounded-lg border-2 "
-                type="text"
-                placeholder="We would love to discuss further the terms of partnership"
-              />
-            </div>
-            <div className="flex  flex-col  mt-4  py-2 px-3 ">
-              <label className="text-gray-50">Organization</label>
-              <input
-                value={org}
-                onChange={(e) => setOrg(e.target.value)}
-                className="bg-transparent text-gray-400 placeholder-[#404040] w-full border-[#404040] outline-none p-2 rounded-lg border-2 "
-                type="text"
-                placeholder="org name if any*"
-              />
-            </div>
-            <div className="flex  flex-col  mt-4 mb-8 py-2 px-3 ">
-              <label className="text-gray-50">Message</label>
-              <textarea
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                rows="4"
-                className="bg-transparent text-gray-400 placeholder-[#404040] w-full border-[#404040] outline-none p-2 rounded-lg border-2 "
-                type="text"
-                placeholder="write to us"
-              />
-            </div>
 
-            <button
-              type="submit"
-              className="block w-full c  bg-yellow mt-5 py-2 rounded-lg  hover:-translate-y-1 transition-all duration-500  mb-2"
-            >
-              send
-            </button>
+            <Form
+              value={org}
+              type="text" 
+              onChangeCallBack={setOrg}
+              placeholder="org name if any*"
+              label="Organization"
+            />
+
+            <Textarea 
+              value={message}
+              type="text" 
+              placeholder="write to us" 
+              label="Message" 
+              onChangeCallBack={setMessage}
+            />
+            <SubmitBtn type="submit" text="Send" />
           </form>
         </div>
       </motion.div>

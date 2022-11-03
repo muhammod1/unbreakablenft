@@ -38,7 +38,7 @@ const ProgramImage = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="my-[40px]"
+      className=" mb-[40px]"
     >
       {openModal && (
         <div className="sliderWrap">

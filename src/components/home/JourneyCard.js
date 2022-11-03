@@ -10,7 +10,7 @@ const JourneyCard = ({ title, isaActive, desc, version, year, index }) => {
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
       transition={{ duration: 0.5 }}
     >
-      <div className=" flex justify-between items-start gap-5 my-10">
+      <div className=" flex justify-between items-start gap-5 my-[74px]">
         <div className="max-w-full small:max-w-[1039px] flex md:items-center flex-col md:flex-row gap-2 md:gap-9">
           <div className="min-w-[83px] mb-8 md:mb-0">
             <h3 className="text-yellow font-audio  text-[32px]">{version}</h3>

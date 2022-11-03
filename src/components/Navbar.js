@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav
       className={`w-full  ${
-        navbar && "bg-[#0c0809] h-screen "
+        navbar && "bg-[#0c0809] p-8"
       }  mx-auto top-0 md:h-auto max-w-[1240px]`}
     >
       <div className="justify-between   mx-auto  md:items-center md:flex px-3 sm:px-6 ">
@@ -43,20 +43,20 @@ const Navbar = () => {
               navbar ? "block" : "hidden"
             }`}
           >
-            <ul className=" items-center justify-center  lg:gap-2  space-y-12 md:flex md:space-x-1 lg:space-x-4 md:space-y-0">
+            <ul className=" mt-10 md:mt-0 items-center justify-center  lg:gap-2  space-y-8 md:flex md:space-x-1 lg:space-x-4 md:space-y-0">
               <li
                 onClick={() => setNavbar(false)}
-                className="text-[#E5E5E5] text-lg md:text-sm"
+                className="text-[#E5E5E5] text-[28px] md:text-sm"
               >
                 <Link to="nfts">UnbrokenNFTs</Link>
               </li>
               <li
                 onClick={() => setNavbar(false)}
-                className="text-[#E5E5E5]  text-lg md:text-sm"
+                className="text-[#E5E5E5]  text-[28px] md:text-sm"
               >
-                <Link to="/roadmap">Readmap</Link>
+                <Link to="/roadmap">Roadmap</Link>
               </li>
-              <li className="group relative inline-block  text-[#E5E5E5] text-lg md:text-sm">
+              <li className="group relative inline-block  text-[#E5E5E5] text-[28px] md:text-sm">
                 <button className="flex items-center rounded py-2 ">
                   Programmes
                   <BsChevronDown className="ml-1" />
@@ -82,13 +82,13 @@ const Navbar = () => {
               </li>
               <li
                 onClick={() => setNavbar(false)}
-                className="flex items-center md:justify-center  text-[#E5E5E5] text-lg md:text-sm"
+                className="flex items-center md:justify-center  text-[#E5E5E5] text-[28px] md:text-sm"
               >
                 <Link className="" to="/partnership">
                   Partnership
                 </Link>
               </li>
-              <li className="group relative inline-block  text-[#E5E5E5] text-lg md:text-sm">
+              <li className="group relative inline-block  text-[#E5E5E5] text-[28px] md:text-sm">
                 <button className="flex items-center rounded py-2 ">
                   About
                   <BsChevronDown className="ml-1" />

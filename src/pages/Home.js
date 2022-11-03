@@ -7,6 +7,7 @@ import {
   HomeHeader,
   InitiativeSection,
   JourneySection,
+  LinkButton,
   NftHomeCardSection,
   SchoolSection,
   Sponsors,
@@ -33,7 +34,7 @@ const Home = () => {
       <motion.div
         whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
         transition={{ duration: 0.5 }}
-        className="mt-14 mx-2  small: flex"
+        className="mt-24 mx-2  small: flex"
       >
         <div className="hidden sm:block flex-1 w-full"></div>
         <div className="w-full small:w-[662px] flex flex-col justify-start flex-1  relative">
@@ -41,17 +42,14 @@ const Home = () => {
           <p className="text-head_white text-4xl font-audio  small:text-5xl  sm:leading-[79px] sm:text-[72px]">
             <span className="block ">We are</span> Unbroken
           </p>
-          <p className="mt-4 text-grey_p">
+          <p className="mt-3 text-grey_p">
             In a world where the “weak” are constantly oppressed and looked down
             on, “Unbroken” is borne out of a deep yearning to comfort, rebuild
             and uphold the suppressed.
           </p>
-          <Link
-            to="/roadmap"
-            className="bg-yellow flex justify-center items-center w-32 p-3 mt-10 sm:mt-12 md:mt-14 rounded-lg text-black-200"
-          >
-            Learn More
-          </Link>
+          <div className="mt-[45px]">
+            <LinkButton text="Learn More" url="/roadmap" />
+          </div>
         </div>
       </motion.div>
       {/* initiative section   */}
@@ -69,9 +67,9 @@ const Home = () => {
         transition={{ duration: 0.5 }}
         className="px-3 sm:px-6 max-w-[1240px] mx-auto "
       >
-        <div className="mt-14 px-3 flex flex-col sm:flex-row justify-between gap-2 py-2  rounded-md items-center  min-h-[110px] bg-yellow ">
+        <div className="mt-[112px] px-3 flex flex-col sm:flex-row justify-between gap-2 py-2  rounded-md items-center  min-h-[110px] bg-yellow ">
           <div className="flex flex-col lg:gap-10 lg:flex-row lg:justify-between lg:items-center">
-            <h4 className="font-audio text-2xl">
+            <h4 className="font-audio mx-8 text-2xl">
               <span className="inline sm:block">Become an</span> Unbroken
             </h4>
             <p className="text-[#262626] max-w-[583px] w-full text-lg">

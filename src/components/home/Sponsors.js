@@ -6,10 +6,10 @@ const Sponsors = () => {
     <motion.div
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
       transition={{ duration: 0.5 }}
-      className="mt-16 px-3 sm:px-6 max-w-[1240px] mx-auto flex flex-col justify-center items-center"
+      className="mt-[85px] px-3 sm:px-6 max-w-[1240px] mx-auto flex flex-col justify-center items-center"
     >
       <p className="text-grey_p text-xl font-audio">Unbroken Sponsors</p>
-      <div className="flex gap-9 items-center justify-center flex-wrap">
+      <div className="flex gap-9 mt-2 items-center justify-center flex-wrap">
         <img src={company1} alt="company logo1" />
         <img src={company2} alt="company logo2" />
         <img src={company3} alt="company logo3" />
