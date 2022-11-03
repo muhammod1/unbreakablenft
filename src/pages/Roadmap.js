@@ -18,38 +18,50 @@ const Roadmap = () => {
             <img src={unionFill} className="w-183px h-[281px]" alt="union" />
           </div>
           <div className="hidden z-40 absolute top-[288px] left-[50px]  lg_l:block">
-            <img
-              src={unionUnFill}
-              className="w-183px h-[280px]"
-              alt="un fill union"
-            />
-            {/* <img src={unionFill} className="w-183px h-[280px]" alt="union" /> */}
+            {roadmapData[2].isCompleted ? (
+              <img src={unionFill} className="w-183px h-[280px]" alt="union" />
+            ) : (
+              <img
+                src={unionUnFill}
+                className="w-183px h-[280px]"
+                alt="un fill union"
+              />
+            )}
           </div>
           <div className="hidden z-30 absolute top-[499px] left-[50px]  lg_l:block">
-            <img
-              src={unionUnFill}
-              className="w-183px h-[280px]"
-              alt="un fill union"
-            />
-            {/* <img src={unionFill} className="w-183px h-[281px]" alt="union" /> */}
+            {roadmapData[3].isCompleted ? (
+              <img src={unionFill} className="w-183px h-[280px]" alt="union" />
+            ) : (
+              <img
+                src={unionUnFill}
+                className="w-183px h-[280px]"
+                alt="un fill union"
+              />
+            )}
           </div>
           <div className="hidden z-10 absolute bottom-[297px] left-[50px]  lg_l:block">
-            <img
-              src={unionUnFill}
-              className="w-183px h-[280px]"
-              alt="un fill union"
-            />
-            {/* <img src={unionFill} className="w-184px h-[280px]" alt="union" /> */}
+            {roadmapData[4].isCompleted ? (
+              <img src={unionFill} className="w-183px h-[280px]" alt="union" />
+            ) : (
+              <img
+                src={unionUnFill}
+                className="w-183px h-[280px]"
+                alt="un fill union"
+              />
+            )}
           </div>
 
           {/* together */}
           <div className="hidden absolute bottom-[86px] left-[50px]  lg_l:block">
-            <img
-              src={unionUnFill}
-              className="w-183px h-[280px]"
-              alt="un fill union"
-            />
-            {/* <img src={unionFill} className="w-183px h-[281px]" alt="union" /> */}
+            {roadmapData[5].isCompleted ? (
+              <img src={unionFill} className="w-183px h-[280px]" alt="union" />
+            ) : (
+              <img
+                src={unionUnFill}
+                className="w-183px h-[280px]"
+                alt="un fill union"
+              />
+            )}
           </div>
 
           {roadmapData.length > 0 && (

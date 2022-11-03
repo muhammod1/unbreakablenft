@@ -239,7 +239,7 @@ export const roadmapData = [
   {
     isActive: false,
     version: "M5",
-    isCompleted: false,
+    isCompleted: true,
     progressIcon: m5,
     completedIcon: m5Complete,
     year: "2022",
