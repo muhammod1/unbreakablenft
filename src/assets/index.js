@@ -26,6 +26,11 @@ import event2 from "./event2.png";
 import event3 from "./event3.png";
 import schoolBatch from "./schoolbatch.png";
 import schoolImage from "./schoolimage.png";
+import schoolImage1 from "./schoolimage1.png";
+import schoolImage2 from "./schoolimage2.png";
+import schoolImage3 from "./schoolimage3.png";
+import schoolImage4 from "./schoolimage4.png";
+
 import company1 from "./company1.png";
 import company2 from "./company2.png";
 import company3 from "./company3.png";
@@ -71,9 +76,14 @@ import schPic2 from "./schPic2.jpg";
 import schPic3 from "./schPic3.jpg";
 import schPic4 from "./schPic4.jpg";
 import schPic5 from "./schPic5.png";
+import thunder from "./thunder.svg";
 
 import lock from "./lock.svg";
 
+import facebookIcon from "./facebookicon.png";
+import linkedinIcon from "./linkedinicon.png";
+import twitterIcon from "./twitterIcon.png";
+import instagramIcon from "./instagramicon.png";
 export {
   lock,
   
@@ -82,7 +92,7 @@ export {
   schPic3,
   schPic4,
   schPic5,
-
+  thunder,
   m1,
   m2,
   m3,
@@ -124,7 +134,6 @@ export {
   rightArrow,
   leftArrow,
   cancle,
-
   host,
   frame,
   Union,
@@ -132,7 +141,6 @@ export {
   linkd,
   twit,
   faceb,
-
   eventimage,
   eventimage1,
   eventimage2,
@@ -146,4 +154,12 @@ export {
   about4,
   about5,
   about6,
+  schoolImage1,
+  schoolImage2,
+  schoolImage3,
+  schoolImage4,
+  twitterIcon,
+  linkedinIcon,
+  facebookIcon,
+  instagramIcon,
 };

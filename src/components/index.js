@@ -15,3 +15,8 @@ export { default as FAQ } from "./FAQ";
 export { default as EventCard } from "./events/EventCard";
 export { default as AboutCard1 } from "./about/AboutCard1";
 export { default as AboutCard2 } from "./about/AboutCard2";
+export { default as HomeHeader } from "./home/HomeHeader";
+export { default as NftHomeCardSection } from "./home/NftHomeCardSection";
+export { default as InitiativeSection } from "./home/InitiativeSection";
+export { default as JourneySection } from "./home/JourneySection";
+export { default as SchoolSection } from "./home/SchoolSection";

@@ -16,6 +16,10 @@ import {
   m4Complete,
   m5Complete,
   m6Complete,
+  schoolImage1,
+  schoolImage2,
+  schoolImage4,
+  schoolImage3,
 } from ".";
 
 export const initiativeData = [
@@ -77,30 +81,30 @@ export const schoolData = [
   },
   {
     badge: schoolBatch,
-    name: "GSS PASALI2",
+    name: "GSS PASALI",
     address: "Kuje, Abuja",
-    photo: schoolImage,
+    photo: schoolImage1,
     videoLink: "https://",
   },
   {
     badge: schoolBatch,
-    name: "GSS PASALI 3",
+    name: "GSS PASALI",
     address: "Kuje, Abuja",
-    photo: schoolImage,
+    photo: schoolImage2,
     videoLink: "https://",
   },
   {
     badge: schoolBatch,
-    name: "GSS PASALI 4",
+    name: "GSS PASALI",
     address: "Kuje, Abuja",
-    photo: schoolImage,
+    photo: schoolImage3,
     videoLink: "https://",
   },
   {
     badge: schoolBatch,
-    name: "GSS PASALI 5",
+    name: "GSS PASALI",
     address: "Kuje, Abuja",
-    photo: schoolImage,
+    photo: schoolImage4,
     videoLink: "https://",
   },
 ];

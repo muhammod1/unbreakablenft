@@ -12,7 +12,7 @@ import { AboutCard1, AboutCard2 } from "../components";
 
 const About = () => {
   return (
-    <div className="mt-14   px-4 small:px-6 max-w-[1240px] mx-auto">
+    <div className="mt-14   px-3 sm:px-6 max-w-[1240px] mx-auto">
       <div>
         <h4 className="text-head_white text-3xl break-words  font-audio small_l:text-5xl sm:text-7xl">
           About <span className="hidden sm:inline">unbroken</span>

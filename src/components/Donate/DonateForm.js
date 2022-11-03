@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Form } from '../UI/Form';
+import { Form, IconForm } from '../UI/Form';
 
 import { lock } from '../../assets';
 
@@ -25,7 +25,6 @@ const DonateForm = () => {
             />
             <Form
                 id='email' 
-                name="email" 
                 type="email"
                 placeholder="We would love to discuss further the terms of partnership" 
                 label="Email address"
@@ -35,9 +34,9 @@ const DonateForm = () => {
                <span className='pl-3'>Payment methods</span>
             </h3>
             <p className='text-[14px] text-grey_p'>All donation payments are secured and encrypted</p>
-            <Form
+            <IconForm
                 id='number' 
-                name="number" 
+                icon="$"
                 type="number"
                 placeholder="200,000" 
                 label="Donation amount"
