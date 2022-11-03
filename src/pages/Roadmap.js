@@ -14,20 +14,15 @@ const Roadmap = () => {
           <span className="block 4xl:inline">Unbroken</span> Roadmap
         </h3>
         <div className="flex relative w-full">
-          <div className="hidden absolute top-[111px] lg_l:top-[104px] left-[49px] md:block">
-            <img
-              src={unionFill}
-              className="w-183px h-[275px]  lg_l:h-[258px]"
-              alt="union"
-            />
+          <div className="hidden absolute  top-[77px] left-[50px] lg_l:block">
+            <img src={unionFill} className="w-183px h-[279px]" alt="union" />
           </div>
-          <div className="hidden absolute top-[317px] lg_l:top-[298px] left-[49px]  md:block">
-            <img
-              src={unionFill}
-              className="w-183px h-[275px]  lg_l:h-[258px]"
-              alt="union"
-            />
+          {/* <div className="hidden absolute top-[297px] left-[49px]  lg_l:block">
+            <img src={unionFill} className="w-183px h-[264px]" alt="union" />
           </div>
+          <div className="hidden absolute top-[497px] left-[49px]  lg_l:block">
+            <img src={unionFill} className="w-183px h-[264px]" alt="union" />
+          </div> */}
 
           {roadmapData.length > 0 && (
             <div className="w-full">
