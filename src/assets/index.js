@@ -7,7 +7,8 @@ import nftrobot from "./nftrobot.png";
 import ArrowIcon from "./ArrowIcon.svg";
 import activeJourney from "./activejourney.png";
 
-import Union from "./Union.svg";
+import union from "./Union.png";
+import unionFill from "./unionfill.svg";
 import instag from "./instag.png";
 import twit from "./twit.png";
 import faceb from "./faceb.png";
@@ -137,7 +138,7 @@ export {
   cancle,
   host,
   frame,
-  Union,
+  union,
   instag,
   linkd,
   twit,
@@ -163,4 +164,5 @@ export {
   linkedinIcon,
   facebookIcon,
   instagramIcon,
+  unionFill,
 };

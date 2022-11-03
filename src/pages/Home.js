@@ -46,12 +46,12 @@ const Home = () => {
             on, “Unbroken” is borne out of a deep yearning to comfort, rebuild
             and uphold the suppressed.
           </p>
-          <a
-            href="#"
+          <Link
+            to="/"
             className="bg-yellow flex justify-center items-center w-32 p-3 mt-10 sm:mt-12 md:mt-14 rounded-lg text-black-200"
           >
             Learn More
-          </a>
+          </Link>
         </div>
       </motion.div>
       {/* initiative section   */}

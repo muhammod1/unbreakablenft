@@ -3,6 +3,7 @@ import React from "react";
 import { activeJourney } from "../../assets";
 import { journeyData } from "../../assets/data";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 const JourneyCard = ({ title, isaActive, desc, version, year, index }) => {
   return (
     <motion.div
@@ -28,9 +29,9 @@ const JourneyCard = ({ title, isaActive, desc, version, year, index }) => {
           <div className=" max-w-[608px] w-full xl:w-[700px]">
             <p className="text-grey_p text-base sm:text-[18px]">{desc}</p>
           </div>
-          <a href="#" className=" text-yellow md:hidden">
+          <Link to="/" className=" text-yellow md:hidden">
             view more
-          </a>
+          </Link>
         </div>
         {isaActive && (
           <div className="pt-3 hidden md:block">

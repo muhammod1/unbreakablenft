@@ -12,7 +12,7 @@ const SchoolCard = ({ photo, videoLink }) => {
     >
       <div className="flex flex-col justify-between h-full">
         <div className="w-12 small_l:w-[78px]">
-          <img src={schoolBatch} />
+          <img src={schoolBatch} alt="school batch" />
         </div>
         <div>
           <h4 className="text-head_white text-lg small_l:text-[32px]">

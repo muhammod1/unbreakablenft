@@ -1,7 +1,5 @@
 import React from "react";
 import { BsTwitter } from "react-icons/bs";
-import { FaHeartBroken } from "react-icons/fa";
-import { event1 } from "../../assets";
 
 const EventCard = ({ center, title, desc, date, icon, photo, url }) => {
   return (
@@ -13,7 +11,7 @@ const EventCard = ({ center, title, desc, date, icon, photo, url }) => {
           <div className="bg-[#000000] opacity-40 -z-10 absolute inset-0"></div>
         </div>
         <div className="absolute inset-0 bg-black-200 opacity-30 "></div>
-        <img src={photo} alt="event cover photo" className="w-full" />
+        <img src={photo} alt="event cover" className="w-full" />
       </div>
       <div className="p-3  w-full ">
         <h4 className="text-[#FAFAFA] font-bold text-lg">{title}</h4>
