@@ -19,6 +19,7 @@ import {
   schoolImage2,
   schoolImage4,
   schoolImage3,
+  
 } from ".";
 
 export const initiativeData = [
@@ -137,6 +138,24 @@ export const currentEventData = [
     url: "#",
   },
 ];
+
+export const comunityIcon = [
+  {
+    icon: "",
+    center: "Twitter Spaces",
+    
+  },
+  {
+    icon: "",
+    center: "Twitter Spaces",
+    
+  },
+  {
+    icon: "",
+    center: "Twitter Spaces",
+   
+  },
+]
 
 export const pastEventData = [
   {

@@ -35,14 +35,14 @@ const RoadmapCard = ({
           <p className="text-[#404040] text-lg">{year}</p>
         </div>
 
-        <div className="flex flex-col ">
+        <div className="flex mb-14 flex-col ">
           <div className="  max-w-[657px]">
             {isActive && (
               <div className="">
                 <p className="text-[#404040] text-lg">Current</p>
               </div>
             )}
-            <h3 className="text-head_white text-[28px] font-audio sm:text-[32px]">
+            <h3 className="text-head_white text-[24px] font-audio sm:text-[24px]">
               {title}
             </h3>
           </div>
