@@ -237,7 +237,7 @@ export const roadmapData = [
     desc: "Host NFTs on Opensea, presale publicity and minting. Call for partnership.",
   },
   {
-    isActive: false,
+    isActive: true,
     version: "M5",
     isCompleted: true,
     progressIcon: m5,
