@@ -11,6 +11,7 @@ import {
   twit,
 } from "../assets";
 import { motion } from "framer-motion";
+import { BsTwitter } from "react-icons/bs";
 const Community = () => {
   return (
     <>
@@ -93,10 +94,11 @@ const Community = () => {
             </div>
             <div className="flex mt-8 flex-col sm:flex-row">
               <div className=" rounded mt-8 sm:mr-6 max-w-[350px] overflow-hidden bg-[#171717] h-full relative">
-                <div className="absolute  z-10  rounded-2xl overflow-hidden top-2 right-3">
-                  <img src={frame} alt="frame" className="h-[25px] w-[100px]" />
-                  <div className="bg-[#FAFAFA] opacity-40 -z-10 absolute inset-0"></div>
-                </div>
+              <div className="flex gap-2 items-center  absolute  z-10 py-[5px] px-3 rounded-2xl overflow-hidden top-2 right-3">
+          <BsTwitter className="text-blue-400 " />
+          <p className="text-head_white text-xs">Twitter Spaces</p>
+          <div className="bg-[#000000] opacity-40 -z-10 absolute inset-0"></div>
+        </div>
                 <img
                   className="w-full object-cover h-[325px]"
                   src={event1}
@@ -122,14 +124,11 @@ const Community = () => {
                 </div>
               </div>
               <div className=" mb-8 rounded overflow-hidden mt-8 bg-[#171717] max-w-[350px] h-full  relative">
-                <div className="absolute  z-10  rounded-2xl overflow-hidden top-2 right-3">
-                  <img
-                    src={frame}
-                    alt="frame"
-                    className="h-[25px]  w-[100px]"
-                  />
-                  <div className="bg-[#FAFAFA] opacity-40 -z-10 absolute inset-0"></div>
-                </div>
+              <div className="flex gap-2 items-center  absolute  z-10 py-[5px] px-3 rounded-2xl overflow-hidden top-2 right-3">
+          <BsTwitter className="text-blue-400 " />
+          <p className="text-head_white text-xs">Twitter Spaces</p>
+          <div className="bg-[#000000] opacity-40 -z-10 absolute inset-0"></div>
+        </div>
                 <img
                   className="w-full object-cover h-[325px]"
                   src={event2}
@@ -153,10 +152,11 @@ const Community = () => {
             </div>
           </div>
           <div className=" rounded max-w-[350px] overflow-hidden bg-[#171717] relative h-full lg:ml-8">
-            <div className="absolute  z-10  rounded-2xl overflow-hidden top-2 right-3">
-              <img src={frame} alt="frame" className="h-[25px] w-[100px]" />
-              <div className="bg-[#FAFAFA] opacity-40 -z-10 absolute inset-0"></div>
-            </div>
+          <div className="flex gap-2 items-center  absolute  z-10 py-[5px] px-3 rounded-2xl overflow-hidden top-2 right-3">
+          <BsTwitter className="text-blue-400 " />
+          <p className="text-head_white text-xs">Twitter Spaces</p>
+          <div className="bg-[#000000] opacity-40 -z-10 absolute inset-0"></div>
+        </div>
             <img
               className="w-full object-cover h-[325px]"
               src={event3}
