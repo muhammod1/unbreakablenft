@@ -1,5 +1,5 @@
 import React from "react";
-import { unionFill } from "../assets";
+import { union, unionFill } from "../assets";
 
 import { roadmapData } from "../assets/data";
 import { RoadmapCard } from "../components";
@@ -21,6 +21,14 @@ const Roadmap = () => {
               alt="union"
             />
           </div>
+          <div className="hidden absolute top-[317px] lg_l:top-[298px] left-[49px]  md:block">
+            <img
+              src={unionFill}
+              className="w-183px h-[275px]  lg_l:h-[258px]"
+              alt="union"
+            />
+          </div>
+
           {roadmapData.length > 0 && (
             <div className="w-full">
               {roadmapData.map((data, index) => (
