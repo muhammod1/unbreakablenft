@@ -10,18 +10,26 @@ import {
   linkd,
   twit,
 } from "../assets";
-
+import { motion } from "framer-motion";
 const Community = () => {
   return (
     <>
       {/* community section  */}
-      <div className="mt-14 flex-col scrollbar-hide px-4 small:px-6 max-w-[1240px] mx-auto overflow-y-auto">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        className="mt-14 flex-col scrollbar-hide px-3 sm:px-6 max-w-[1240px] mx-auto overflow-y-auto"
+      >
         <p className="text-[#737373] text-lg">Our Community</p>
         <h3 className="text-head_white font-audio text-[40px] sm:text-7xl mt-2">
           <span className="block 4xl:inline">Join other Unbrokens</span> around
           the world.
         </h3>
-        <div className="mt-16 max-w-[534px] ">
+        <motion.div
+          whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+          transition={{ duration: 0.5 }}
+          className="mt-16 max-w-[534px] "
+        >
           <h3 className="font-audio text-2xl  md:text-2xl text-head_white">
             Follow us on social media
           </h3>
@@ -29,8 +37,12 @@ const Community = () => {
             Keep up with all our activities and join other Unbrokens around the
             world!
           </p>
-        </div>
-        <div className="mt-4 max-w-[534px] h-[110px] flex mx-[-10px]  ">
+        </motion.div>
+        <motion.div
+          whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+          transition={{ duration: 0.5 }}
+          className="mt-4 max-w-[534px] h-[110px] flex mx-[-10px]  "
+        >
           <div className="mx-2">
             <img src={twit} alt="instagram" />
           </div>
@@ -43,8 +55,11 @@ const Community = () => {
           <div className="mx-2">
             <img src={faceb} alt="facebook" />
           </div>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+          transition={{ duration: 0.5 }}
+        >
           <div className="w-[100%]  p-5 md:p-5 bg-yellow rounded-md">
             <div className="flex flex-col gap-4 md:flex-row item-center justify-between">
               <h1 className="w-full md:w-[30%] text-[28px] font-audio ">
@@ -59,9 +74,13 @@ const Community = () => {
               </button>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className=" mt-16 flex lg:flex-row justify-center flex-col justify-evenly ">
+        <motion.div
+          whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+          transition={{ duration: 0.5 }}
+          className=" mt-16 flex lg:flex-row items-center justify-center flex-col  "
+        >
           <div className="  ">
             <div className="  ">
               <h3 className="font-audio text-4xl   md:text-7xl text-head_white">
@@ -158,8 +177,8 @@ const Community = () => {
               </span>
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </>
   );
 };

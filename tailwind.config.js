@@ -21,7 +21,9 @@ module.exports = {
       screens: {
         small: "260px",
         small_l: "416px",
+
         mobile: "475px",
+        lg_l: "930px",
       },
       backgroundImage: {
         nftBgImg: 'url("../src/assets/bgimage.jpg")',
@@ -30,6 +32,7 @@ module.exports = {
         ellipse1: 'url("./assets/ellipse1.png")',
         ellipse2: 'url("./assets/ellipse2.png")',
         contact: 'url("./assets/contactimage.png")',
+        school: 'url("./assets/schoolimage.png")',
       },
       fontSize: {
         "9xl": "clamp(2.5rem, 10.5vw, 7rem);",

@@ -1,11 +1,13 @@
 import React from "react";
 import { BsTwitter } from "react-icons/bs";
-import { FaHeartBroken } from "react-icons/fa";
-import { event1 } from "../../assets";
-
+import { motion } from "framer-motion";
 const EventCard = ({ center, title, desc, date, icon, photo, url }) => {
   return (
-    <div className="w-[350px]  h-[348px] bg-[#171717] flex flex-col  rounded">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="w-[350px]  h-[348px] bg-[#171717] flex flex-col  rounded"
+    >
       <div className="w-full h-[350px]   relative">
         <div className="flex gap-2 items-center  absolute  z-10 py-[2px] px-2 rounded-2xl overflow-hidden top-2 right-3">
           <BsTwitter className="text-blue-400 " />
@@ -13,7 +15,7 @@ const EventCard = ({ center, title, desc, date, icon, photo, url }) => {
           <div className="bg-[#000000] opacity-40 -z-10 absolute inset-0"></div>
         </div>
         <div className="absolute inset-0 bg-black-200 opacity-30 "></div>
-        <img src={photo} alt="event cover photo" className="w-full" />
+        <img src={photo} alt="event cover" className="w-full" />
       </div>
       <div className="p-3  w-full ">
         <h4 className="text-[#FAFAFA] font-bold text-lg">{title}</h4>
@@ -31,7 +33,7 @@ const EventCard = ({ center, title, desc, date, icon, photo, url }) => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

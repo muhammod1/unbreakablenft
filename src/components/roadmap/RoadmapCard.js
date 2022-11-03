@@ -1,5 +1,5 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import { activeJourney } from "../../assets";
 const RoadmapCard = ({
   title,
@@ -13,13 +13,17 @@ const RoadmapCard = ({
   indexId,
 }) => {
   return (
-    <div className=" flex w-full justify-between md:mt-28 items-center gap-5 mb-5">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className=" flex w-full h-fit lg_l:h-[147px] justify-between md:mt-16 items-center gap-5 mb-5"
+    >
       <div className=" flex md:items-center flex-col md:flex-row gap-2 md:gap-9">
         <div className=" w-11">
           {indexId === 0 && <p className="text-[#404040] text-lg">2020</p>}
           {indexId === 4 && <p className="text-[#404040] text-lg">2023</p>}
         </div>
-        <div className="hidden md:block">
+        <div className="hidden max-w-[220px] md:block">
           {isCompleted ? (
             <img src={completedIcon} alt="progress" />
           ) : (
@@ -52,7 +56,7 @@ const RoadmapCard = ({
           <img src={activeJourney} alt="active journey icon" />
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
 

@@ -80,34 +80,34 @@ transform: rotate(66.65deg);
     background-position: center;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #0C0B09 100%), url('../src/assets/program-bg.svg');
 }
- .nft__card-cover {
+ .nft__side-cover {
     z-index: 1;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
     
     position: absolute;
     inset: 0;
-    .nft___main_cover{
-        display: none;
-    }
+    // .nft___main_cover{
+    //     display: none;
+    // }
    
 
 
 }
-.nft__card-cover:hover {
-    .nft___side_cover{
-        display: none;
-    }
-    .nftsample1{
-        display: none;
-    }
+// .nft__card-cover:hover {
+//     .nft___side_cover{
+//         display: none;
+//     }
+//     .nftsample1{
+//         display: none;
+//     }
    
-    .nft___main_cover{
-        display: block;
-    }
-    background: transparent;
-    // transition: all ease-in-out 1000ms;
+//     .nft___main_cover{
+//         display: block;
+//     }
+//     background: transparent;
+//     // transition: all ease-in-out 1000ms;
 
-}
+// }
 
 .sliderWrap {
 position: fixed;
@@ -198,3 +198,4 @@ user-select: none;
 .contact_img_section {
     background: linear-gradient(rgba(2,2,2,.7),rgba(0,0,0,.7)),url("./assets/contactimage.png") center center;
 }  
+

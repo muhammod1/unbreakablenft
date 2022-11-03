@@ -1,8 +1,12 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const NftSales = () => {
   return (
-    <div className="py-32 px-4 small:px-6 max-w-[1240px] mx-auto bg-[black]">
+    <motion.div
+      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      transition={{ duration: 0.5 }}
+      className="py-32 px-4 small:px-6 max-w-[1240px] mx-auto bg-[black]"
+    >
       <div className=" p-5 md:p-5 bg-yellow rounded-md">
         <div className="flex flex-col gap-4 md:flex-row item-center justify-between">
           <h1 className="w-full md:w-[30%] text-[28px] font-audio ">
@@ -17,7 +21,7 @@ const NftSales = () => {
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

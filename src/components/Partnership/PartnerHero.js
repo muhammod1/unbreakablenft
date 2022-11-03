@@ -1,8 +1,12 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const PartnerHero = () => {
   return (
-    <div className="w-[90%] mt-[60px] mobile:mt-[80px]  mx-auto md:mx-0 md:w-[70%]">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="w-full mt-[60px] mobile:mt-[80px]  mx-auto md:mx-0 md:w-[70%]"
+    >
       <h3 className="text-white font-audio text-2xl small_l:text-[265%] small_l:leading-[121%]  md:text-[65px]">
         <span className="block">Why Unbroken</span>{" "}
       </h3>
@@ -10,7 +14,7 @@ const PartnerHero = () => {
         Bullying and any form of oppression is a global menace, which has to be
         treated with a sense of urgency.
       </p>
-    </div>
+    </motion.div>
   );
 };
 

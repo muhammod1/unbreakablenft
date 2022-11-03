@@ -11,10 +11,8 @@ const DonateModal = () => {
   }, []);
   return (
     <motion.div
-      initial={{ y: -1000, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ ease: "easeIn" }}
-      exit={{ y: -1000 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       className={
         toggleModel
           ? " bg-yellow h-16 flex z-50 justify-center items-center p-2"

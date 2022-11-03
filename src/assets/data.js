@@ -2,7 +2,6 @@ import {
   board,
   cctv,
   eventscard,
-  ard,
   mic,
   schoolBatch,
   schoolImage,
@@ -16,6 +15,10 @@ import {
   m4Complete,
   m5Complete,
   m6Complete,
+  schoolImage1,
+  schoolImage2,
+  schoolImage4,
+  schoolImage3,
 } from ".";
 
 export const initiativeData = [
@@ -77,30 +80,30 @@ export const schoolData = [
   },
   {
     badge: schoolBatch,
-    name: "GSS PASALI2",
+    name: "GSS PASALI",
     address: "Kuje, Abuja",
-    photo: schoolImage,
+    photo: schoolImage1,
     videoLink: "https://",
   },
   {
     badge: schoolBatch,
-    name: "GSS PASALI 3",
+    name: "GSS PASALI",
     address: "Kuje, Abuja",
-    photo: schoolImage,
+    photo: schoolImage2,
     videoLink: "https://",
   },
   {
     badge: schoolBatch,
-    name: "GSS PASALI 4",
+    name: "GSS PASALI",
     address: "Kuje, Abuja",
-    photo: schoolImage,
+    photo: schoolImage3,
     videoLink: "https://",
   },
   {
     badge: schoolBatch,
-    name: "GSS PASALI 5",
+    name: "GSS PASALI",
     address: "Kuje, Abuja",
-    photo: schoolImage,
+    photo: schoolImage4,
     videoLink: "https://",
   },
 ];
@@ -204,7 +207,7 @@ export const roadmapData = [
     desc: "Design and develop the website, create marketing plans, finish NFT artworks, plan and document anti-bullying initiatives",
   },
   {
-    isActive: false,
+    isActive: true,
     version: "M2",
     isCompleted: true,
     progressIcon: m2,
@@ -216,7 +219,7 @@ export const roadmapData = [
   {
     isActive: false,
     version: "M3",
-    isCompleted: true,
+    isCompleted: false,
     progressIcon: m3,
     completedIcon: m3Complete,
     year: "2022",
@@ -224,9 +227,9 @@ export const roadmapData = [
     desc: "Create social media pages, setup and onboard community and contributor platforms",
   },
   {
-    isActive: true,
+    isActive: false,
     version: "M4",
-    isCompleted: true,
+    isCompleted: false,
     progressIcon: m4,
     completedIcon: m4Complete,
     year: "2022",

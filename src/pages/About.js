@@ -9,11 +9,11 @@ import {
   mabout,
 } from "../assets";
 import { AboutCard1, AboutCard2 } from "../components";
-
+import { motion } from "framer-motion";
 const About = () => {
   return (
-    <div className="mt-14   px-4 small:px-6 max-w-[1240px] mx-auto">
-      <div>
+    <div className="mt-14   px-3 sm:px-6 max-w-[1240px] mx-auto">
+      <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
         <h4 className="text-head_white text-3xl break-words  font-audio small_l:text-5xl sm:text-7xl">
           About <span className="hidden sm:inline">unbroken</span>
           <span className="inline sm:hidden">US</span>
@@ -41,8 +41,12 @@ const About = () => {
             large.
           </p>
         </div>
-      </div>
-      <div className="mt-24">
+      </motion.div>
+      <motion.div
+        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{ duration: 0.5 }}
+        className="mt-24"
+      >
         <h4 className="hidden sm:block text-3xl text-head_white">Our goals</h4>
         <div className="flex mt-8 gap-10 flex-col sm:flex-row text-[#D4D4D4] text-base">
           <div className="max-w-[400px]">
@@ -70,9 +74,13 @@ const About = () => {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="mt-14 flex max-w-[1120px]  mx-auto gap-4 flex-col sm:items-end sm:flex-row">
+      <motion.div
+        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{ duration: 0.5 }}
+        className="mt-14 flex max-w-[1120px]  mx-auto gap-4 flex-col sm:items-end sm:flex-row"
+      >
         <div className=" w-full h-109px sm:w-[70%]">
           <h4 className=" small:text-[28px] sm:text-[40px] font-audio  text-head_white">
             We are the Unbrokens
@@ -87,7 +95,7 @@ const About = () => {
               <AboutCard2 aboutImage={about1} />
               <AboutCard2 aboutImage={about2} />
             </div>
-            <div className="w-full items-end flex flex-col gap-4 ">
+            <div className="w-full items-center flex flex-col gap-4 ">
               <AboutCard1 aboutImage={about4} />
               <AboutCard1 aboutImage={about3} />
             </div>
@@ -102,7 +110,7 @@ const About = () => {
             <AboutCard1 aboutImage={about5} />
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

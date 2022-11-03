@@ -2,11 +2,14 @@ import React, { useState } from "react";
 
 import { cardData } from "../../assets/NftsData";
 import NftPopup from "./NftPopup";
-
+import { motion } from "framer-motion";
 const Cards = () => {
   const [showModal, setShowModal] = useState(false);
   return (
-    <>
+    <motion.div
+      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="mt-[-20px] px-4 small:px-6 max-w-[1240px] mx-auto bg-[black]">
         <div className="flex justify-center my-20 pt-8">
           <div className="rounded-full p-1 inline-flex bg-[#171717]">
@@ -23,7 +26,9 @@ const Cards = () => {
 
         <div className="flex gap-8 w-[90%] mx-auto flex-wrap justify-center">
           {cardData.map(({ icon, title, desc, id }) => (
-            <button
+            <motion.button
+              whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+              transition={{ duration: 0.5 }}
               key={id}
               className="text-black relative rounded"
               onClick={() => setShowModal(true)}
@@ -41,14 +46,14 @@ const Cards = () => {
                   alt="icon"
                 />
               </div>
-            </button>
+            </motion.button>
           ))}
         </div>
 
         {/* Modal Card  */}
         {showModal ? <NftPopup setShowModal={setShowModal} /> : null}
       </div>
-    </>
+    </motion.div>
   );
 };
 
