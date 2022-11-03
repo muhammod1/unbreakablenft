@@ -60,7 +60,7 @@ const ProgramCard = ({ schoolDetails }) => {
                   </div>
                   <div className="my-4 md:w-[60%]">
                     <p className="text-yellow text-[14px] ">{data.title}</p>
-                    <div className="text-white text-[12px] mt-2">
+                    <div className="text-white text-[16px] mt-2">
                       {data.desc}
                     </div>
                     <div className="text-[#E5E5E5] mt-5 text-[11px] flex flex-wrap justify-start gap-3">
@@ -76,11 +76,11 @@ const ProgramCard = ({ schoolDetails }) => {
                     </div>
                   </div>
                 </div>
-                <div className="md:w-[10%] md:flex">
+                <div className="md:w-[10%]  md:flex items-center">
                   {data.isOpen ? (
                     <button
                       onClick={() => handleToggle(data.id)}
-                      className="w-fit mx-auto p-3 md:m-auto flex gap-2 justify-center"
+                      className="w-fit p-3  flex gap-2 ml-auto h-fit justify-end "
                     >
                       <div className="h-[2px] w-[20px] bg-yellow my-auto"></div>
                       <span className="md:hidden text-white font-pop text-[14px]">
@@ -90,7 +90,7 @@ const ProgramCard = ({ schoolDetails }) => {
                   ) : (
                     <button
                       onClick={() => handleToggle(data.id)}
-                      className="w-fit  p-3 mx-auto md:m-auto flex gap-2 justify-center"
+                      className="w-fit  p-3 flex gap-2 ml-auto h-fit   justify-end"
                     >
                       <img className=" w-[20px]" src={plus} alt="number" />
                       <span className="md:hidden text-white font-pop text-[14px]">

@@ -1,5 +1,6 @@
 import React from "react";
-
+import { BsTwitter } from "react-icons/bs";
+import { AiFillLinkedin } from "react-icons/ai";
 const AboutCard1 = ({ aboutImage }) => {
   return (
     <div className=" overflow-hidden rounded-lg relative">
@@ -8,6 +9,10 @@ const AboutCard1 = ({ aboutImage }) => {
           Oluchi Enebeli
         </h4>
         <p className="text-sm text-[#D4D4D4]">United Kingdom, UK</p>
+        <div className="flex gap-2">
+          <BsTwitter color="#fff" />
+          <AiFillLinkedin color="#fff" />
+        </div>
       </div>
       <img src={aboutImage} className="w-full" alt="about photos" />
     </div>

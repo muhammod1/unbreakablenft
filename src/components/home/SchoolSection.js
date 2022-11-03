@@ -1,8 +1,9 @@
 import React from "react";
 import { schoolData } from "../../assets/data";
-import LinkButton from "../LinkButton";
+
 import SchoolCard from "./SchoolCard";
 import { motion } from "framer-motion";
+import { LinkButton } from "../";
 const SchoolSection = () => {
   return (
     <motion.div

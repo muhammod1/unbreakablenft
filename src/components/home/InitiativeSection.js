@@ -7,9 +7,9 @@ const InitiativeSection = () => {
     <motion.div
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
       transition={{ duration: 0.5 }}
-      className="px-3 sm:px-6 max-w-[1240px] mx-auto"
+      className="px-3 mt-20 sm:px-6 max-w-[1240px] mx-auto"
     >
-      <div className="mt-16 max-w-[534px] ">
+      <div className=" max-w-[534px] ">
         <h3 className="font-audio text-4xl  md:text-7xl text-head_white">
           Initiatives
         </h3>
