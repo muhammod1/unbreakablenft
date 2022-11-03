@@ -20,7 +20,7 @@ export const Form = ({ id, type, placeholder, label }) => {
 
 export const IconForm = ({ id, type, placeholder, label, icon }) => {
   return (
-    <form className="mt-4 relative ">
+    <div className="mt-4 relative ">
         <label for={id} className="block text-[#F5F5F5]">
             {label}
         </label>
@@ -34,13 +34,13 @@ export const IconForm = ({ id, type, placeholder, label, icon }) => {
         <div class="text-grey_p flex absolute inset-y-0 right-7 top-3 items-center pl-3 pointer-events-none">
             {icon}
         </div>
-    </form>
+    </div>
     )
 }
 
 export const Textarea = ({ id, type, placeholder, label }) => {
     return (
-      <form className="mt-4 ">
+      <div className="mt-4 ">
           <label for={id} className="block text-[#F5F5F5]">
               {label}
           </label>
@@ -51,6 +51,18 @@ export const Textarea = ({ id, type, placeholder, label }) => {
               className="rounded mb-4 mt-1 focus:outline-none bg-transparent border p-2 text-[14px] w-full border-[#404040]"
               placeholder={placeholder}
           ></textarea>
-      </form>
+      </div>
       )
+  }
+
+  export const Submit = ({ type, text }) => {
+    return (
+        <button
+            type={type}
+            className="block w-full text-md  bg-yellow mt-5 py-2 rounded-lg  hover:-translate-y-1 transition-all duration-500  mb-2"
+        >
+            {text}
+        </button>
+        
+    )
   }

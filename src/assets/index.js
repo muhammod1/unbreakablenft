@@ -79,6 +79,7 @@ import schPic5 from "./schPic5.png";
 import thunder from "./thunder.svg";
 
 import lock from "./lock.svg";
+import coin from "./coin.svg";
 
 import facebookIcon from "./facebookicon.png";
 import linkedinIcon from "./linkedinicon.png";
@@ -86,6 +87,7 @@ import twitterIcon from "./twitterIcon.png";
 import instagramIcon from "./instagramicon.png";
 export {
   lock,
+  coin,
   
   schPic1,
   schPic2,
