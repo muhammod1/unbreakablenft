@@ -88,7 +88,6 @@ import instagramIcon from "./instagramicon.png";
 export {
   lock,
   coin,
-  
   schPic1,
   schPic2,
   schPic3,

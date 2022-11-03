@@ -87,7 +87,7 @@ const About = () => {
               <AboutCard2 aboutImage={about1} />
               <AboutCard2 aboutImage={about2} />
             </div>
-            <div className="w-full items-end flex flex-col gap-4 ">
+            <div className="w-full items-center flex flex-col gap-4 ">
               <AboutCard1 aboutImage={about4} />
               <AboutCard1 aboutImage={about3} />
             </div>
