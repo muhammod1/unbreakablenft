@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { lock, coin } from "../../assets";
-import { Form, IconForm } from "../UI/Form";
+import { Form, IconForm, SubmitBtn } from "../UI/Form";
 
 import { motion } from "framer-motion";
 import DonateQRCode from "./DonateQRCode";
@@ -59,6 +59,7 @@ const DonateForm = () => {
         <form onSubmit={handleSubmit}>
             <Form
                 value={name}
+                required="required"
                 type="text" 
                 onChangeCallBack={setName}
                 placeholder="your legal name" 
@@ -66,6 +67,7 @@ const DonateForm = () => {
             />
             <Form 
                 value={email}
+                required="required"
                 type="email" 
                 onChangeCallBack={setEmail}
                 placeholder="We would love to discuss further the terms of partnership" 
@@ -82,6 +84,7 @@ const DonateForm = () => {
           <div className="flex relative flex-col  mt-4  py-2">
           <IconForm 
                 value={number}
+                required="required"
                 type="number" 
                 onChangeCallBack={setNumber}
                 placeholder="200,000" 
@@ -123,12 +126,7 @@ const DonateForm = () => {
               <p className=" mt-9 text-[12px] text-end text-[#737373]">-$0</p>
             </div>
           </div>
-          <button
-            type="submit"
-            className="block w-full bg-yellow mt-5 py-2 rounded-lg  hover:-translate-y-1 transition-all duration-500  mb-2"
-          >
-            Proceed
-          </button>
+          <SubmitBtn type="submit" text="Proceed" />
 
           {showQRCode && (
             <DonateQRCode />
