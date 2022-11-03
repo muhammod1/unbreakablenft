@@ -17,12 +17,20 @@ const Roadmap = () => {
           <div className="hidden absolute  top-[77px] left-[50px] lg_l:block">
             <img src={unionFill} className="w-183px h-[279px]" alt="union" />
           </div>
-          {/* <div className="hidden absolute top-[297px] left-[49px]  lg_l:block">
-            <img src={unionFill} className="w-183px h-[264px]" alt="union" />
+          <div className="hidden absolute top-[287px] left-[50px]  lg_l:block">
+            <img src={unionFill} className="w-183px h-[279px]" alt="union" />
           </div>
-          <div className="hidden absolute top-[497px] left-[49px]  lg_l:block">
-            <img src={unionFill} className="w-183px h-[264px]" alt="union" />
-          </div> */}
+          <div className="hidden absolute top-[496px] left-[50px]  lg_l:block">
+            <img src={unionFill} className="w-183px h-[282px]" alt="union" />
+          </div>
+          <div className="hidden absolute bottom-[298px] left-[50px]  lg_l:block">
+            <img src={unionFill} className="w-183px h-[280px]" alt="union" />
+          </div>
+
+          {/* together */}
+          <div className="hidden absolute bottom-[87px] left-[50px]  lg_l:block">
+            <img src={unionFill} className="w-183px h-[280px]" alt="union" />
+          </div>
 
           {roadmapData.length > 0 && (
             <div className="w-full">
