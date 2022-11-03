@@ -1,8 +1,12 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 const ProgramHero = () => {
   return (
-    <div className="relative">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="relative"
+    >
       <div className="bg__program h-[525px] md:h-[522px] w-full">
         <div className="w-full mx-auto absolute top-[35%] md:top-[25%]">
           <div className=" max-w-[1240px] w-[90%] mobile:w-[70%] md:w-[90%] mx-auto ">
@@ -16,7 +20,7 @@ const ProgramHero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

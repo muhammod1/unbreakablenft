@@ -207,7 +207,7 @@ export const roadmapData = [
     desc: "Design and develop the website, create marketing plans, finish NFT artworks, plan and document anti-bullying initiatives",
   },
   {
-    isActive: false,
+    isActive: true,
     version: "M2",
     isCompleted: true,
     progressIcon: m2,
@@ -219,7 +219,7 @@ export const roadmapData = [
   {
     isActive: false,
     version: "M3",
-    isCompleted: true,
+    isCompleted: false,
     progressIcon: m3,
     completedIcon: m3Complete,
     year: "2022",
@@ -227,9 +227,9 @@ export const roadmapData = [
     desc: "Create social media pages, setup and onboard community and contributor platforms",
   },
   {
-    isActive: true,
+    isActive: false,
     version: "M4",
-    isCompleted: true,
+    isCompleted: false,
     progressIcon: m4,
     completedIcon: m4Complete,
     year: "2022",

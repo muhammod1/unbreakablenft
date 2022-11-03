@@ -8,10 +8,15 @@ import {
   eventimage3,
   eventimage4,
 } from "../assets";
+import { motion } from "framer-motion";
 const Events = () => {
   return (
     <div>
-      <div className="flex relative max-h-[468px]">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        className="flex relative max-h-[468px]"
+      >
         <div className="mt-14 mx-6 absolute bottom-6  md:mx-20">
           <h4 className="text-head_white text-3xl break-words  font-audio small_l:text-5xl sm:text-7xl">
             <span className="block">The Unbroken</span> Events
@@ -46,9 +51,13 @@ const Events = () => {
             alt="events"
           />
         </div>
-      </div>
+      </motion.div>
       <div className="mt-14 flex flex-col justify-center items-center  px-3 sm:px-6 max-w-[1240px] mx-auto">
-        <div className="mb-14 ">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className="mb-14 "
+        >
           <h4 className="  font-audio text-2xl text-head_white">
             Current Events
           </h4>
@@ -59,9 +68,13 @@ const Events = () => {
               ))}
             </div>
           )}
-        </div>
+        </motion.div>
 
-        <div className="mb-14 flex flex-col ">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className="mb-14 flex flex-col "
+        >
           <h4 className=" font-audio text-2xl text-head_white">Past Events</h4>
           {pastEventData.length > 0 && (
             <div className="mt-6  flex justify-center gap-4 flex-wrap">
@@ -70,7 +83,7 @@ const Events = () => {
               ))}
             </div>
           )}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

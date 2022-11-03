@@ -1,10 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 const HomeHeader = () => {
   return (
     <motion.div
-      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-      transition={{ duration: 0.5 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       className="mt-16 md:mt-24 px-3 sm:px-6 max-w-[1240px] mx-auto  flex gap-8 flex-col items-center sm:flex-row justify-between flex-wrap md:flex-nowrap"
     >
       <div className="flex flex-col flex-1 w-full justify-end">
@@ -13,15 +14,20 @@ const HomeHeader = () => {
           <span className="block md:inline">Against</span> bullying
         </h3>
         <div className="mt-6 flex flex-col small:flex-row small:items-center">
-          <button className="bg-yellow text-black-200 p-1 px-3  rounded-md mr-4">
+          <Link
+            to="/nfts"
+            className="bg-yellow text-black-200 p-1 px-3  rounded-md mr-4"
+          >
             Discover NFTs
-          </button>
+          </Link>
         </div>
       </div>
       <div className="flex-1 w-full">
         {/* <div className="hidden sm:block"></div> */}
         {/* <img className=" w-full" src={motion} alt="motion" /> */}
-        <iframe
+        <motion.iframe
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
           className="w-full"
           height="415"
           src="https://www.youtube.com/embed/QsEKICkpQBI"

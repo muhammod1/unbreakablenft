@@ -29,7 +29,7 @@ const JourneyCard = ({ title, isaActive, desc, version, year, index }) => {
           <div className=" max-w-[608px] w-full xl:w-[700px]">
             <p className="text-grey_p text-base sm:text-[18px]">{desc}</p>
           </div>
-          <Link to="/" className=" text-yellow md:hidden">
+          <Link to="/program" className=" text-yellow md:hidden">
             view more
           </Link>
         </div>

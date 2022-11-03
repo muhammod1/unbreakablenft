@@ -43,7 +43,7 @@ const Navbar = () => {
               navbar ? "block" : "hidden"
             }`}
           >
-            <ul className=" items-center justify-center   space-y-12 md:flex md:space-x-1 lg:space-x-4 md:space-y-0">
+            <ul className=" items-center justify-center  lg:gap-2  space-y-12 md:flex md:space-x-1 lg:space-x-4 md:space-y-0">
               <li
                 onClick={() => setNavbar(false)}
                 className="text-[#E5E5E5] text-lg md:text-sm"

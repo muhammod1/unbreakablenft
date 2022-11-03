@@ -22,7 +22,7 @@ const JourneySection = () => {
             ))}
           </div>
           <div className="hidden md:flex justify-center mt-16">
-            <Link to="/" className="bg-yellow rounded-lg p-3">
+            <Link to="/roadmap" className="bg-yellow rounded-lg p-3">
               Learn More
             </Link>
           </div>

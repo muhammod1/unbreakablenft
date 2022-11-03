@@ -1,14 +1,18 @@
-import React from 'react'
-import DonateForm from '../components/Donate/DonateForm'
-import { DonateHero } from '../components/Donate/DonateHero'
-
+import React from "react";
+import DonateForm from "../components/Donate/DonateForm";
+import { DonateHero } from "../components/Donate/DonateHero";
+import { motion } from "framer-motion";
 const Donate = () => {
   return (
-    <div className="w-[90%] mobile:w-[95%] max-w-[1220px] mx-auto">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="w-[90%] mobile:w-[95%] max-w-[1220px] mx-auto"
+    >
       <DonateHero />
       <DonateForm />
-    </div>
-  )
-}
+    </motion.div>
+  );
+};
 
-export default Donate
+export default Donate;

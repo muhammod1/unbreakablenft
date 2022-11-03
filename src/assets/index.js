@@ -9,6 +9,7 @@ import activeJourney from "./activejourney.png";
 
 import union from "./Union.png";
 import unionFill from "./unionfill.svg";
+import unionUnFill from "./unionunfill.svg";
 import instag from "./instag.png";
 import twit from "./twit.png";
 import faceb from "./faceb.png";
@@ -107,6 +108,7 @@ export {
   m6Complete,
   programbg,
   contactimage,
+  unionUnFill,
   logo,
   motion,
   nftsample1,

@@ -17,8 +17,8 @@ const Home = () => {
     <div className="scrollbar-hide bg-vector1   overflow-y-auto">
       {/* <div className="bg-vector1 hidden md:block w-[1055px]  h-[3196px]  top-14 fixed left-80   -z-10 "></div> */}
       <motion.div
-        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-        transition={{ duration: 0.5 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         className="ellipse1 hidden md:block"
       ></motion.div>
       {/* <motion.div
@@ -47,7 +47,7 @@ const Home = () => {
             and uphold the suppressed.
           </p>
           <Link
-            to="/"
+            to="/roadmap"
             className="bg-yellow flex justify-center items-center w-32 p-3 mt-10 sm:mt-12 md:mt-14 rounded-lg text-black-200"
           >
             Learn More
@@ -80,7 +80,7 @@ const Home = () => {
             </p>
           </div>
           <Link
-            to=""
+            to="/community"
             className="bg-[#262626] w-full text-center sm:w-fit p-3 rounded-md text-yellow text-sm"
           >
             Join Discord

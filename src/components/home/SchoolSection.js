@@ -27,7 +27,7 @@ const SchoolSection = () => {
           schoolData.map((data) => <SchoolCard key={data.name} {...data} />)}
       </div>
       <div className="flex justify-center">
-        <LinkButton text="View more" url="#" />
+        <LinkButton text="View more" url="/program" />
       </div>
     </motion.div>
   );
