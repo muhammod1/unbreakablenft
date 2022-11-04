@@ -35,16 +35,16 @@ const Cards = () => {
 
         {/* mapping through an object to display the cards   */}
         {active === cardData && 
-          <div className="flex gap-8 w-[90%] mx-auto flex-wrap justify-center">
+          <div className="flex gap-8 lg_lg:gap-16 max-w-[1240px] w-full flex-wrap justify-center ">
             {cardData.map(({ icon, title, desc, id }) => (
               <motion.button
                 whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
                 transition={{ duration: 0.5 }}
                 key={id}
-                className="text-black relative rounded"
+                className="text-black relative"
                 onClick={() => setShowModal(true)}
               >
-                <div className="nftcard hover:scale-105 bg-nftCard w-[300px] h-[320px] bg-blue-700 rounded-2xl overflow-hidden relative">
+                <div className="nftcard hover:scale-105 bg-nftCard w-[280px] h-[320px] small_l:w-[342px] small_l:h-[414px] rounded-[16px] relative">
                   <p className="text-sm bg-yellow mt-3 absolute mr-4 top-0 right-0 px-[8px] py-[6px] rounded-2xl">
                     {desc}
                   </p>
@@ -65,7 +65,7 @@ const Cards = () => {
             {/* Unbroken Nfts */}
 
         {active === cardDataUnbroken && 
-          <div className="flex gap-8 w-[90%] mx-auto flex-wrap justify-center">
+          <div className="flex gap-8 lg_lg:gap-16 max-w-[1240px] w-full flex-wrap justify-center ">
             {cardDataUnbroken.map(({ icon, title, desc, id }) => (
               <motion.button
                 whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
@@ -74,7 +74,7 @@ const Cards = () => {
                 className="text-black relative rounded"
                 onClick={() => setShowModal(true)}
               >
-                <div className="nftcard hover:scale-105 bg-nftCard w-[300px] h-[320px] bg-blue-700 rounded-2xl overflow-hidden relative">
+                <div className="nftcard hover:scale-105 bg-nftCard w-[280px] h-[320px] small_l:w-[342px] small_l:h-[414px] rounded-[16px] relative">
                   <p className="text-sm bg-yellow mt-3 absolute mr-4 top-0 right-0 px-[8px] py-[6px] rounded-2xl">
                     {desc}
                   </p>
