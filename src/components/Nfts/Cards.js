@@ -5,7 +5,6 @@ import NftPopup from "./NftPopup";
 import { motion } from "framer-motion";
 const Cards = () => {
   const [showModal, setShowModal] = useState(false);
-  const [btn, setBtn] = useState(true);
   const [active, setActive] = useState(cardData);
 
   return (
