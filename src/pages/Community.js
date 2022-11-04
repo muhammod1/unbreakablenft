@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  circle,
   event1,
   event2,
   event3,
@@ -34,7 +35,7 @@ const Community = () => {
           <h3 className="font-audio text-2xl  md:text-2xl text-head_white">
             Follow us on social media
           </h3>
-          <p className="text-grey_p mt-2 ">
+          <p className="text-grey_p text-[14.5px] mt-2 ">
             Keep up with all our activities and join other Unbrokens around the
             world!
           </p>
@@ -114,12 +115,15 @@ const Community = () => {
                   </p>
                 </div>
                 <div className="px-6 pt-4 pb-2">
-                  <span className="inline-block   py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                    <img
-                      src={host}
-                      alt="host"
-                      className="h-[45px]  w-[146px]"
-                    />
+                  <span className="inline-block   py-1 text-sm font-semibold  mr-2 mb-2">
+                    <div className="  md:w-fit py-1 px-3 bg-[#262626] flex   rounded-[8px] ">
+                      <img src={circle} className=" my-auto mr-2 w-[37px] h-[37px]"/>
+                      <div className="flex  flex-col">
+                         <p className="text-[10px]  text-[#A3A3A3] Poppins">Host</p>
+                         <p className="text-[12px]  text-[#FAFAFA] Poppins">Oluchi Enebeli</p>
+                      </div>
+                     
+                    </div>
                   </span>
                 </div>
               </div>
@@ -144,8 +148,15 @@ const Community = () => {
                   </p>
                 </div>
                 <div className="px-6 pt-4 pb-2">
-                  <span className="inline-block   py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                    <img src={host} alt="host" className="h-[45px] w-[146px]" />
+                <span className="inline-block   py-1 text-sm font-semibold  mr-2 mb-2">
+                    <div className="  md:w-fit py-1 px-3 bg-[#262626] flex   rounded-[8px] ">
+                      <img src={circle} className=" my-auto mr-2 w-[37px] h-[37px]"/>
+                      <div className="flex  flex-col">
+                         <p className="text-[10px]  text-[#A3A3A3] Poppins">Host</p>
+                         <p className="text-[12px]  text-[#FAFAFA] Poppins">Oluchi Enebeli</p>
+                      </div>
+                     
+                    </div>
                   </span>
                 </div>
               </div>
@@ -172,9 +183,16 @@ const Community = () => {
               </p>
             </div>
             <div className="px-6 pt-4 pb-2">
-              <span className="inline-block   py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-                <img src={host} alt="host" className="h-[45px] w-[146px]" />
-              </span>
+            <span className="inline-block   py-1 text-sm font-semibold  mr-2 mb-2">
+                    <div className="  md:w-fit py-1 px-3 bg-[#262626] flex   rounded-[8px] ">
+                      <img src={circle} className=" my-auto mr-2 w-[37px] h-[37px]"/>
+                      <div className="flex  flex-col">
+                         <p className="text-[10px]  text-[#A3A3A3] Poppins">Host</p>
+                         <p className="text-[12px]  text-[#FAFAFA] Poppins">Oluchi Enebeli</p>
+                      </div>
+                     
+                    </div>
+                  </span>
             </div>
           </div>
         </motion.div>

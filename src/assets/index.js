@@ -89,6 +89,7 @@ import facebookIcon from "./facebookicon.png";
 import linkedinIcon from "./linkedinicon.png";
 import twitterIcon from "./twitterIcon.png";
 import instagramIcon from "./instagramicon.png";
+import circle from "./circle.png"
 export {
   copyIcon,
   QRCode,
@@ -171,4 +172,5 @@ export {
   facebookIcon,
   instagramIcon,
   unionFill,
+  circle,
 };
