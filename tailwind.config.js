@@ -24,7 +24,8 @@ module.exports = {
 
         mobile: "475px",
         lg_l: "930px",
-        mobile_l: "800px"
+        lg_lg: "1000px",
+        mobile_l: "800px",
       },
       backgroundImage: {
         nftBgImg: 'url("../src/assets/bgimage.jpg")',
