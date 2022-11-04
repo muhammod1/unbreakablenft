@@ -19,7 +19,6 @@ import {
   schoolImage2,
   schoolImage4,
   schoolImage3,
-  
 } from ".";
 
 export const initiativeData = [
@@ -138,8 +137,6 @@ export const currentEventData = [
     url: "#",
   },
 ];
-
-
 
 export const pastEventData = [
   {
