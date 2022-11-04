@@ -97,6 +97,9 @@ const DonateForm = () => {
 
           <div className="flex mt-10 justify-between p-5 border border-[#171717] rounded-lg">
             <div className="w-[50%]">
+
+              {/* This is the section fro the select button */}
+
               {/* <label for="coins" className="block text-[14px] text-[#737373]">
                 I want to donate
               </label> 
