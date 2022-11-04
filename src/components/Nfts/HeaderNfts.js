@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import LinkButton from "../UI/LinkButton";
 const HeaderNfts = () => {
   return (
     <motion.div
@@ -12,10 +13,11 @@ const HeaderNfts = () => {
           <h3 className="text-white font-audio text-[52px] mobile:text-[50px] sm:text-[63px] leading-[91%]  md:text-[70px] ">
             <span className="block">Unbroken NFTs</span>{" "}
           </h3>
-          <p className="mt-[15px] small_l:w-[90%] mobile_l:w-[65%] w-[95%] text-grey_p">
+          <p className="mt-[15px] mb-[45px] small_l:w-[90%] mobile_l:w-[65%] w-[95%] text-grey_p">
             Welcome to our NFT gallery. With your support, we will execute <span className="md:block"> our
             anti-bullying initiatives.</span>
           </p>
+          <LinkButton text="NFT collection" url="/" />
         </div>
       </div>
     </motion.div>
