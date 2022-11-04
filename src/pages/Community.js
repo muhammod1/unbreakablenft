@@ -5,8 +5,6 @@ import {
   event2,
   event3,
   faceb,
-  frame,
-  host,
   instag,
   linkd,
   twit,
@@ -117,7 +115,7 @@ const Community = () => {
                 <div className="px-6 pt-4 pb-2">
                   <span className="inline-block   py-1 text-sm font-semibold  mr-2 mb-2">
                     <div className="  md:w-fit py-1 px-3 bg-[#262626] flex   rounded-[8px] ">
-                      <img src={circle} className=" my-auto mr-2 w-[37px] h-[37px]"/>
+                      <img src={circle} alt="host card" className=" my-auto mr-2 w-[37px] h-[37px]"/>
                       <div className="flex  flex-col">
                          <p className="text-[10px]  text-[#A3A3A3] Poppins">Host</p>
                          <p className="text-[12px]  text-[#FAFAFA] Poppins">Oluchi Enebeli</p>
@@ -150,7 +148,7 @@ const Community = () => {
                 <div className="px-6 pt-4 pb-2">
                 <span className="inline-block   py-1 text-sm font-semibold  mr-2 mb-2">
                     <div className="  md:w-fit py-1 px-3 bg-[#262626] flex   rounded-[8px] ">
-                      <img src={circle} className=" my-auto mr-2 w-[37px] h-[37px]"/>
+                      <img src={circle} alt="host card" className="  my-auto mr-2 w-[37px] h-[37px]"/>
                       <div className="flex  flex-col">
                          <p className="text-[10px]  text-[#A3A3A3] Poppins">Host</p>
                          <p className="text-[12px]  text-[#FAFAFA] Poppins">Oluchi Enebeli</p>
@@ -185,7 +183,7 @@ const Community = () => {
             <div className="px-6 pt-4 pb-2">
             <span className="inline-block   py-1 text-sm font-semibold  mr-2 mb-2">
                     <div className="  md:w-fit py-1 px-3 bg-[#262626] flex   rounded-[8px] ">
-                      <img src={circle} className=" my-auto mr-2 w-[37px] h-[37px]"/>
+                      <img src={circle} alt="host card" className=" my-auto mr-2 w-[37px] h-[37px]"/>
                       <div className="flex  flex-col">
                          <p className="text-[10px]  text-[#A3A3A3] Poppins">Host</p>
                          <p className="text-[12px]  text-[#FAFAFA] Poppins">Oluchi Enebeli</p>
