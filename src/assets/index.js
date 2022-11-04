@@ -89,9 +89,11 @@ import facebookIcon from "./facebookicon.png";
 import linkedinIcon from "./linkedinicon.png";
 import twitterIcon from "./twitterIcon.png";
 import instagramIcon from "./instagramicon.png";
-
 import unionFill2 from "./unionfill2.svg";
 import unionUnFill2 from "./unionunfill2.svg";
+
+import circle from "./circle.png";
+
 export {
   copyIcon,
   unionUnFill2,
@@ -176,4 +178,5 @@ export {
   facebookIcon,
   instagramIcon,
   unionFill,
+  circle,
 };
