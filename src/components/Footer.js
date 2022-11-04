@@ -90,8 +90,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mt-12 w-full bg-[#262626]  rounded-lg h-[1px]"></div>
-      <div className="mt-16 flex w-full justify-center">
+      <div className="mt-10 w-full bg-[#262626]  rounded-lg h-[1px]"></div>
+      <div className="mt-10 flex w-full justify-center">
         <p className="text-[#737373] text-base sm:text-sm">
           © 2022 Unbroken. All rights reserved.
         </p>

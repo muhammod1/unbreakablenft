@@ -81,7 +81,7 @@ const Community = () => {
         <motion.div
           whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
           transition={{ duration: 0.5 }}
-          className=" mt-16 flex lg:flex-row items-center justify-center flex-col  "
+          className=" mt-16 flex lg:flex-row items-center justify-center flex-col  justify-evenly "
         >
           <div className="  ">
             <div className="  ">
@@ -93,8 +93,8 @@ const Community = () => {
                 and reality of bullying.
               </p>
             </div>
-            <div className="flex mt-8 flex-col sm:flex-row">
-              <div className=" rounded mt-8 sm:mr-6 max-w-[350px] overflow-hidden bg-[#171717] h-full relative">
+            <div className="flex mt-8 flex-col sm:flex-row  ">
+              <div className=" rounded mt-8 sm:mr-14 max-w-[350px]  overflow-hidden bg-[#171717] h-full relative ">
               <div className="flex gap-2 items-center  absolute  z-10 py-[5px] px-3 rounded-2xl overflow-hidden top-2 right-3">
           <BsTwitter className="text-blue-400 " />
           <p className="text-head_white text-xs">Twitter Spaces</p>
@@ -162,7 +162,7 @@ const Community = () => {
               </div>
             </div>
           </div>
-          <div className=" rounded max-w-[350px] overflow-hidden bg-[#171717] relative h-full lg:ml-8">
+          <div className=" rounded max-w-[350px] overflow-hidden bg-[#171717] relative h-full lg:ml-8 ">
           <div className="flex gap-2 items-center  absolute  z-10 py-[5px] px-3 rounded-2xl overflow-hidden top-2 right-3">
           <BsTwitter className="text-blue-400 " />
           <p className="text-head_white text-xs">Twitter Spaces</p>
