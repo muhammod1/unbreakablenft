@@ -1,5 +1,5 @@
 import React from "react";
-import { unionFill, unionUnFill } from "../assets";
+import { unionFill, unionFill2, unionUnFill, unionUnFill2 } from "../assets";
 
 import { roadmapData } from "../assets/data";
 import { RoadmapCard } from "../components";
@@ -11,7 +11,7 @@ const Roadmap = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        className="mt-14 px-3 sm:px-6 max-w-[1240px] mx-auto scrollbar-hide overflow-y-auto"
+        className="mt-14 px-3 sm:px-6 max-w-[1240px] mx-auto "
       >
         <p className="text-[#737373] text-lg">Our Journey starts here</p>
         <h3 className="text-head_white font-audio text-[40px] sm:text-7xl mt-2">
@@ -65,6 +65,32 @@ const Roadmap = () => {
                 className="w-183px h-[280px]"
                 alt="un fill union"
               />
+            )}
+          </div>
+
+          <div className="hidden absolute -z-20 bottom-[-73px] left-[50px]  lg_l:block">
+            {roadmapData[5].isCompleted ? (
+              <div>
+                <img
+                  src={unionFill2}
+                  className="w-183px h-[160px]"
+                  alt="un fill union"
+                />
+                <h4 className="absolute top-20 right-12 text-lg text-yellow">
+                  Continue.
+                </h4>
+              </div>
+            ) : (
+              <div>
+                <img
+                  src={unionUnFill2}
+                  className="w-183px h-[160px]"
+                  alt="un fill union"
+                />
+                <h4 className="absolute top-20 ight-12 text-lg text-[#404040]">
+                  Continue.
+                </h4>
+              </div>
             )}
           </div>
 
