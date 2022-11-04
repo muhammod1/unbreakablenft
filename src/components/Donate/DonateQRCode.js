@@ -4,7 +4,7 @@ import { QRCode, copyIcon } from '../../assets'
 
 const DonateQRCode = () => {
   return (
-    <div className='text-white mt-10 mb-4'>
+    <div className='text-white mt-10 mb-4 border p-[17px] border-[#262626] rounded-[5px]'>
         <p className='text-[16px] w-[90%] max-w-[282px] mx-auto text-center'>Scan the QR code below to donate 3400 USDC from your wallet.</p>
         <div className="my-3">
             <img className='mx-auto h-[265.5px] w-[265.5px]' src={QRCode} alt="qrcode" />

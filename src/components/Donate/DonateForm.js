@@ -55,22 +55,26 @@ const DonateForm = () => {
           All donation payments are secured and encrypted
         </p>
         <form onSubmit={handleSubmit}>
+        {!showQRCode && (
+          <>
             <Form
-                value={name}
-                required="required"
-                type="text" 
-                onChangeCallBack={setName}
-                placeholder="your legal name" 
-                label="Full name"
+              value={name}
+              required="required"
+              type="text" 
+              onChangeCallBack={setName}
+              placeholder="your legal name" 
+              label="Full name"
             />
             <Form 
-                value={email}
-                required="required"
-                type="email" 
-                onChangeCallBack={setEmail}
-                placeholder="We would love to discuss further the terms of partnership" 
-                label="Email address"
+              value={email}
+              required="required"
+              type="email" 
+              onChangeCallBack={setEmail}
+              placeholder="We would love to discuss further the terms of partnership" 
+              label="Email address"
             />
+            </>
+          )}
         
           <h3 className="text-white font-audio text-2xl my-3 mt-14 flex item-center">
             <img src={lock} alt="lock" />
@@ -81,15 +85,14 @@ const DonateForm = () => {
           </p>
           <div className="flex relative flex-col  mt-4  py-2">
           <IconForm 
-                value={number}
-                required="required"
-                type="number" 
-                onChangeCallBack={setNumber}
-                placeholder="200,000" 
-                label="Donate Amount"
-                icon="$"
-            />
-            
+            value={number}
+            required="required"
+            type="number" 
+            onChangeCallBack={setNumber}
+            placeholder="200,000" 
+            label="Donate Amount"
+            icon="$"
+            />  
           </div>
 
           <div className="flex mt-10 justify-between p-5 border border-[#171717] rounded-lg">
@@ -124,7 +127,7 @@ const DonateForm = () => {
               <p className=" mt-9 text-[12px] text-end text-[#737373]">-$0</p>
             </div>
           </div>
-          <SubmitBtn type="submit" text="Proceed" />
+          {!showQRCode && (<SubmitBtn type="submit" text="Proceed" />)}
 
             { showQRCode && ( <DonateQRCode /> ) }
         </form>
@@ -132,9 +135,9 @@ const DonateForm = () => {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        className="ml-auto hidden md:block"
+        className="ml-auto hidden md:block "
       >
-        <div className="w-[400px] p-5 border border-[#171717] rounded-lg">
+        <div className="w-[400px] py-[16px] px-[17px] border border-[#262626] rounded-[5px] sticky top-3/4">
           <p className="block font-bold text-[18px] text-yellow">
             Donate Summary
           </p>
