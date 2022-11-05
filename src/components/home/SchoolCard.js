@@ -22,7 +22,7 @@ const SchoolCard = ({ photo, videoLink }) => {
         </div>
         <button className="flex text-yellow items-center">
           {" "}
-          <BiPlayCircle size={26} className="mr-2" /> Watch Vidoe
+          <BiPlayCircle size={26} className="mr-2" /> Watch Video
         </button>
       </div>
 
