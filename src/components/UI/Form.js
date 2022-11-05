@@ -9,7 +9,7 @@ export const Form = ({
   onChangeCallBack,
 }) => {
   return (
-    <div className="flex  flex-col  mt-8  py-2">
+    <div className="flex  flex-col  mt-2 md:mt-6   py-2">
       <label className="text-gray-50 pb-3">{label}</label>
       <input
         value={value}
@@ -56,7 +56,7 @@ export const Textarea = ({
   onChangeCallBack,
 }) => {
   return (
-    <div className="flex flex-col  mt-4 mb-8  py-2 ">
+    <div className="flex flex-col  mt-3 md:mt-6  mb-3 md:mb-8  py-2 ">
       <label className="text-gray-50 pb-3">{label}</label>
       <textarea
         value={message}

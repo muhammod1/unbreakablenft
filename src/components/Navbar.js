@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav
       className={`w-full  ${
-        navbar && "bg-[#0c0809] p-8"
+        navbar && "bg-[#0c0809] h-screen "
       }  mx-auto top-0 md:h-auto max-w-[1240px]`}
     >
       <div className="justify-between   mx-auto  md:items-center md:flex px-3 sm:px-6 ">
@@ -64,7 +64,7 @@ const Navbar = () => {
                 <ul className="absolute z-50 hidden w-[162px] pt-1 text-grey_p group-hover:block ">
                   <li onClick={() => setNavbar(false)} className="">
                     <Link
-                      className="whitespace-no-wrap block rounded-t bg-[#0C0B09] py-2 px-4"
+                      className="whitespace-no-wrap block rounded-t text-[16px] md:text-[20px] bg-[#0C0B09] py-2 px-4"
                       to="/program"
                     >
                       Programmes
@@ -72,7 +72,7 @@ const Navbar = () => {
                   </li>
                   <li onClick={() => setNavbar(false)} className="">
                     <Link
-                      className="whitespace-no-wrap block bg-[#0C0B09] py-2 px-4"
+                      className="whitespace-no-wrap text-[16px] md:text-[20px] block bg-[#0C0B09] py-2 px-4"
                       to="/events"
                     >
                       Event
@@ -96,7 +96,7 @@ const Navbar = () => {
                 <ul className="absolute z-50 hidden w-[162px] pt-1 text-grey_p  group-hover:block ">
                   <li onClick={() => setNavbar(false)} className="">
                     <Link
-                      className="whitespace-no-wrap block rounded-t bg-[#0C0B09] py-2 px-4"
+                      className="whitespace-no-wrap text-[16px] md:text-[20px] block rounded-t bg-[#0C0B09] py-2 px-4"
                       to="/about"
                     >
                       About us
@@ -104,7 +104,7 @@ const Navbar = () => {
                   </li>
                   <li onClick={() => setNavbar(false)} className="">
                     <Link
-                      className="whitespace-no-wrap block bg-[#0C0B09] py-2 px-4"
+                      className="whitespace-no-wrap text-[16px] md:text-[20px] block bg-[#0C0B09] py-2 px-4"
                       to="/contact"
                     >
                       Contact us

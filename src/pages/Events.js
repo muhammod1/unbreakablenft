@@ -17,10 +17,12 @@ const Events = () => {
         whileInView={{ opacity: 1 }}
         className="flex relative max-h-[468px]"
       >
-        <div className="mt-14 mx-6 absolute bottom-6  md:mx-20">
-          <h4 className="text-head_white text-3xl break-words  font-audio small_l:text-5xl sm:text-7xl">
-            <span className="block">The Unbroken</span> Events
-          </h4>
+        <div className="mt-14  absolute bottom-6 right-0 left-0">
+          <div className="px-3 sm:px-6 max-w-[1240px] mx-auto ">
+            <h4 className="text-head_white text-3xl break-words  font-audio small_l:text-5xl sm:text-7xl">
+              <span className="block">The Unbroken</span> Events
+            </h4>
+          </div>
         </div>
         <div className=" -z-10 flex-1">
           <img
@@ -52,7 +54,7 @@ const Events = () => {
           />
         </div>
       </motion.div>
-      <div className="mt-14 flex flex-col justify-center items-center  px-3 sm:px-6 max-w-[1240px] mx-auto">
+      <div className="mt-14 flex flex-col  px-3 sm:px-6 max-w-[1240px] mx-auto">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -62,9 +64,9 @@ const Events = () => {
             Current Events
           </h4>
           {currentEventData.length > 0 && (
-            <div className="mt-6 flex gap-4 justify-center  flex-wrap">
+            <div className="mt-6 flex gap-4  flex-wrap">
               {currentEventData.map((data) => (
-                <EventCard key={data.date} {...data} />
+                <EventCard key={data.date} {...data} text="Remind me" />
               ))}
             </div>
           )}
@@ -73,13 +75,13 @@ const Events = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          className="mb-14 flex flex-col "
+          className="mb-14 flex flex-col px-3 sm:px-6 max-w-[1240px] mx-auto "
         >
           <h4 className=" font-audio text-2xl text-head_white">Past Events</h4>
           {pastEventData.length > 0 && (
-            <div className="mt-6  flex justify-center gap-4 flex-wrap">
+            <div className="mt-6  flex gap-4 flex-wrap">
               {pastEventData.map((data) => (
-                <EventCard key={data.date} {...data} />
+                <EventCard key={data.date} {...data} text="Replay" />
               ))}
             </div>
           )}
