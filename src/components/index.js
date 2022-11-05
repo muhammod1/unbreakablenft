@@ -20,3 +20,4 @@ export { default as NftHomeCardSection } from "./home/NftHomeCardSection";
 export { default as InitiativeSection } from "./home/InitiativeSection";
 export { default as JourneySection } from "./home/JourneySection";
 export { default as SchoolSection } from "./home/SchoolSection";
+export { default as LinkCard} from "./UI/LinkCard";

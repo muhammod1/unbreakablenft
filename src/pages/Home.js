@@ -39,7 +39,7 @@ const Home = () => {
         <div className="hidden sm:block flex-1 w-full"></div>
         <div className="w-full small:w-[662px] flex flex-col justify-start flex-1  relative">
           <div className="-z-20 ellipse3"></div>
-          <p className="text-head_white text-4xl font-audio  small:text-5xl  sm:leading-[79px] sm:text-[72px]">
+          <p className="text-head_white text-4xl font-audio  md:text-7xl ">
             <span className="block ">We are</span> Unbroken
           </p>
           <p className="mt-3 text-grey_p">
@@ -69,17 +69,17 @@ const Home = () => {
       >
         <div className="mt-[112px] flex flex-col sm:flex-row justify-between gap-2 py-2   rounded-[5px] items-center px-[16px] md:px-[42px]  min-h-[110px] bg-yellow ">
           <div className="flex flex-col lg:gap-10 lg:flex-row lg:justify-between lg:items-center">
-            <h4 className="font-audio mx-8 text-2xl">
-              <span className="inline sm:block">Become an</span> Unbroken
+            <h4 className="font-audio sm:mx-8 text-2xl">
+              <span className="  sm:block">Become an</span> Unbroken
             </h4>
-            <p className="text-[#262626] max-w-[583px] w-full text-lg">
+            <p className="text-[#262626] sm:mx-[-20px] max-w-[583px] w-full text-lg">
               Join the coolest tribe on Discord , participate in community
               activities, events and programmes
             </p>
           </div>
           <Link
             to="/community"
-            className="bg-[#262626] w-full text-center sm:w-fit p-3 rounded-md text-yellow text-sm"
+            className="bg-[#262626] w-full text-center sm:w-fit p-3 rounded-md text-yellow mx-8 text-sm"
           >
             Join Discord
           </Link>
