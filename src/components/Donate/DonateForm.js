@@ -38,7 +38,7 @@ const DonateForm = () => {
         whileInView={{ opacity: 1 }}
         className="w-[97%] small_l[95%] mx-auto md:mx-0 md:w-[50%]"
       >
-        <div className="flex items-center mb-4">
+        {/* <div className="flex items-center mb-4">
           <input
             id="default-checkbox"
             type="checkbox"
@@ -53,10 +53,10 @@ const DonateForm = () => {
           >
             Donate anonymously
           </label>
-        </div>
+        </div> */}
 
-        <form onSubmit={handleSubmit}>
-          {/* {!checked && (
+        {/* <form onSubmit={handleSubmit}> */}
+        {/* {!checked && (
             <>
               <h3 className="text-white font-audio text-2xl my-2">
                 Personal information
@@ -102,10 +102,9 @@ const DonateForm = () => {
             />
           </div> */}
 
-          <div className="flex mt-10 justify-between p-5 border border-[#171717] rounded-lg">
+        {/* <div className="flex mt-10 justify-between p-5 border border-[#171717] rounded-lg">
             <div className="w-[50%]">
-              {/* This is the section fro the select button */}
-
+            
               <label for="coins" className="block text-[14px] text-[#737373]">
                 I want to donate
               </label>
@@ -129,12 +128,12 @@ const DonateForm = () => {
               <p className="text-white text-[32px] font-bold">3400</p>
               <p className=" mt-9 text-[12px] text-end text-[#737373]">-$0</p>
             </div>
-          </div>
+          </div> */}
 
-          {!showQRCode && <SubmitBtn type="submit" text="Proceed" />}
+        {/* {!showQRCode && <SubmitBtn type="submit" text="Proceed" />} */}
 
-          {showQRCode && <DonateQRCode />}
-        </form>
+        {/* </form> */}
+        <DonateQRCode />
       </motion.div>
       {/* {!checked && (
 
