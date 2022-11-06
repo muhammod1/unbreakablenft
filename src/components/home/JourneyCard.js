@@ -8,7 +8,7 @@ const JourneyCard = ({ title, isaActive, desc, version, year, index }) => {
   return (
     <motion.div
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.7 }}
     >
       <div className=" flex justify-between items-start gap-5 my-[74px]">
         <div className="max-w-full small:max-w-[1039px] flex md:items-center flex-col md:flex-row gap-2 md:gap-9">

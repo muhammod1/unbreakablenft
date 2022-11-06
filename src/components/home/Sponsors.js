@@ -5,7 +5,7 @@ const Sponsors = () => {
   return (
     <motion.div
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.7 }}
       className="mt-[85px] px-3 sm:px-6 max-w-[1240px] mx-auto flex flex-col justify-center items-center"
     >
       <p className="text-grey_p text-xl font-audio">Unbroken Sponsors</p>

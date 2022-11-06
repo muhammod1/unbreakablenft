@@ -6,7 +6,7 @@ const InitiativeSection = () => {
   return (
     <motion.div
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.7 }}
       className="px-3 mt-[86px] sm:px-6 max-w-[1240px] mx-auto"
     >
       <div className=" max-w-[534px] ">

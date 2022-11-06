@@ -10,7 +10,7 @@ const Cards = () => {
   return (
     <motion.div
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.7 }}
     >
       <div className="mt-[-20px] px-4 small:px-6 max-w-[1240px] mx-auto bg-[black]">
         <div className="flex justify-center my-20 pt-8">
@@ -38,7 +38,7 @@ const Cards = () => {
             {cardData.map(({ icon, title, desc, id }) => (
               <motion.button
                 whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.7 }}
                 key={id}
                 className="text-black relative"
                 onClick={() => setShowModal(true)}
@@ -68,7 +68,7 @@ const Cards = () => {
             {cardDataUnbroken.map(({ icon, title, desc, id }) => (
               <motion.button
                 whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.7 }}
                 key={id}
                 className="text-black relative rounded"
                 onClick={() => setShowModal(true)}

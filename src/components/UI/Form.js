@@ -41,7 +41,7 @@ export const IconForm = ({
         type={type}
         placeholder={placeholder}
       />
-      <div className="text-grey_p flex absolute inset-y-0 right-10 top-6 items-center pl-3 pointer-events-none">
+      <div className="text-grey_p flex absolute inset-y-0 right-5 top-9 items-center  pointer-events-none">
         {icon}
       </div>
     </div>
