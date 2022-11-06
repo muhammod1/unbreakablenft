@@ -84,6 +84,8 @@ import lock from "./lock.svg";
 import coin from "./coin.svg";
 import QRCode from "./QRCode.png";
 import copyIcon from "./copyIcon.svg";
+import checkbox from "./checkbox.svg";
+
 
 import facebookIcon from "./facebookicon.png";
 import linkedinIcon from "./linkedinicon.png";
@@ -95,6 +97,7 @@ import unionUnFill2 from "./unionunfill2.svg";
 import circle from "./circle.png";
 
 export {
+  checkbox,
   copyIcon,
   unionUnFill2,
   unionFill2,

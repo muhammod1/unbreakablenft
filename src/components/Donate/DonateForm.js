@@ -44,7 +44,6 @@ const DonateForm = () => {
             type="checkbox"
             checked={checked}
             onChange={handleChange}
-            // value=""
             className="w-4 accent-yellow h-4 rounded"
           />
           <label
@@ -58,8 +57,7 @@ const DonateForm = () => {
         
         
         <form onSubmit={handleSubmit}>
-          {/* <> */}
-            {checked && (
+            {!checked && (
               <>
                 <h3 className="text-white font-audio text-2xl my-2">
                   Personal information
@@ -69,7 +67,6 @@ const DonateForm = () => {
                 </p>
               <Form
                 value={name}
-                required="required"
                 type="text" 
                 onChangeCallBack={setName}
                 placeholder="your legal name" 
@@ -77,7 +74,6 @@ const DonateForm = () => {
               />
               <Form 
                 value={email}
-                required="required"
                 type="email" 
                 onChangeCallBack={setEmail}
                 placeholder="We would love to discuss further the terms of partnership" 
@@ -123,16 +119,10 @@ const DonateForm = () => {
                   USDC
                 </option>
                 <option className="pl-3" value="US">
-                  United States
+                  USDT
                 </option>
                 <option className="pl-3" value="CA">
-                  Canada
-                </option>
-                <option className="pl-3" value="FR">
-                  France
-                </option>
-                <option className="pl-3" value="DE">
-                  Germany
+                  ETH
                 </option>
               </select>
               <p className="mt-9 block text-[12px] text-[#737373]">Approx:</p>
