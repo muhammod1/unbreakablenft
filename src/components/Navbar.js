@@ -70,14 +70,6 @@ const Navbar = () => {
                       Programmes
                     </Link>
                   </li>
-                  <li onClick={() => setNavbar(false)} className="">
-                    <Link
-                      className="whitespace-no-wrap text-[16px] md:text-[20px] block bg-[#0C0B09] py-2 px-4"
-                      to="/events"
-                    >
-                      Event
-                    </Link>
-                  </li>
                 </ul>
               </li>
               <li

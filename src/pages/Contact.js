@@ -42,54 +42,7 @@ const Contact = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         className="flex w-full lg:w-1/2 justify-center items-center  "
-      >
-        {/* <div className="w-full px-4 small:px-6 mx-auto my">
-          <form
-            autoComplete="off"
-            className=" max-w-[600px]"
-            onSubmit={handleSubmit}
-          >
-            <h1 className="text-yellow text-[32px] font-audio">Contact us</h1>
-            <p className=" text-grey_p">
-              Want to become a partner or have a story to share?
-            </p>
-            <Form
-              value={name}
-              type="text"
-              required="required"
-              onChangeCallBack={setName}
-              placeholder="your legal name"
-              label="Full name"
-            />
-
-            <Form
-              value={email}
-              required="required"
-              type="email"
-              onChangeCallBack={setEmail}
-              placeholder="We would love to discuss further the terms of partnership"
-              label="Email address"
-            />
-
-            <Form
-              value={org}
-              type="text"
-              onChangeCallBack={setOrg}
-              placeholder="org name if any*"
-              label="Organization"
-            />
-
-            <Textarea
-              value={message}
-              type="text"
-              placeholder="write to us"
-              label="Message"
-              onChangeCallBack={setMessage}
-            />
-            <SubmitBtn type="submit" text="Send" />
-          </form>
-        </div> */}
-      </motion.div>
+      ></motion.div>
     </div>
   );
 };
