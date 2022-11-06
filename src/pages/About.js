@@ -50,18 +50,15 @@ const About = () => {
         <h4 className="hidden sm:block text-3xl text-head_white">Our goals</h4>
         <div className="flex mt-8 gap-10 flex-col sm:flex-row text-[#D4D4D4] text-base">
           <div className="max-w-[400px]">
-            
             <p>To increase awareness of bullying and its negative impacts</p>
           </div>
           <div className="max-w-[400px]">
-            
             <p>
               o create long-term impactful solutions to curb bullying in high
               schools.
             </p>
           </div>
           <div className="max-w-[400px]">
-           
             <p>
               To improve the safety and monitoring of student activities on the
               school premises
@@ -70,7 +67,7 @@ const About = () => {
         </div>
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
         transition={{ duration: 0.5 }}
         className="mt-24 flex max-w-[1120px]  mx-auto gap-4 flex-col sm:items-end sm:flex-row"
@@ -104,7 +101,7 @@ const About = () => {
             <AboutCard1 aboutImage={about5} />
           </div>
         </div>
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };

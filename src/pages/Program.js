@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ProgramCard from "../components/program/ProgramCard";
 import ProgramHero from "../components/program/ProgramHero";
-import Pagination from "../components/program/paginationPro";
+// import Pagination from "../components/program/paginationPro";
 
 import { schoolDetails } from "../assets/program";
 
@@ -11,18 +11,18 @@ const Program = () => {
 
   // Get current posts
 
-  const indexOfLastPost = currentPage * postsPerPage;
-  const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = schoolDetails.slice(indexOfFirstPost, indexOfLastPost);
+  // const indexOfLastPost = currentPage * postsPerPage;
+  // const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  // const currentPosts = schoolDetails.slice(indexOfFirstPost, indexOfLastPost);
 
-  //Change page
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
-  const paginateFront = () => setCurrentPage(currentPage + 1);
-  const paginateBack = () => setCurrentPage(currentPage - 1);
+  // //Change page
+  // const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  // const paginateFront = () => setCurrentPage(currentPage + 1);
+  // const paginateBack = () => setCurrentPage(currentPage - 1);
   return (
     <div>
       <ProgramHero />
-      <ProgramCard schoolDetails={currentPosts} />
+      <ProgramCard schoolDetails={schoolDetails} />
       {/* <Pagination
         postsPerPage={postsPerPage} 
         totalPosts={schoolDetails.length} 
