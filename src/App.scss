@@ -86,28 +86,7 @@ transform: rotate(66.65deg);
     
     position: absolute;
     inset: 0;
-    // .nft___main_cover{
-    //     display: none;
-    // }
-   
-
-
 }
-// .nft__card-cover:hover {
-//     .nft___side_cover{
-//         display: none;
-//     }
-//     .nftsample1{
-//         display: none;
-//     }
-   
-//     .nft___main_cover{
-//         display: block;
-//     }
-//     background: transparent;
-//     // transition: all ease-in-out 1000ms;
-
-// }
 
 .sliderWrap {
 position: fixed;
@@ -132,7 +111,7 @@ color: #FFD700;
 z-index: 9999;
 }
 
-.btnClose, .btnPrev, .btnNext {
+ .btnPrev, .btnNext {
 width: 8%;
 height: 8%;
 }
@@ -152,31 +131,13 @@ right: 10px;
 opacity: 1;
 }
 
-.sliderWrap .btnClose {
-    top: 5%;
-    right: 15%;
-
-    @media screen and (max-width: 1100px) {
-        top: 6%;
-        right: 12%;
-    }
-    @media screen and (max-width: 799px) {
-        top: 6%;
-        right: 8%;
-    }
-    @media screen and (max-width: 670px) {
-        top: 0%;
-        right: 8%;
-    }
-}
-
-
 .fullScreenImage {
 width: calc(100% - 40px);
-height: calc(100% - 70px);
+height: calc(100% - 100px);
 display: flex;
 align-items: center;
 justify-content: center;
+position: relative;
 }
 
 .fullScreenImage img {
@@ -197,5 +158,4 @@ user-select: none;
 
 .contact_img_section {
     background: linear-gradient(rgba(2,2,2,.7),rgba(0,0,0,.7)),url("./assets/contactimage.png") center center;
-}  
-
+}
