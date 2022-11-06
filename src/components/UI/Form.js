@@ -32,7 +32,7 @@ export const IconForm = ({
   onChangeCallBack,
 }) => {
   return (
-    <div className="flex  flex-col  mt-8   py-2 relative">
+    <div className="flex  flex-col  mt-8 py-2 relative">
       <label className="text-gray-50 pb-3">{label}</label>
       <input
         value={value}
@@ -41,7 +41,7 @@ export const IconForm = ({
         type={type}
         placeholder={placeholder}
       />
-      <div className="text-grey_p flex absolute inset-y-0 right-5 top-9 items-center  pointer-events-none">
+      <div className="text-grey_p h-[30px] bg-[#0e0e0e]  w-[30px] flex absolute right-2 top-[50px] items-center justify-center pointer-events-none">
         {icon}
       </div>
     </div>
