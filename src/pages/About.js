@@ -18,7 +18,7 @@ const About = () => {
           About <span className="hidden sm:inline">unbroken</span>
           <span className="inline sm:hidden">US</span>
         </h4>
-        <p className="text-[#D4D4D4] text-lg">
+        <p className="text-[#D4D4D4] mt-4 text-lg">
           Unbroken NFTs is a collection that tells the fictional story of
           fifteen (15) unique characters from diverse cultural backgrounds. They
           were victims of bullying who transitioned to become successful by

@@ -1,7 +1,7 @@
 import React from "react";
 import { BsTwitter } from "react-icons/bs";
 import { motion } from "framer-motion";
-const EventCard = ({ center, title, desc, date, icon, photo, url }) => {
+const EventCard = ({ center, title, desc, date, icon, photo, url, text }) => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -27,9 +27,9 @@ const EventCard = ({ center, title, desc, date, icon, photo, url }) => {
           </div>
           <a
             href={url}
-            className="bg-yellow  text-xs rounded-lg p-1 small:p-2 px-2 small:px-4"
+            className="bg-yellow  text-xs rounded-[5px] p-1 small:p-2 px-2 small:px-4"
           >
-            Read me
+            {text}
           </a>
         </div>
       </div>

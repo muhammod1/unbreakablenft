@@ -5,14 +5,13 @@ import {
   event2,
   event3,
   faceb,
-  frame,
-  host,
   instag,
   linkd,
   twit,
 } from "../assets";
 import { motion } from "framer-motion";
 import { BsTwitter } from "react-icons/bs";
+import { LinkCard } from "../components";
 const Community = () => {
   return (
     <>
@@ -29,7 +28,7 @@ const Community = () => {
         </h3>
         <motion.div
           whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.7 }}
           className="mt-16 max-w-[534px] "
         >
           <h3 className="font-audio text-2xl  md:text-2xl text-head_white">
@@ -42,7 +41,7 @@ const Community = () => {
         </motion.div>
         <motion.div
           whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.7 }}
           className="mt-4 max-w-[534px] h-[110px] flex mx-[-10px]  "
         >
           <div className="mx-2">
@@ -60,28 +59,16 @@ const Community = () => {
         </motion.div>
         <motion.div
           whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.7 }}
         >
-          <div className="w-[100%]  p-5 md:p-5 bg-yellow rounded-md">
-            <div className="flex flex-col gap-4 md:flex-row item-center justify-between">
-              <h1 className="w-full md:w-[30%] mx-8 text-[28px] font-audio ">
-                <span className="block">Become an Unbroken</span>{" "}
-              </h1>
-              <p className="h-fit my-auto mr-20 text-[16px]">
-                Welcome to our NFT gallery. With your support, we will execute
-                our anti-bullying initiatives.
-              </p>
-              <button className="h-fit  md:w-[12%] my-auto bg-[#262626] py-3 px-2 text-yellow text-[14px] rounded">
-                join discord
-              </button>
-            </div>
-          </div>
+          <LinkCard text="Become an " subtext="Unbroken" desc="Welcome to our NFT gallery. With your support, we will execute our anti-bullying initiatives." linktext="Join discord" url="#"  />
+"
         </motion.div>
 
         <motion.div
           whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-          transition={{ duration: 0.5 }}
-          className=" mt-16 flex lg:flex-row items-center justify-center flex-col  "
+          transition={{ duration: 0.7 }}
+          className=" mt-16 flex lg:flex-row items-center justify-center flex-col  justify-evenly "
         >
           <div className="  ">
             <div className="  ">
@@ -93,8 +80,8 @@ const Community = () => {
                 and reality of bullying.
               </p>
             </div>
-            <div className="flex mt-8 flex-col sm:flex-row">
-              <div className=" rounded mt-8 sm:mr-6 max-w-[350px] overflow-hidden bg-[#171717] h-full relative">
+            <div className="flex mt-8 flex-col sm:flex-row  ">
+              <div className=" rounded mt-8 sm:mr-14 max-w-[350px]  overflow-hidden bg-[#171717] h-full relative ">
               <div className="flex gap-2 items-center  absolute  z-10 py-[5px] px-3 rounded-2xl overflow-hidden top-2 right-3">
           <BsTwitter className="text-blue-400 " />
           <p className="text-head_white text-xs">Twitter Spaces</p>
@@ -117,7 +104,7 @@ const Community = () => {
                 <div className="px-6 pt-4 pb-2">
                   <span className="inline-block   py-1 text-sm font-semibold  mr-2 mb-2">
                     <div className="  md:w-fit py-1 px-3 bg-[#262626] flex   rounded-[8px] ">
-                      <img src={circle} className=" my-auto mr-2 w-[37px] h-[37px]"/>
+                      <img src={circle} alt="host card" className=" my-auto mr-2 w-[37px] h-[37px]"/>
                       <div className="flex  flex-col">
                          <p className="text-[10px]  text-[#A3A3A3] Poppins">Host</p>
                          <p className="text-[12px]  text-[#FAFAFA] Poppins">Oluchi Enebeli</p>
@@ -150,7 +137,7 @@ const Community = () => {
                 <div className="px-6 pt-4 pb-2">
                 <span className="inline-block   py-1 text-sm font-semibold  mr-2 mb-2">
                     <div className="  md:w-fit py-1 px-3 bg-[#262626] flex   rounded-[8px] ">
-                      <img src={circle} className=" my-auto mr-2 w-[37px] h-[37px]"/>
+                      <img src={circle} alt="host card" className="  my-auto mr-2 w-[37px] h-[37px]"/>
                       <div className="flex  flex-col">
                          <p className="text-[10px]  text-[#A3A3A3] Poppins">Host</p>
                          <p className="text-[12px]  text-[#FAFAFA] Poppins">Oluchi Enebeli</p>
@@ -162,7 +149,7 @@ const Community = () => {
               </div>
             </div>
           </div>
-          <div className=" rounded max-w-[350px] overflow-hidden bg-[#171717] relative h-full lg:ml-8">
+          <div className=" rounded max-w-[350px] overflow-hidden bg-[#171717] relative h-full lg:ml-8 ">
           <div className="flex gap-2 items-center  absolute  z-10 py-[5px] px-3 rounded-2xl overflow-hidden top-2 right-3">
           <BsTwitter className="text-blue-400 " />
           <p className="text-head_white text-xs">Twitter Spaces</p>
@@ -185,7 +172,7 @@ const Community = () => {
             <div className="px-6 pt-4 pb-2">
             <span className="inline-block   py-1 text-sm font-semibold  mr-2 mb-2">
                     <div className="  md:w-fit py-1 px-3 bg-[#262626] flex   rounded-[8px] ">
-                      <img src={circle} className=" my-auto mr-2 w-[37px] h-[37px]"/>
+                      <img src={circle} alt="host card" className=" my-auto mr-2 w-[37px] h-[37px]"/>
                       <div className="flex  flex-col">
                          <p className="text-[10px]  text-[#A3A3A3] Poppins">Host</p>
                          <p className="text-[12px]  text-[#FAFAFA] Poppins">Oluchi Enebeli</p>
