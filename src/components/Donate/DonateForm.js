@@ -100,7 +100,7 @@ const DonateForm = () => {
 
               {/* This is the section fro the select button */}
 
-              {/* <label for="coins" className="block text-[14px] text-[#737373]">
+              <label for="coins" className="block text-[14px] text-[#737373]">
                 I want to donate
               </label> 
                 <select
@@ -122,7 +122,7 @@ const DonateForm = () => {
                 <option className="pl-3" value="DE">
                   Germany
                 </option>
-              </select> */}
+              </select>
               <p className="mt-9 block text-[12px] text-[#737373]">Approx:</p>
             </div>
             <div className="mt-auto">
@@ -177,3 +177,4 @@ const DonateForm = () => {
 };
 
 export default DonateForm;
+
