@@ -43,7 +43,7 @@ const Contact = () => {
         whileInView={{ opacity: 1 }}
         className="flex w-full lg:w-1/2 justify-center items-center  "
       >
-        <div className="w-full px-4 small:px-6 mx-auto my">
+        {/* <div className="w-full px-4 small:px-6 mx-auto my">
           <form
             autoComplete="off"
             className=" max-w-[600px]"
@@ -88,7 +88,7 @@ const Contact = () => {
             />
             <SubmitBtn type="submit" text="Send" />
           </form>
-        </div>
+        </div> */}
       </motion.div>
     </div>
   );
