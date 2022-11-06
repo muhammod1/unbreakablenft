@@ -44,6 +44,7 @@ const DonateForm = () => {
             type="checkbox"
             checked={checked}
             onChange={handleChange}
+            // value=""
             className="w-4 accent-yellow h-4 rounded"
           />
           <label
@@ -67,6 +68,7 @@ const DonateForm = () => {
                 </p>
               <Form
                 value={name}
+                required="required"
                 type="text" 
                 onChangeCallBack={setName}
                 placeholder="your legal name" 
@@ -74,6 +76,7 @@ const DonateForm = () => {
               />
               <Form 
                 value={email}
+                required="required"
                 type="email" 
                 onChangeCallBack={setEmail}
                 placeholder="We would love to discuss further the terms of partnership" 
@@ -139,43 +142,46 @@ const DonateForm = () => {
             { showQRCode && ( <DonateQRCode /> ) }
       </form>
       </motion.div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        className="ml-auto hidden md:block "
-      >
-        <div className="w-[400px] py-[16px] px-[17px] border border-[#262626] rounded-[5px] sticky top-10">
-          <p className="block font-bold text-[18px] text-yellow">
-            Donate Summary
-          </p>
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            className="flex justify-between "
-          >
-            <div className="">
-              <p className="mt-3 block text-[14px] text-[#737373]">Full name</p>
-              <p className="mt-3 block text-[14px] text-[#737373]">
-                email address
-              </p>
-              <p className="mt-3 block text-[14px] text-[#737373]">
-                Your donation
-              </p>
-            </div>
-            <div className="">
-              <p className=" mt-3 text-[14px] text-end text-[#F5F5F5]">
-                {name}
-              </p>
-              <p className=" mt-3 text-[14px] text-end text-[#F5F5F5]">
-                {email}
-              </p>
-              <p className=" mt-3 text-[14px] text-end text-[#F5F5F5]">
-                {number}
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </motion.div>
+      {!checked && (
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className="ml-auto hidden md:block "
+        >
+          <div className="w-[400px] py-[16px] px-[17px] border border-[#262626] rounded-[5px] sticky top-10">
+            <p className="block font-bold text-[18px] text-yellow">
+              Donate Summary
+            </p>
+            <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              className="flex justify-between "
+            >
+              <div className="">
+                <p className="mt-3 block text-[14px] text-[#737373]">Full name</p>
+                <p className="mt-3 block text-[14px] text-[#737373]">
+                  email address
+                </p>
+                <p className="mt-3 block text-[14px] text-[#737373]">
+                  Your donation
+                </p>
+              </div>
+              <div className="">
+                <p className=" mt-3 text-[14px] text-end text-[#F5F5F5]">
+                  {name}
+                </p>
+                <p className=" mt-3 text-[14px] text-end text-[#F5F5F5]">
+                  {email}
+                </p>
+                <p className=" mt-3 text-[14px] text-end text-[#F5F5F5]">
+                  {number}
+                </p>
+              </div>
+            </motion.div>
+          </div>
+        </motion.div>
+      )}
     </motion.div>
   );
 };
