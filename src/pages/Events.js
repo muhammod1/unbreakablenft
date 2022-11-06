@@ -75,7 +75,7 @@ const Events = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          className="mb-14 flex flex-col px-3 sm:px-6 max-w-[1240px] mx-auto "
+          className="mb-14 "
         >
           <h4 className=" font-audio text-2xl text-head_white">Past Events</h4>
           {pastEventData.length > 0 && (

@@ -7,7 +7,7 @@ const SchoolCard = ({ photo, videoLink }) => {
   return (
     <motion.div
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.7 }}
       className="p-4 group w-full  bg-no-repeat transition-all duration-500 hover:scale-105 ease-in-out bg-cover small_l:w-[361px] h-60 small_l:h-[387px]  overflow-hidden flex-shrink-0 rounded-md relative"
     >
       <div className="flex flex-col justify-between h-full">
@@ -34,7 +34,7 @@ const SchoolCard = ({ photo, videoLink }) => {
       />
       <motion.img
         whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.7 }}
         src={schoolImage}
         alt="schoolimages"
         className="w-full hidden group-hover:block -z-10  absolute inset-0"

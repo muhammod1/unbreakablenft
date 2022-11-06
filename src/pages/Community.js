@@ -28,7 +28,7 @@ const Community = () => {
         </h3>
         <motion.div
           whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.7 }}
           className="mt-16 max-w-[534px] "
         >
           <h3 className="font-audio text-2xl  md:text-2xl text-head_white">
@@ -41,7 +41,7 @@ const Community = () => {
         </motion.div>
         <motion.div
           whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.7 }}
           className="mt-4 max-w-[534px] h-[110px] flex mx-[-10px]  "
         >
           <div className="mx-2">
@@ -59,15 +59,15 @@ const Community = () => {
         </motion.div>
         <motion.div
           whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.7 }}
         >
-          <LinkCard text="Become an Unbroken" desc="Welcome to our NFT gallery. With your support, we will execute our anti-bullying initiatives."  />
+          <LinkCard text="Become an " subtext="Unbroken" desc="Welcome to our NFT gallery. With your support, we will execute our anti-bullying initiatives." linktext="Join discord" url="#"  />
 "
         </motion.div>
 
         <motion.div
           whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.7 }}
           className=" mt-16 flex lg:flex-row items-center justify-center flex-col  justify-evenly "
         >
           <div className="  ">

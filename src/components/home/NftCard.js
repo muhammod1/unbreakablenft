@@ -23,7 +23,7 @@ const NftCard = ({ bgImage, icon, title, desc }) => {
             <div>
               <p className="text-2xl">{title}</p>
               <p className="text-sm">
-                Price <span className="text-yellow">0.5ETH</span>
+                Price <span className="text-yellow">0.7ETH</span>
               </p>
             </div>
             <img src={icon} alt="nft icons" />

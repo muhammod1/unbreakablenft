@@ -6,7 +6,7 @@ const NftHomeCardSection = () => {
   return (
     <motion.div
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.7 }}
       className="mt-20  pl-3 sm:pl-6 max-w-[1240px] mx-auto"
     >
       {cardData.length > 0 && (

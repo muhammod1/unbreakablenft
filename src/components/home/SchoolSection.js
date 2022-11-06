@@ -8,7 +8,7 @@ const SchoolSection = () => {
   return (
     <motion.div
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.7 }}
       className="mt-[85px] px-3 sm:px-6 max-w-[1240px] mx-auto"
     >
       <div className=" flex gap-5 justify-center flex-wrap ">
