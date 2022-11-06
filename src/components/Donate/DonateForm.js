@@ -10,7 +10,7 @@ const DonateForm = () => {
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
   const [showQRCode, setShowQRCode] = useState(false);
-  const [checked, setChecked] = useState(true);
+  const [checked, setChecked] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -59,7 +59,7 @@ const DonateForm = () => {
         
         <form onSubmit={handleSubmit}>
           {/* <> */}
-            {!checked && (
+            {checked && (
               <>
                 <h3 className="text-white font-audio text-2xl my-2">
                   Personal information
