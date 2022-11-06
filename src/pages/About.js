@@ -50,24 +50,18 @@ const About = () => {
         <h4 className="hidden sm:block text-3xl text-head_white">Our goals</h4>
         <div className="flex mt-8 gap-10 flex-col sm:flex-row text-[#D4D4D4] text-base">
           <div className="max-w-[400px]">
-            <h4 className="block text-2xl font-audio sm:hidden text-yellow">
-              Goals
-            </h4>
+            
             <p>To increase awareness of bullying and its negative impacts</p>
           </div>
           <div className="max-w-[400px]">
-            <h4 className="block text-2xl font-audio sm:hidden text-yellow">
-              Mission
-            </h4>
+            
             <p>
               o create long-term impactful solutions to curb bullying in high
               schools.
             </p>
           </div>
           <div className="max-w-[400px]">
-            <h4 className="block text-2xl font-audio sm:hidden text-yellow">
-              Vision
-            </h4>
+           
             <p>
               To improve the safety and monitoring of student activities on the
               school premises
