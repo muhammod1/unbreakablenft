@@ -1,17 +1,19 @@
 import React from "react";
 
 import Modal from "../UI/Modal";
+import {IoMdClose} from 'react-icons/io'
+
 
 const PartnershipModal = ({ setShowModal }) => {
   return (
     <div>
       <Modal>
         <div
-          className="cursor-pointer w-fit ml-auto py-2 pr-4 text-end text-yellow background-transparent text-[14px] outline-none focus:outline-none ease-linear transition-all duration-150"
+          className="cursor-pointer w-fit flex ml-auto py-2 pr-4 text-end text-yellow background-transparent text-[18px] outline-none focus:outline-none ease-linear transition-all duration-150"
           type="button"
           onClick={() => setShowModal(false)}
         >
-          close <span className="pl-1">X</span>
+          close <span className="pl-1"> <IoMdClose size={24} /></span>
         </div>
         <div className="w-full px-3 pb-3 mx-auto h-fit flex flex-row-reverse">
           <div className="hidden md:block partner__bg w-1/2 mx-auto" />

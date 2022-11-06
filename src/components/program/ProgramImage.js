@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
+              
 import { leftArrow, rightArrow } from "../../assets";
-
+import {IoMdClose} from 'react-icons/io'
 import { motion } from "framer-motion";
-
 import { galleryImages } from "../../assets/program";
 
 const ProgramImage = () => {
@@ -57,10 +57,11 @@ const ProgramImage = () => {
           />
           <div className="fullScreenImage">
             <div
-              className="btnClose  text-[40px] md:text-[60px] p-2"
+              className="btnClose top-[40px] right-5 md:top-4 md:right-20 mobile_l:right-34 lg:right-40"
               onClick={handleCloseModal}
             >
-              X
+              <IoMdClose size={34} />
+              
             </div>
             <img src={galleryImages[slideNumber].img} alt="" />
           </div>
