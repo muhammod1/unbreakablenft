@@ -17,11 +17,11 @@ const NftPopup = ({setShowModal}) => {
                 >
                 <IoMdClose size={24} />
                 </button> 
-                <div className='w-full p-3 mx-auto h-fit flex flex-col md:flex-row'>
+                <div className='w-full p-3  mx-auto  h-fit flex flex-col md:flex-row'>
                     <div className='w-[100%] h-[250px] mobile:h-[340px] md:h-full mx-auto'>
                         <img className='h-full w-full' src={nftrobot} alt="robot" />
                     </div>
-                    <div className='w-[100%] px-3'>
+                    <div className='w-[100%] px-3 md:ml-6'>
                         <h1 className="md:text-[26px] font-audio mt-5 md:mt-0">
                             <span className="block text-white">Unbroken #5692</span>{" "}
                         </h1>
