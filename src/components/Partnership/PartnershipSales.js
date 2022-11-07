@@ -21,11 +21,11 @@ const PartnershipSales = ({ title, desc, buttonText }) => {
             the collection on OpenSea.
           </p>
         </div>
-        <button 
+        <button
           className="bg-[#262626] p-3 w-full sm:w-fit rounded-md text-yellow text-sm"
-          onClick={() => setShowModal(true)}
+          // onClick={() => setShowModal(true)}
         >
-          Send proposal
+          Contact us
         </button>
       </motion.div>
 

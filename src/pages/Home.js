@@ -48,7 +48,7 @@ const Home = () => {
             and uphold the suppressed.
           </p>
           <div className="mt-[45px]">
-            <LinkButton text="Learn More" url="/roadmap" />
+            <LinkButton text="Learn More" url="/about" />
           </div>
         </div>
       </motion.div>

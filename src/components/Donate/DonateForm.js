@@ -20,12 +20,12 @@ const DonateForm = () => {
       number,
     };
     console.log(filledForm);
-    setShowQRCode(true)
+    setShowQRCode(true);
   };
 
   const handleChange = (e) => {
     setChecked(e.currentTarget.checked);
-  }
+  };
 
   return (
     <motion.div
@@ -38,7 +38,7 @@ const DonateForm = () => {
         whileInView={{ opacity: 1 }}
         className="w-[97%] small_l[95%] mx-auto md:mx-0 md:w-[50%]"
       >
-        <div className="flex items-center mb-4">
+        {/* <div className="flex items-center mb-4">
           <input
             id="default-checkbox"
             type="checkbox"
@@ -53,39 +53,36 @@ const DonateForm = () => {
           >
             Donate anonymously
           </label>
-        </div>
+        </div> */}
 
-        
-        
-        <form onSubmit={handleSubmit}>
-            {!checked && (
-              <>
-                <h3 className="text-white font-audio text-2xl my-2">
-                  Personal information
-                </h3>
-                <p className="text-[14px] text-grey_p">
-                  All donation payments are secured and encrypted
-                </p>
+        {/* <form onSubmit={handleSubmit}> */}
+        {/* {!checked && (
+            <>
+              <h3 className="text-white font-audio text-2xl my-2">
+                Personal information
+              </h3>
+              <p className="text-[14px] text-grey_p">
+                All donation payments are secured and encrypted
+              </p>
               <Form
                 value={name}
                 required="required"
-                type="text" 
+                type="text"
                 onChangeCallBack={setName}
-                placeholder="your legal name" 
+                placeholder="your legal name"
                 label="Full name"
               />
-              <Form 
+              <Form
                 value={email}
                 required="required"
-                type="email" 
+                type="email"
                 onChangeCallBack={setEmail}
-                placeholder="We would love to discuss further the terms of partnership" 
+                placeholder="We would love to discuss further the terms of partnership"
                 label="Email address"
               />
             </>
           )}
-          
-        
+
           <h3 className="text-white font-audio text-2xl my-3 mt-14 flex item-center">
             <img src={lock} alt="lock" />
             <span className="pl-3">Payment methods</span>
@@ -94,27 +91,24 @@ const DonateForm = () => {
             All donation payments are secured and encrypted
           </p>
           <div className="flex relative flex-col  mt-4  py-2">
-          <IconForm 
-            value={number}
-            required="required"
-            type="number" 
-            onChangeCallBack={setNumber}
-            placeholder="200,000" 
-            label="Donate Amount"
-            icon="$"
-            />  
-          </div>
+            <IconForm
+              value={number}
+              required="required"
+              type="number"
+              onChangeCallBack={setNumber}
+              placeholder="200,000"
+              label="Donate Amount"
+              icon="$"
+            />
+          </div> */}
 
-        {!showQRCode && (
-          <div className="flex mt-10 justify-between p-5 border border-[#171717] rounded-lg">
+        {/* <div className="flex mt-10 justify-between p-5 border border-[#171717] rounded-lg">
             <div className="w-[50%]">
-
-              {/* This is the section fro the select button */}
-
+            
               <label for="coins" className="block text-[14px] text-[#737373]">
                 I want to donate
-              </label> 
-                <select
+              </label>
+              <select
                 id="coins"
                 className="my-2 flex-col w-fit bg-yellow text-[black] text-bold text-[20px] rounded-lg p-2.5"
               >
@@ -134,15 +128,14 @@ const DonateForm = () => {
               <p className="text-white text-[32px] font-bold">3400</p>
               <p className=" mt-9 text-[12px] text-end text-[#737373]">-$0</p>
             </div>
-          </div>
-        )}
+          </div> */}
 
-          {!showQRCode && (<SubmitBtn type="submit" text="Proceed" />)}
+        {/* {!showQRCode && <SubmitBtn type="submit" text="Proceed" />} */}
 
-            { showQRCode && ( <DonateQRCode /> ) }
-      </form>
+        {/* </form> */}
+        <DonateQRCode />
       </motion.div>
-      {!checked && (
+      {/* {!checked && (
 
         <motion.div
           initial={{ opacity: 0 }}
@@ -181,10 +174,9 @@ const DonateForm = () => {
             </motion.div>
           </div>
         </motion.div>
-      )}
+      )} */}
     </motion.div>
   );
 };
 
 export default DonateForm;
-
