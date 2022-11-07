@@ -8,7 +8,7 @@ const DonateQRCode = () => {
 
   const handleCopy = () => {
     navigator.clipboard.writeText(copyText)
-    alert("Text copied")
+    // alert("Text copied")
   };
 
   return (
