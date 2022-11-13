@@ -1,26 +1,11 @@
-import React, { useState } from "react";
-// import { Submit } from "../components/UI/Form";
+import React from "react";
+import { faceb, instag, linkd, twit, mail } from "../assets";
 
-import { Form, SubmitBtn, Textarea } from "../components/UI/Form";
+import { BsDiscord } from "react-icons/bs";
+import {FiMail} from 'react-icons/fi'
+
 import { motion } from "framer-motion";
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [org, setOrg] = useState("");
-  const [message, setMessage] = useState("");
-  // const [isLoading, setIsLoading] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    let filledForm = {
-      name,
-      email,
-      org,
-      message,
-    };
-    console.log(filledForm);
-  };
-
   return (
     <div className="h-screen flex ">
       <motion.div
@@ -28,67 +13,79 @@ const Contact = () => {
         whileInView={{ opacity: 1 }}
         className="hidden justify-start md:flex w-full lg:w-1/2 bg-contact bg-cover  bg-no-repeat
    items-end"
-      >
-        <div className="w-full mb-10 mx-auto px-10 flex flex-col">
-          <h4 className="text-yellow leading-9 lg:leading-10 text-[40px] font-audio">
-            We would love to hear from you
-          </h4>
-          <p className="text-grey_p text-sm">
-            Write to us, we would love to hear from you.
-          </p>
-        </div>
-      </motion.div>
+      ></motion.div>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        className="flex w-full lg:w-1/2 justify-center items-center  "
+        className="flex justify-center mt-20   md:mt-20 md:ml-8  "
       >
-        <div className="w-full px-4 small:px-6 mx-auto my">
-          <form
-            autoComplete="off"
-            className=" max-w-[600px]"
-            onSubmit={handleSubmit}
-          >
-            <h1 className="text-yellow text-[32px] font-audio">Contact us</h1>
-            <p className=" text-grey_p">
+        <motion.div
+          whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+          transition={{ duration: 0.7 }}
+          className="px-3 sm:px-8 max-w-[1240px] mx-auto"
+        >
+          <div className=" max-w-[534px] ">
+            <h3 className="font-audio text-4xl md:w-[474px]  md:text-[40px] text-yellow">
+              We would love to hear from you
+            </h3>
+            <p className="text-grey_p text-[14px] mt-2">
               Want to become a partner or have a story to share?
             </p>
-            <Form
-              value={name}
-              type="text"
-              required="required"
-              onChangeCallBack={setName}
-              placeholder="your legal name"
-              label="Full name"
-            />
+          </div>
+          <div className="block">
+            <div className="flex mt-14">
+             <img src={mail} alt="mail" className="w-[24px]"/>
+              <span className="font-poppins text-[14px] text-head_white ml-2">Write to us</span>
+            </div>
+            <div className="flex mt-8">
+              <BsDiscord
+                fill=" #7289DA
+"
+                size={24}
+                
+              />
+              <span className="font-poppins text-[14px] text-head_white ml-2">Join us on discord</span>
+            </div>
+            <div class="flex items-center  py-4 mt-14">
+        
+        <div className="flex-grow h-px px-10 bg-gray-400"></div> 
 
-            <Form
-              value={email}
-              required="required"
-              type="email"
-              onChangeCallBack={setEmail}
-              placeholder="We would love to discuss further the terms of partnership"
-              label="Email address"
-            />
+     
+        <span className="flex-shrink text-[14px] text-head_white px-4  font-poppins">OR</span>
 
-            <Form
-              value={org}
-              type="text"
-              onChangeCallBack={setOrg}
-              placeholder="org name if any*"
-              label="Organization"
-            />
-
-            <Textarea
-              value={message}
-              type="text"
-              placeholder="write to us"
-              label="Message"
-              onChangeCallBack={setMessage}
-            />
-            <SubmitBtn type="submit" text="Send" />
-          </form>
-        </div>
+        
+        <div className="flex-grow h-px  px-10 bg-gray-400"></div>
+    </div>
+    <motion.div
+          whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+          transition={{ duration: 0.7 }}
+          className="mt-8 max-w-[534px] "
+        >
+          <h3 className="font-poppins text-[14px]  md:text-[14px] text-head_white">
+          Send a DM social media
+          </h3>
+         
+        </motion.div>
+        <motion.div
+          whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+          transition={{ duration: 0.7 }}
+          className="mt-4 max-w-[534px] h-[110px] flex mx-[-10px]  "
+        >
+          <div className="mx-2">
+            <img src={twit} alt="instagram" />
+          </div>
+          <div className="mx-2">
+            <img src={linkd} alt="linkdln" />
+          </div>
+          <div className="mx-2">
+            <img src={instag} alt="instagram" />
+          </div>
+          <div className="mx-2">
+            <img src={faceb} alt="facebook" />
+          </div>
+        </motion.div>
+          </div>
+        </motion.div>
       </motion.div>
     </div>
   );
