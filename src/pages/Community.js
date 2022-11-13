@@ -61,14 +61,20 @@ const Community = () => {
           whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
           transition={{ duration: 0.7 }}
         >
-          <LinkCard text="Become an " subtext="Unbroken" desc="Welcome to our NFT gallery. With your support, we will execute our anti-bullying initiatives." linktext="Join discord" url="#"  />
-"
+          <LinkCard
+            text="Become an "
+            subtext="Unbroken"
+            desc="Welcome to our NFT gallery. With your support, we will execute our anti-bullying initiatives."
+            linktext="Join discord"
+            url="#"
+          />
+          "
         </motion.div>
 
         <motion.div
           whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
           transition={{ duration: 0.7 }}
-          className=" mt-16 flex lg:flex-row items-center justify-center flex-col  justify-evenly "
+          className=" mt-16 flex lg:flex-row items-center justify-center flex-col   "
         >
           <div className="  ">
             <div className="  ">
@@ -82,11 +88,11 @@ const Community = () => {
             </div>
             <div className="flex mt-8 flex-col sm:flex-row  ">
               <div className=" rounded mt-8 sm:mr-14 max-w-[350px]  overflow-hidden bg-[#171717] h-full relative ">
-              <div className="flex gap-2 items-center  absolute  z-10 py-[5px] px-3 rounded-2xl overflow-hidden top-2 right-3">
-          <BsTwitter className="text-blue-400 " />
-          <p className="text-head_white text-xs">Twitter Spaces</p>
-          <div className="bg-[#000000] opacity-40 -z-10 absolute inset-0"></div>
-        </div>
+                <div className="flex gap-2 items-center  absolute  z-10 py-[5px] px-3 rounded-2xl overflow-hidden top-2 right-3">
+                  <BsTwitter className="text-blue-400 " />
+                  <p className="text-head_white text-xs">Twitter Spaces</p>
+                  <div className="bg-[#000000] opacity-40 -z-10 absolute inset-0"></div>
+                </div>
                 <img
                   className="w-full object-cover h-[325px]"
                   src={event1}
@@ -104,22 +110,29 @@ const Community = () => {
                 <div className="px-6 pt-4 pb-2">
                   <span className="inline-block   py-1 text-sm font-semibold  mr-2 mb-2">
                     <div className="  md:w-fit py-1 px-3 bg-[#262626] flex   rounded-[8px] ">
-                      <img src={circle} alt="host card" className=" my-auto mr-2 w-[37px] h-[37px]"/>
+                      <img
+                        src={circle}
+                        alt="host card"
+                        className=" my-auto mr-2 w-[37px] h-[37px]"
+                      />
                       <div className="flex  flex-col">
-                         <p className="text-[10px]  text-[#A3A3A3] Poppins">Host</p>
-                         <p className="text-[12px]  text-[#FAFAFA] Poppins">Oluchi Enebeli</p>
+                        <p className="text-[10px]  text-[#A3A3A3] Poppins">
+                          Host
+                        </p>
+                        <p className="text-[12px]  text-[#FAFAFA] Poppins">
+                          Oluchi Enebeli
+                        </p>
                       </div>
-                     
                     </div>
                   </span>
                 </div>
               </div>
               <div className=" mb-8 rounded overflow-hidden mt-8 bg-[#171717] max-w-[350px] h-full  relative">
-              <div className="flex gap-2 items-center  absolute  z-10 py-[5px] px-3 rounded-2xl overflow-hidden top-2 right-3">
-          <BsTwitter className="text-blue-400 " />
-          <p className="text-head_white text-xs">Twitter Spaces</p>
-          <div className="bg-[#000000] opacity-40 -z-10 absolute inset-0"></div>
-        </div>
+                <div className="flex gap-2 items-center  absolute  z-10 py-[5px] px-3 rounded-2xl overflow-hidden top-2 right-3">
+                  <BsTwitter className="text-blue-400 " />
+                  <p className="text-head_white text-xs">Twitter Spaces</p>
+                  <div className="bg-[#000000] opacity-40 -z-10 absolute inset-0"></div>
+                </div>
                 <img
                   className="w-full object-cover h-[325px]"
                   src={event2}
@@ -135,14 +148,21 @@ const Community = () => {
                   </p>
                 </div>
                 <div className="px-6 pt-4 pb-2">
-                <span className="inline-block   py-1 text-sm font-semibold  mr-2 mb-2">
+                  <span className="inline-block   py-1 text-sm font-semibold  mr-2 mb-2">
                     <div className="  md:w-fit py-1 px-3 bg-[#262626] flex   rounded-[8px] ">
-                      <img src={circle} alt="host card" className="  my-auto mr-2 w-[37px] h-[37px]"/>
+                      <img
+                        src={circle}
+                        alt="host card"
+                        className="  my-auto mr-2 w-[37px] h-[37px]"
+                      />
                       <div className="flex  flex-col">
-                         <p className="text-[10px]  text-[#A3A3A3] Poppins">Host</p>
-                         <p className="text-[12px]  text-[#FAFAFA] Poppins">Oluchi Enebeli</p>
+                        <p className="text-[10px]  text-[#A3A3A3] Poppins">
+                          Host
+                        </p>
+                        <p className="text-[12px]  text-[#FAFAFA] Poppins">
+                          Oluchi Enebeli
+                        </p>
                       </div>
-                     
                     </div>
                   </span>
                 </div>
@@ -150,11 +170,11 @@ const Community = () => {
             </div>
           </div>
           <div className=" rounded max-w-[350px] overflow-hidden bg-[#171717] relative h-full lg:ml-8 ">
-          <div className="flex gap-2 items-center  absolute  z-10 py-[5px] px-3 rounded-2xl overflow-hidden top-2 right-3">
-          <BsTwitter className="text-blue-400 " />
-          <p className="text-head_white text-xs">Twitter Spaces</p>
-          <div className="bg-[#000000] opacity-40 -z-10 absolute inset-0"></div>
-        </div>
+            <div className="flex gap-2 items-center  absolute  z-10 py-[5px] px-3 rounded-2xl overflow-hidden top-2 right-3">
+              <BsTwitter className="text-blue-400 " />
+              <p className="text-head_white text-xs">Twitter Spaces</p>
+              <div className="bg-[#000000] opacity-40 -z-10 absolute inset-0"></div>
+            </div>
             <img
               className="w-full object-cover h-[325px]"
               src={event3}
@@ -170,16 +190,21 @@ const Community = () => {
               </p>
             </div>
             <div className="px-6 pt-4 pb-2">
-            <span className="inline-block   py-1 text-sm font-semibold  mr-2 mb-2">
-                    <div className="  md:w-fit py-1 px-3 bg-[#262626] flex   rounded-[8px] ">
-                      <img src={circle} alt="host card" className=" my-auto mr-2 w-[37px] h-[37px]"/>
-                      <div className="flex  flex-col">
-                         <p className="text-[10px]  text-[#A3A3A3] Poppins">Host</p>
-                         <p className="text-[12px]  text-[#FAFAFA] Poppins">Oluchi Enebeli</p>
-                      </div>
-                     
-                    </div>
-                  </span>
+              <span className="inline-block   py-1 text-sm font-semibold  mr-2 mb-2">
+                <div className="  md:w-fit py-1 px-3 bg-[#262626] flex   rounded-[8px] ">
+                  <img
+                    src={circle}
+                    alt="host card"
+                    className=" my-auto mr-2 w-[37px] h-[37px]"
+                  />
+                  <div className="flex  flex-col">
+                    <p className="text-[10px]  text-[#A3A3A3] Poppins">Host</p>
+                    <p className="text-[12px]  text-[#FAFAFA] Poppins">
+                      Oluchi Enebeli
+                    </p>
+                  </div>
+                </div>
+              </span>
             </div>
           </div>
         </motion.div>

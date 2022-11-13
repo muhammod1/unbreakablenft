@@ -1,5 +1,6 @@
 import React from 'react'
 
+import {IoMdClose} from 'react-icons/io'
 import { bgImage } from '../../assets';
 
 const ProgramModal = ({ setShowModal }) => {
@@ -13,7 +14,7 @@ const ProgramModal = ({ setShowModal }) => {
                     type="button"
                     onClick={() => setShowModal(false)}
                 >
-                    X
+                    <IoMdClose size={24} />
                 </button> 
                 <div className='w-full p-3  mx-auto h-fit flex flex-row-reverse'>
                     <div className='w-[100%] h-full mx-auto'>

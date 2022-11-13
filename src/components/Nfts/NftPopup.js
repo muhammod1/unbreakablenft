@@ -9,7 +9,7 @@ const NftPopup = ({setShowModal}) => {
     <>
     <div className="justify-center gradient items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
         <div className="relative w-[100%] mobile:w-[90%] my-6 mx-auto max-w-[1000px]">
-            <div className="w-[85%] md:w-[85%] mx-auto border-0 rounded-lg relative bg-[#171717] outline-none focus:outline-none">
+            <div className="w-[90%] md:w-[100%] mx-auto border-0 rounded-lg relative bg-[#171717] outline-none focus:outline-none">
                 <button
                 className="absolute right-[4px] -top-10 md:right-0 text-yellow background-transparent font-bold uppercase text-2xl outline-none focus:outline-none ease-linear transition-all duration-150"
                 type="button"
@@ -17,12 +17,12 @@ const NftPopup = ({setShowModal}) => {
                 >
                 <IoMdClose size={24} />
                 </button> 
-                <div className='w-full p-3   mx-auto h-fit flex flex-col md:flex-row'>
+                <div className='w-full p-3  mx-auto  h-fit flex flex-col md:flex-row'>
                     <div className='w-[100%] h-[250px] mobile:h-[340px] md:h-full mx-auto'>
                         <img className='h-full w-full' src={nftrobot} alt="robot" />
                     </div>
-                    <div className='w-[100%] px-3'>
-                        <h1 className="md:text-[26px] font-audio ">
+                    <div className='w-[100%] px-3 md:ml-6'>
+                        <h1 className="md:text-[26px] font-audio mt-5 md:mt-0">
                             <span className="block text-white">Unbroken #5692</span>{" "}
                         </h1>
                         <p className='card-font text-white mt-3 font-sans text-[12px]  md:text-[16px]'>
