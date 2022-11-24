@@ -95,7 +95,7 @@ import unionFill2 from "./unionfill2.svg";
 import unionUnFill2 from "./unionunfill2.svg";
 
 import circle from "./circle.png";
-
+import mail from "./mail.png"
 export {
   checkbox,
   copyIcon,
@@ -182,4 +182,5 @@ export {
   instagramIcon,
   unionFill,
   circle,
+  mail,
 };
